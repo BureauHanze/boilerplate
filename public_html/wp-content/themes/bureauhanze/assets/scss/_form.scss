@@ -1,0 +1,55 @@
+input,
+textarea {
+    font-family: 'Open Sans';
+    font-size: $font;
+    width: 100%;
+    padding-left: $padding-sm;
+    border: 1px solid #98AAC3;
+    color: #999999;
+}
+input {
+    height: 50px;
+}
+textarea {
+    height: 120px;
+    max-width: 100%;
+    min-width: 100%;
+    padding: $padding-sm;
+}
+.contact__grid {
+    .contact__row {
+        display: flex;
+        gap: 25px;
+        @media(max-width: $tablet){
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+    .col-6,
+    .col-12 {
+        margin-bottom: $margin-lg;
+    }
+    .col-6 {
+        width: 50%;
+
+    }
+    .col-12 {
+        width: 100%;
+    }
+    .col-8 {
+        width: 66%
+    }
+    .col-4 {
+        width: 34%
+    }
+    p {
+        margin: 0;
+    }
+    @media(max-width: $tablet){
+        .col-8,
+        .col-6,
+        .col-4 {
+            width: 100%;
+        }
+    }
+}

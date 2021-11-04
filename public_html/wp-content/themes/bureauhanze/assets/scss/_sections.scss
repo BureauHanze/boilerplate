@@ -1,0 +1,204 @@
+.solution {
+    .site-paragraph {
+        .site-paragraph__heading {
+            font-size: 30px;
+            margin-bottom: $margin-lg;
+        }
+    }
+}
+
+.product-highlight {
+    .product-highlight__content {
+        display: flex;
+        align-items: center;
+        @media(max-width: $desktop-xl){
+            flex-direction: column-reverse;
+        }
+        .site-paragraph {
+            padding: $padding-xl $padding-xl $padding-xl 0;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+            @media(max-width: $tablet){
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .btn-primary {
+                margin-right: 35px;
+                @media(max-width: $tablet){
+                    margin: 0 0 35px 0;
+                    
+                }
+            }
+        }
+        .product-highlight__images {
+            position: relative;
+            .product-highlight__main-image {
+                max-height: 900px;
+            }
+            .product-highlight__sub-image {
+                position: absolute;
+                right: -100px;
+                top: 160px;
+                object-fit: contain;
+                width: 100vw;
+                left: 50%;
+                margin-left: -42vw;
+                pointer-events: none;
+                @media(max-width: $tablet){
+                    top: 120px;
+                }
+                @media(min-width: $full-width){
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+.projects {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px;
+    }
+    .project {
+        position: relative;
+        .project__container {
+            position: relative;
+            border: 1px solid $blue;
+            min-height: 460px;
+            img {
+                object-fit: cover;
+            }
+            .project__content {
+                position: relative;
+                padding: $padding-lg;
+            }
+        }
+    }
+}
+
+.contact {
+    .row {
+        position: relative;
+        padding: $padding-xl;
+        @media(max-width: $tablet){
+            padding: $padding-lg;
+        }
+        @media(max-width: $mobile){
+            padding: $padding-lg;
+        }
+        .contact__background-image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: $blue;
+            opacity: 0.8;
+            z-index: 3;
+        }
+        .contact__container {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            z-index: 3;
+            max-height: 390px;
+            @media(max-width: $desktop-xl){
+                flex-direction: column;
+                max-height: 600px;
+            }
+            @media(max-width: $tablet){
+                flex-direction: column;
+                max-height: 780px;
+            }
+            @media(max-width: $mobile){
+                flex-direction: column;
+                max-height: 920px;
+            }
+            .contact__heading {
+                .contact__buttons {
+                    display: flex;
+                    align-items: center;
+                    gap: 32px;
+                    margin-bottom: $margin-xl;
+                    svg {
+                        margin-right: 10px;
+                    }
+                    .envelope-top {
+                        fill: white;
+                    }
+                    .phone1,
+                    .phone2,
+                    .phone3,
+                    .phone4,
+                    .phone5,
+                    .phone6 {
+                        fill: white;
+                    }
+                    a {
+                        color: white;
+                        font-weight: bold;
+                    }
+                }
+                .text-with-arrow {
+                    color: white;
+                    opacity: 0.75;
+                    display: grid;
+                    grid-template-columns: 210px 1fr;
+                    max-width: 90%;
+                    svg {
+                        color: white;
+                    }
+                }
+            }
+            h2 {
+                padding-right: $padding-md;
+                color: white;
+                font-size: 46px;
+                @media(max-width: $mobile){
+                    font-size: 28px;
+                }
+                .heading__sub {
+                    color: $red;
+                    font-size: inherit;
+                }
+            }
+            .contact__form {
+                position: relative;
+                padding: $padding-lg;
+                width: 100%;
+                height: 100%;
+                max-width: 500px;
+                background-color: #F3F5F6;
+                @media(max-width: $desktop){
+                    max-width: inherit;
+                }
+                &::before {
+                    content: "";
+                    height: 100%;
+                    width: 100%;
+                    background-color: #e9e9e9;
+                    position: absolute;
+                    z-index: -1;
+                    top: 10px;
+                    left: 10px;
+                }
+                h3 {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    .content-with-text {
+        display: flex;
+        align-items: flex-start;
+    }
+}

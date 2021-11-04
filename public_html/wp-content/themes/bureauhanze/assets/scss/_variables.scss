@@ -1,0 +1,61 @@
+// Breakpoints
+$mobile: 576px;         // Mobile
+$tablet: 768px;         // Tablet
+$desktop: 992px;        // Desktop
+$desktop-xl: 1200px; // Desktop large
+$full-width: 1920px;    // Full width
+
+// Max page width
+$container-width: 1920px;
+
+// Margins
+$margin-sm: 8px;
+$margin-md: 16px;
+$margin-lg: 32px;
+$margin-xl: 64px;
+
+// Paddings
+$padding-sm: 8px;
+$padding-md: 16px;
+$padding-lg: 32px;
+$padding-xl: 64px;
+
+// Font sizes
+$font-sm: 0.75rem;  // 12px
+$font-md: 0.875rem; // 14px
+$font: 1rem;        // 16px
+$font-lg: 1.5rem;   // 24px
+$font-xl: 2rem;     // 32px
+$font-xxl: 2.75rem; // 44px
+$font-xxxl: 4rem;   // 64px
+
+// Colors
+$blue: #183254;
+$blue-dark: #162D4B;
+$blue-darker: #101E31;
+$red: #E73743;
+$yellow: #FECC04;
+$yellow-light: #FED842;
+$text: #414141;
+$text-light: #56606D;
+$light-gray: #eaeaea;
+
+
+// Boilerplate colors
+$gray-1: #f8f9fa;
+$gray-2: #e9ecef;
+$gray-3: #dee2e6;
+$gray-4: #ced4da;
+$gray-5: #adb5bd;
+$gray-6: #6c757d;
+$gray-7: #495057;
+$gray-8: #343a40;
+$gray-9: #212529;
+
+// Transitions
+$main-transition: all 0.2s ease;
+
+// Site global variables
+$clip-path-slant: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+$border-radius: 15px;
+$box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;

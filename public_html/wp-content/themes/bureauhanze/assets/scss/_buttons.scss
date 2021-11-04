@@ -1,0 +1,83 @@
+.btn {
+    display: inline-flex;
+    transition: all 0.2s ease;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    padding: $padding-sm $padding-lg;
+    text-decoration: none;
+    color: $blue;
+    background-color: $yellow;
+    font-weight: normal;
+    z-index: 5;
+    overflow: hidden;
+    font-size: $font;
+    font-weight: bold;
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: $yellow-light;
+        height: 100%;
+        width: 80px;
+        top: 0;
+        left: -16px;
+        z-index: -1;
+        transform: skewX(-20deg);
+    }
+    &:hover {
+        background-color: $yellow-light;
+    }
+    .btn-primary__icon {
+        margin-right: 35px;
+    }
+}
+
+.btn-link,
+.btn-link-inverted {
+    display: inline-flex;
+    align-items: center;
+    font-size: $font;
+    color: $blue;
+    text-decoration: none;
+    font-weight: bold;
+    &::before {
+        content: "";
+        background-image: url("https://www.bureauhanzeweb.nl/stand-by/wp-content/themes/bureauhanze/assets/images/arrow-right.svg");
+        background-repeat: no-repeat;
+        height: 18px;
+        width: 15px;
+        margin-right: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &:hover {
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+}
+
+.btn-link-inverted {
+    color: $red;
+    &::before {
+        content: "";
+        background-image: url("/wp-content/themes/bureauhanze/assets/images/arrow-right-red.svg");
+    }
+    &:hover {
+        color: $blue;
+    }
+}
+
+@media(min-width: $desktop-xl){
+    .header__nav {
+        display: none;
+    }
+}

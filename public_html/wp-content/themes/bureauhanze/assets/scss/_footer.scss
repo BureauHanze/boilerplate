@@ -1,0 +1,122 @@
+.footer {
+    background-color: $gray-2;
+    color: white;
+    .footer__top {
+        display: grid;
+        grid-template-columns: 1fr 165px 3fr 210px;
+        grid-gap: 100px;
+        @media(max-width: $desktop-xl){
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 64px;
+        }
+        .footer__heading {
+            font-size: $font-lg;
+            margin-bottom: $margin-md;
+        }
+        .footer__logo {
+            padding: $padding-md;
+            width: 150px;
+            z-index: 1;
+            position: relative;
+        }
+        .top__contact {
+            p {
+                margin: 0 0 $margin-md;
+                line-height: 1.5;
+                margin-bottom: 0;
+            }
+            .main-navigation__phone,
+            .main-navigation__mail {
+                color: white;
+            }
+            .main-navigation__mail {
+                margin: $margin-md 0 $margin-md 0;
+            }
+        }
+        .top__content {
+            max-width: 80%;
+            @media(max-width: 768px){
+                max-width: 100%;
+                grid-column: span 2;
+            }
+        }
+        .top__links {
+            a {
+                display: flex;
+                line-height: 2;
+                align-items: center;
+                line-height: 2.4;
+                text-decoration: none;
+                &::before {
+                    content: "";
+                    background-color: $gray-6;
+                    background-size: 8px 12px;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    height: 32px;
+                    width: 32px;
+                    display: inline-block;
+                    margin-right: $margin-md;
+                }
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                }
+            }
+
+        }
+    }
+    .footer__bottom {
+        background-color: $gray-3;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: $padding-sm $padding-lg;
+            color: $text-light;
+            .bottom__copyright {
+                p {
+                    color: $text-light;
+                    font-size: $font;
+                }
+            }
+            .bottom__links {
+                display: flex;
+                align-items: center;
+                a {
+                    color: $text-light;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                        text-underline-position: under;
+                    }
+                }
+                span {
+                    margin: 0 $margin-sm;
+                }
+            }
+        }
+        .to-top {
+            margin-left: $margin-lg;
+            transition: $main-transition;
+            background-color: $gray-6;
+            border: 1px solid $text-light;
+            height: 32px;
+            width: 32px;
+            &::before {
+                content: "";
+                transform: rotate(270deg);
+                background-size: 8px 12px;
+                background-position: center center;
+                background-repeat: no-repeat;
+                height: 100%;
+                width: 100%;
+                display: inline-block;
+                margin-right: $margin-sm;
+            }
+            &:hover {
+                background-color: $gray-8;
+            }
+        }
+    }
+}

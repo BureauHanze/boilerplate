@@ -1,0 +1,38 @@
+.header {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+
+    
+    
+    .header__nav {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .header__logo {
+                height: 80px;
+            }
+            .header__contact-buttons {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                a {
+                    display: inline-flex;
+                    align-items: center;
+                    margin-right: $margin-md;
+                    &:hover {
+                        color: black;
+                    }
+                    svg {
+                        color: black;
+                        height: 16px;
+                        width: 16px;
+                        margin-right: $margin-sm;
+                    }
+                }
+            }
+        }
+    }
+}
+
