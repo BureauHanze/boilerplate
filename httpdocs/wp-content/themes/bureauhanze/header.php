@@ -24,18 +24,7 @@
 		<header class="header">
 			<div class="header__nav">
 				<div class="container">
-					<a class="header__logo" href="/" title="Home">
-						<?php
-						$contactlogo = get_field('contactLogo', 'option');
-						if ($contactlogo) : ?>
-							<?php the_field('contactLogo', 'option'); ?></p>
-						<?php
-						endif; ?>
-					</a>
-					<div class="header__contact-buttons">
-						<a href="tel:+31341251287" title="Bel StandBy" class="contact-buttons__phone"><?php get_template_part( 'assets/svg/phone'); ?>Telefoon</a>
-						<a href="mailto:info@stand-by.nl" title="Mail naar info@stand-by.nl" class="contact-buttons__mail"><?php get_template_part( 'assets/svg/envelope'); ?>E-mail</a>
-					</div>
+					<a class="header__logo" href="/" title="Home"></a>
 					<div id="open_nav" class="header__nav">☰</div>
 				</div>
 			</div>

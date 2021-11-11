@@ -75,9 +75,3 @@ button {
         color: $blue;
     }
 }
-
-@media(min-width: $desktop-xl){
-    .header__nav {
-        display: none;
-    }
-}

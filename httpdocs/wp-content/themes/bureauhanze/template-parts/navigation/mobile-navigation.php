@@ -1,6 +1,6 @@
 <div id="page-overlay" class="page-overlay"></div>
 
-<div class="nav__container">
+<div class="nav">
     <nav class="nav__content">
         <div class="container">
             <div class="nav__header">
