@@ -2,5 +2,5 @@
 Boilerplate for WordPress development
 
 WordPress login:
-Accountname: WordPress 5.8.1
+Accountname: admin or webbeheer@buerauhanze.nl
 Password: welkom01
