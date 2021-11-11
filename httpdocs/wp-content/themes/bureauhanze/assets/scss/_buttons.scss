@@ -19,7 +19,6 @@ button {
     font-weight: normal;
     z-index: 5;
     overflow: hidden;
-    font-size: $font;
     font-weight: bold;
     &::after {
         content: "";
@@ -44,7 +43,6 @@ button {
 .btn-link-inverted {
     display: inline-flex;
     align-items: center;
-    font-size: $font;
     color: $blue;
     text-decoration: none;
     font-weight: bold;

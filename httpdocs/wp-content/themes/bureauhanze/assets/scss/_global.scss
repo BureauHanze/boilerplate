@@ -7,7 +7,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 p, a, ul, li {
     font-family: 'Open Sans';
-    font-size: 19px;
 }
 h1 {
     font-size: $font-xxxl;
@@ -23,7 +22,6 @@ h3 {
 }
 p {
     margin-bottom: 15px;
-    font-size: 19px;
     color: $text;
     line-height: 1.8;
 }
@@ -67,6 +65,7 @@ section {
 }
 .container {
     padding: $padding-xl;
+    width: 100%;
     max-width: $container-width;
     margin-left: auto;
     margin-right: auto;

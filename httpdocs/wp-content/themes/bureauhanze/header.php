@@ -4,18 +4,15 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<link rel="stylesheet" href="https://use.typekit.net/uye1uxs.css">
-	<title><?php echo get_the_title($page->ID); ?> | Boilerplate.</title>
-	<?php
-	if ( get_field( 'header_google_analytics', 'option' ) ):?>
-		<?php the_field( 'header_google_analytics', 'option' );
-	endif; ?>
 
-	<?php wp_head(); ?>
+	<?php
+	get_template_part( 'template-parts/header/head' );
+
+	wp_head(); ?>
 </head>
 
 <body>
-	<!-- Mobile Nav-->
+
 	<?php
 	get_template_part( 'template-parts/navigation/mobile-navigation' ); ?>
 
@@ -24,7 +21,14 @@
 		<header class="header">
 			<div class="header__nav">
 				<div class="container">
-					<a class="header__logo" href="/" title="Home"></a>
+					<a class="header__logo" href="/" title="Home">
+						<?php
+						$contactlogo = get_field('contactLogo', 'option');
+						if ($contactlogo) : ?>
+							<?php the_field('contactLogo', 'option'); ?></p>
+						<?php
+						endif; ?>
+					</a>
 					<div id="open_nav" class="header__nav">☰</div>
 				</div>
 			</div>

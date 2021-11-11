@@ -7,18 +7,18 @@ function addschema()
     $headline = get_the_title($post->ID);
     $description = get_the_content($post->ID);
     $permalink = get_permalink();
-    $faviconcompany = get_field('contactFavicon', 'option');        // Favicon
-    $company = get_field('contactCompany', 'option');               // Bedrijfsnaam
-    $slogancompany = get_field('contactSlogan', 'option');          // Ondertitel bedrijf
-    $urlcompany = get_field('contactURL', 'option');                // Website URL
-    $addresscompany = get_field('contactAddress', 'option');        // Adres
-    $postalcompany = get_field('contactPostal', 'option');          // Postcode
-    $placecompany = get_field('contactPlace', 'option');            // Plaatsnaam
-    $phonecompany = get_field('contactPhone', 'option');            // Telefoonnummer
-    $instagramcompany = get_field('contactInstagram', 'option');    // Instagram URL
-    $linkedincompany = get_field('contactLinkedIn', 'option');      // LinkedIn URL
+    $faviconcompany = get_field('contactFavicon', 'option');            // Favicon
+    $company = get_field('contactCompany', 'option');                   // Bedrijfsnaam
+    $slogancompany = get_field('contactSlogan', 'option');              // Ondertitel bedrijf
+    $urlcompany = get_field('contactURL', 'option');                    // Website URL
+    $addresscompany = get_field('contactAddress', 'option');            // Adres
+    $postalcompany = get_field('contactPostal', 'option');              // Postcode
+    $placecompany = get_field('contactPlace', 'option');                // Plaatsnaam
+    $phonecompany = get_field('contactPhone', 'option');                // Telefoonnummer
+    $instagramcompany = get_field('contactInstagram', 'option');        // Instagram URL
+    $linkedincompany = get_field('contactLinkedIn', 'option');          // LinkedIn URL
+    $seodescription = get_field('seoPageMetaDescription', 'option');    // Meta Description
  
-
     // Main schema.org for organisation
     $schema_organisation = array(
         '@context'  => "http://schema.org",
@@ -26,7 +26,7 @@ function addschema()
         "@id" => "$urlcompany#organization",
         "name" => $company,
         "alternateName" => $slogancompany,
-        "description" => "", // Meta description van SEO per pagina
+        "description" => $seodescription, // Meta description van SEO per pagina
         "url" => $urlcompany,
         "logo" => $faviconcompany,
         'sameAs' => array(
