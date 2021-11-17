@@ -18,16 +18,6 @@ else : ?>
 <?php
 endif; ?>
 
-<!-- Meta Keywords -->
-<?php
-if (get_field('seoPageMetaKeywords', 'option')) : ?>
-<meta name="keywords" content="<?php the_field('seoPageMetaKeywords', 'option'); ?>">
-<?php
-else : ?>
-<meta name="keywords" content="">
-<?php
-endif; ?>
-
 <!-- Google Analytics code -->
 <?php
 if ( get_field( 'header_google_analytics', 'option' ) ):?>

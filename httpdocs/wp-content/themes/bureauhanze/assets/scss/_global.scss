@@ -1,30 +1,59 @@
-h1,h2,h3,h4,h5,h6 {
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6,
+p, a, ul, li,
+input, textarea {
     font-family: 'Open Sans';
     margin-top: 0;
-    color: $blue;
-    line-height: 1;
-    text-transform: uppercase;
+    line-height: $line-height;
 }
-p, a, ul, li {
-    font-family: 'Open Sans';
+
+h1,h2,h3,h4,h5,h6 {
+    color: $heading-color;
 }
+
+p, a, ul, li{
+    color: $text-color;
+}
+
 h1 {
     font-size: $font-xxxl;
 }
+
 h2 {
     font-size: $font-xxl;
-    .heading__sub {
-        font-size: $font-xl;
-    }
 }
+
 h3 {
     font-size: $font-lg;
 }
+
+h4 {
+    font-size: $font-lg;
+}
+
+h5 {
+    font-size: $font-lg;
+}
+
+h6 {
+    font-size: $font-lg;
+}
+
 p {
     margin-bottom: 15px;
-    color: $text;
-    line-height: 1.8;
+    color: $text-color;
 }
+
 a {
     cursor: pointer;
     text-decoration: underline;
@@ -54,15 +83,13 @@ ul {
         }
     }
 }
-body {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
+
+
+
 section {
   padding: 0 0 $padding-lg 0;   
 }
+
 .container {
     padding: $padding-xl;
     width: 100%;
@@ -78,12 +105,11 @@ section {
     @media(max-width: $mobile) {
         padding: $padding-sm;
     }
+    .row {
+        position: relative;
+        width: 100%;
+    }
 }
-.row {
-    position: relative;
-    width: 100%;
-}
-
 
 img,
 svg {
@@ -91,6 +117,7 @@ svg {
     height: 100%;
     width: 100%;
 }
+
 iframe {
     display: block;
     margin-left: auto;
@@ -99,138 +126,4 @@ iframe {
 
 #page {
     position: relative;
-}
-
-.heading {
-    font-size: $font-xxxl;
-    color: $blue;
-    margin-bottom: 0;
-}
-.heading-sub {
-    color: $red;
-    font-size: $font-xl;
-}
-
-.site-paragraph,
-.site-paragraph-inverted {
-    background-color: white;
-    width: 100%;
-    padding: $padding-xl;
-    min-width: 500px;
-    @media(max-width: $mobile) {
-        min-width: inherit;
-    }
-    .paragraph__corner {
-        position: relative;
-        svg {
-            position: absolute;
-            width: 48px;
-            height: 48px;
-            top: 8px;
-            left: 0;
-            color: $light-gray;
-        }
-    }
-    .site-paragraph__heading {
-        font-size: $font-xxxl;
-        color: $blue;
-        margin-bottom: 0;
-    }
-    .site-paragraph__heading-sub {
-        color: $red;
-        font-size: $font-xl;
-    }
-    .two-col {
-        position: relative;
-        column-count: 2;
-        column-gap: 32px;
-        padding: $padding-lg;
-        p {
-            padding: 0;
-            margin: 0;
-            &::before {
-                display: none;
-            }
-        }
-    }
-    p {
-        color: $blue;
-        padding: $padding-lg;
-        position: relative;
-    }
-    a {
-        text-decoration: none;
-        &:hover {
-            color: $blue;
-            text-decoration: underline;
-            text-underline-position: under;
-        }
-    }
-    .btn-primary {
-        &:hover {
-            text-decoration: none;
-        }
-    }
-    .two-col-ul {
-        position: relative;
-        column-count: 2;
-        column-gap: 32px;
-        padding: $padding-lg;
-        li {
-            color: white;
-        }
-    }
-}
-.site-paragraph-inverted {
-    background-color: $red;
-    .site-paragraph__heading {
-        color: white;
-    }
-    .site-paragraph__heading-sub {
-        color: $blue;
-    }
-    p {
-        color: white;
-    }
-    a {
-        &:hover {
-            text-decoration: none;
-            color: white;
-        }
-    }
-}
-
-.text-with-arrow {
-    display: flex;
-    align-items: center;
-    svg {
-        padding-left: $padding-sm;
-        color: $blue;
-    }
-}
-
-.contact-mail,
-.contact-phone {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-        text-underline-position: under;
-    }
-    svg {
-        width: 16px;
-        height: 100%;
-        margin-right: $margin-sm;
-    }
-}
-
-.seperator {
-    height: 1px;
-    width: 100%;
-    background-color: $blue;
-}
-
-.otgs-development-site-front-end {
-    display: none;
 }

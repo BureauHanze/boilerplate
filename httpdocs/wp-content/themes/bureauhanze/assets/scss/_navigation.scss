@@ -20,15 +20,16 @@
 
 .nav {
     position: absolute;
-    right: -400px;
+    right: 0;
     top: 0;
     bottom: 0;
-    width: 400px;
+    width: 0;
     height: 100%;
     background: $gray-2;
     box-shadow: $box-shadow;
     transition: right 0.2s ease;
     z-index: 2;
+    overflow: hidden;
     .nav__header {
         display: flex;
         justify-content: space-between;

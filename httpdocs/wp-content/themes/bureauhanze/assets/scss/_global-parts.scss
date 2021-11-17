@@ -1,0 +1,15 @@
+.contact-mail,
+.contact-phone {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+    svg {
+        width: 16px;
+        height: 100%;
+        margin-right: $margin-sm;
+    }
+}
