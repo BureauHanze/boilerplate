@@ -11,13 +11,13 @@ Password: welkom01
 First install node https://nodejs.org/en/
 
 // Install Gulp CLI
-$ npm install gulp-cli -g
+$sudo npm install gulp-cli -g
 
 // Create package.json
-$ npm init -y
+$npm init -y
 
 // Install pakkages (node_modules)
-$ npm install gulp browser-sync gulp-connect-php
+$npm install gulp browser-sync gulp-connect-php
 
 // Start Gulp in project
-$ gulp
+$gulp
