@@ -13,6 +13,15 @@ First install node https://nodejs.org/en/
 // Install Gulp CLI
 $sudo npm install gulp-cli -g
 
+
+// Install NPM packages
+Install the following commands in your current project.
+
+
+Go to current projectfolder by typing this in the terminal:
+cd [projectfolder location]
+
+
 // Create package.json
 $npm init -y
 
