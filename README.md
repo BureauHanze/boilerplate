@@ -6,7 +6,7 @@ Accountname: admin or webbeheer@buerauhanze.nl
 Password: welkom01
 
 
-// Install Gulp with Browsersync
+// Install Gulp with Browsersync, PHP server watch, Sass compiler & minify, JavaScript combine & minify
 
 First install node https://nodejs.org/en/
 
@@ -26,7 +26,7 @@ cd [projectfolder location]
 $npm init -y
 
 // Install pakkages (node_modules)
-$npm install gulp browser-sync gulp-connect-php
+$npm install gulp browser-sync gulp-connect-php gulp-sourcemaps gulp-sass sass gulp-autoprefixer gulp-cleancss gulp-rename gulp-terser
 
 // Start Gulp in project
 $gulp
