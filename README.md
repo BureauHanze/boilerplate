@@ -26,7 +26,7 @@ cd [projectfolder location]
 $npm init -y
 
 // Install pakkages (node_modules)
-$npm install gulp browser-sync gulp-connect-php gulp-sourcemaps gulp-sass sass gulp-autoprefixer gulp-cleancss gulp-rename gulp-terser
+$npm install gulp browser-sync gulp-connect-php gulp-sourcemaps gulp-sass sass gulp-autoprefixer gulp-cleancss gulp-rename gulp-terser gulp-concat
 
 // Start Gulp in project
 $gulp
