@@ -8,6 +8,7 @@ const phpConnect = require('gulp-connect-php');
 const autoprefixer = require('gulp-autoprefixer');
 const cleancss = require('gulp-cleancss');
 const rename = require('gulp-rename');
+const concat = require('gulp-concat');
 const terser = require('gulp-terser');
 
 // PHP server
@@ -39,12 +40,33 @@ function scssTask() {
 }
 
 // Bundle JavaScript and minify
-function jsTask() {
+function jsScript() {
     return src('httpdocs/wp-content/themes/bureauhanze/assets/js/script.js', { sourcemaps: true })
         .pipe(terser())
-        .pipe(rename("bundle.js"))
+        .pipe(rename('script.min.js'))
         .pipe(dest('httpdocs/wp-content/themes/bureauhanze/assets/js', { sourcemaps: '.' }));
 }
+
+// Bundle jQuery dependency JavaScript and minify in footer
+function jsJqueryDep() {
+    return src(['httpdocs/wp-content/themes/bureauhanze/assets/js/jquerydep.js'])
+        .pipe(sourcemaps.init())
+        .pipe(terser())
+        .pipe(concat('jquerydep.min.js'))
+        .pipe(sourcemaps.write())
+        .pipe(dest('httpdocs/wp-content/themes/bureauhanze/assets/js'));
+}
+
+// Bundle JavaScript and minify in footer
+function jsFooter() {
+    return src(['httpdocs/wp-content/themes/bureauhanze/assets/js/footer.js'])
+        .pipe(sourcemaps.init())
+        .pipe(terser())
+        .pipe(concat('footer.min.js'))
+        .pipe(sourcemaps.write())
+        .pipe(dest('httpdocs/wp-content/themes/bureauhanze/assets/js'));
+}
+
 
 // BrowserSync Reload
 function browserSyncReload(done) {
@@ -56,11 +78,13 @@ function browserSyncReload(done) {
 function watchFiles() {
     gulp.watch('httpdocs/wp-content/themes/bureauhanze/**/*.php', gulp.series(browserSyncReload));
     gulp.watch('httpdocs/wp-content/themes/bureauhanze/assets/scss/*.scss', gulp.series(scssTask, browserSyncReload));
-    gulp.watch('httpdocs/wp-content/themes/bureauhanze/assets/js/script.js', gulp.series(jsTask, browserSyncReload));
+    gulp.watch('httpdocs/wp-content/themes/bureauhanze/assets/js/script.js', gulp.series(jsScript, browserSyncReload));
+    gulp.watch('httpdocs/wp-content/themes/bureauhanze/assets/js/jquerydep.js', gulp.series(jsJqueryDep, browserSyncReload));
+    gulp.watch('httpdocs/wp-content/themes/bureauhanze/assets/js/footer.js', gulp.series(jsFooter, browserSyncReload));
 }
 
 // Start PHP server and Browsersync
 const watch = gulp.parallel([phpServer, watchFiles]);
 
 // Start with $gulp
-exports.default = series(scssTask, jsTask, watch);
+exports.default = series(scssTask, jsScript, jsJqueryDep, jsFooter, watch);
