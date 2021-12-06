@@ -14,6 +14,7 @@ p, a, ul, li,
 input, textarea {
     font-family: 'Open Sans';
     margin-top: 0;
+    margin: 0 0 $margin-md 0;
     line-height: $line-height;
 }
 
@@ -34,7 +35,7 @@ h2 {
 }
 
 h3 {
-    font-size: $font-lg;
+    font-size: $font-xl;
 }
 
 h4 {
@@ -72,14 +73,15 @@ ul {
         &::before {
             content: "";
             position: absolute;
-            top: 12px;
-            bottom: 0;
-            left: -30px;
-            display: inline-flex;
+            top: 50%;
+            bottom: 50%;
+            transform: translate(-50%, -50%);
+            left: -$margin-md;
             height: 8px;
             width: 8px;
             background-color: $blue;
             margin-right: $margin-sm;
+            border-radius: 50%;
         }
     }
 }

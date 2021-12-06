@@ -41,21 +41,23 @@ function scssTask() {
 
 // Bundle JavaScript and minify
 function jsScript() {
-    return src('httpdocs/wp-content/themes/bureauhanze/assets/js/script.js', { sourcemaps: true })
-        .pipe(terser())
-        .pipe(rename('script.min.js'))
-        .pipe(dest('httpdocs/wp-content/themes/bureauhanze/assets/js', { sourcemaps: '.' }));
-}
-
-// Bundle jQuery dependency JavaScript and minify in footer
-function jsJqueryDep() {
-    return src(['httpdocs/wp-content/themes/bureauhanze/assets/js/jquerydep.js'])
+    return src('httpdocs/wp-content/themes/bureauhanze/assets/js/script.js')
         .pipe(sourcemaps.init())
         .pipe(terser())
-        .pipe(concat('jquerydep.min.js'))
+        .pipe(rename('script.min.js'))
         .pipe(sourcemaps.write())
         .pipe(dest('httpdocs/wp-content/themes/bureauhanze/assets/js'));
 }
+
+// Bundle jQuery dependency JavaScript and minify in footer
+// function jsJqueryDep() {
+//     return src(['httpdocs/wp-content/themes/bureauhanze/assets/js/jquerydep.js'])
+//         .pipe(sourcemaps.init())
+//         .pipe(terser())
+//         .pipe(concat('jquerydep.min.js'))
+//         .pipe(sourcemaps.write())
+//         .pipe(dest('httpdocs/wp-content/themes/bureauhanze/assets/js'));
+// }
 
 // Bundle JavaScript and minify in footer
 function jsFooter() {
@@ -79,7 +81,7 @@ function watchFiles() {
     gulp.watch('httpdocs/wp-content/themes/bureauhanze/**/*.php', gulp.series(browserSyncReload));
     gulp.watch('httpdocs/wp-content/themes/bureauhanze/assets/scss/*.scss', gulp.series(scssTask, browserSyncReload));
     gulp.watch('httpdocs/wp-content/themes/bureauhanze/assets/js/script.js', gulp.series(jsScript, browserSyncReload));
-    gulp.watch('httpdocs/wp-content/themes/bureauhanze/assets/js/jquerydep.js', gulp.series(jsJqueryDep, browserSyncReload));
+    // gulp.watch('httpdocs/wp-content/themes/bureauhanze/assets/js/jquerydep.js', gulp.series(jsJqueryDep, browserSyncReload));
     gulp.watch('httpdocs/wp-content/themes/bureauhanze/assets/js/footer.js', gulp.series(jsFooter, browserSyncReload));
 }
 
@@ -87,4 +89,4 @@ function watchFiles() {
 const watch = gulp.parallel([phpServer, watchFiles]);
 
 // Start with $gulp
-exports.default = series(scssTask, jsScript, jsJqueryDep, jsFooter, watch);
+exports.default = series(scssTask, jsScript, jsFooter, watch);

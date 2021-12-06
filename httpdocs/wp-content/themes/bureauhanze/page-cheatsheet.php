@@ -4,6 +4,87 @@ get_header(); ?>
 
 <main id="main" class="site-main" role="main">
 
+
+    <section>
+        <div class="container">
+        <h2>Bedrijfsinformatie</h2>
+
+        <div class="main__address">
+            <?php
+            $contactaddress = get_field('contactAddress', 'option');
+            if ($contactaddress) : ?>
+                <p>
+                    <?php the_field('contactAddress', 'option'); ?>
+                </p>
+            <?php
+            endif; 
+            $contactpostal = get_field('contactPostal', 'option');
+            if ($contactpostal) : ?>
+                <p>
+                    <?php the_field('contactPostal', 'option');
+                    $contactplace = get_field('contactPlace', 'option');
+                    if ($contactplace) : ?>
+                        <?php the_field('contactPlace', 'option');
+                    endif; ?>
+                </p>
+            <?php
+            endif; ?>
+
+            <?php
+            $contactcoutry = get_field('contactCountry', 'option');
+            if ($contactcoutry) : ?>
+                <p><?php the_field('contactCountry', 'option'); ?></p>
+            <?php
+            endif; ?>
+        </div>
+            
+
+            <?php
+            $contactmail = get_field('contactMail', 'option');
+            if($contactmail):?>
+            <a class="main__contact" href="<?php echo $contactmail['url']; ?>" target="<?php echo $contactmail['target']; ?>" title="<?php echo $contactmail['title']; ?>"><?php get_template_part( 'assets/svg/envelope'); echo $contactmail['title']; ?></a>
+            <?php
+            endif; ?>
+
+            <?php
+            $contactphone = get_field('contactPhone', 'option');
+            if($contactphone):?>
+            <a class="main__contact" href="<?php echo $contactphone['url']; ?>" target="<?php echo $contactphone['target']; ?>" title="<?php echo $contactphone['title']; ?>"><?php get_template_part( 'assets/svg/phone'); echo $contactphone['title']; ?></a>
+            <?php
+            endif; ?>
+
+            <?php
+            $contactfacebook = get_field('contactFacebook', 'option');
+            if($contactfacebook):?>
+            <a class="main__contact" href="<?php echo $contactfacebook['url']; ?>" target="<?php echo $contactfacebook['target']; ?>" title="<?php echo $contactfacebook['title']; ?>"><?php get_template_part( 'assets/svg/facebook'); echo $contactfacebook['title']; ?></a>
+            <?php
+            endif; ?>
+
+            <?php
+            $contactyoutube = get_field('contactYouTube', 'option');
+            if($contactyoutube):?>
+            <a class="main__contact" href="<?php echo $contactyoutube['url']; ?>" target="<?php echo $contactyoutube['target']; ?>" title="<?php echo $contactyoutube['title']; ?>"><?php get_template_part( 'assets/svg/youtube'); echo $contactyoutube['title']; ?></a>
+            <?php
+            endif; ?>
+
+            <?php
+            $contactlinkedin = get_field('contactLinkedIn', 'option');
+            if($contactlinkedin):?>
+            <a class="main__contact" href="<?php echo $contactlinkedin['url']; ?>" target="<?php echo $contactlinkedin['target']; ?>" title="<?php echo $contactlinkedin['title']; ?>"><?php get_template_part( 'assets/svg/linkedin'); echo $contactlinkedin['title']; ?></a>
+            <?php
+            endif; ?>
+
+            <?php
+            $contactinstagram = get_field('contactInstagram', 'option');
+            if($contactinstagram):?>
+            <a class="main__contact" href="<?php echo $contactinstagram['url']; ?>" target="<?php echo $contactinstagram['target']; ?>" title="<?php echo $contactinstagram['title']; ?>"><?php get_template_part( 'assets/svg/instagram'); echo $contactinstagram['title']; ?></a>
+            <?php
+            endif; ?>
+
+        </div>
+    </section>
+
+
     <section class="cheatsheet__headings">
         <div class="container">
             <h1>Heading H1</h1>
