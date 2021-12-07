@@ -21,7 +21,12 @@ function phpServer() {
             proxy: 'localhost:8888',
             browser: 'google chrome',
             notify: false,
-            files: "httpdocs/wp-content/themes/bureauhanze/assets/css/style.min.css",
+            files: [
+                "httpdocs/wp-content/themes/bureauhanze/assets/css/style.min.css", 
+                "httpdocs/wp-content/themes/bureauhanze/**/*.php", 
+                "httpdocs/wp-content/themes/bureauhanze/assets/js/script.js", 
+                "httpdocs/wp-content/themes/bureauhanze/assets/js/footer.js"
+            ],
             injectChanges: true
         });
     });

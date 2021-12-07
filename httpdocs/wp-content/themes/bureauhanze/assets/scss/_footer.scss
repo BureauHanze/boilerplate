@@ -55,8 +55,15 @@
             border: 1px solid $text-light;
             height: 32px;
             width: 32px;
+            padding: $padding-sm;
             &:hover {
                 background-color: $gray-8;
+                svg {
+                    fill: white;
+                }
+            }
+            svg {
+                transform: rotate(-90deg);
             }
         }
     }
