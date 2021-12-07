@@ -81,6 +81,13 @@ get_header(); ?>
             <?php
             endif; ?>
 
+            <?php
+            $contactwhatsapp = get_field('contactWhatsApp', 'option');
+            if($contactwhatsapp):?>
+            <a class="main__contact" href="<?php echo $contactwhatsapp['url']; ?>" target="<?php echo $contactwhatsapp['target']; ?>" title="<?php echo $contactwhatsapp['title']; ?>"><?php get_template_part( 'assets/svg/whatsapp'); echo $contactwhatsapp['title']; ?></a>
+            <?php
+            endif; ?>
+
         </div>
     </section>
 

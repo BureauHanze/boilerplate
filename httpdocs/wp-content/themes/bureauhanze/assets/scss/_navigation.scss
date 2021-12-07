@@ -62,9 +62,10 @@
     transition: $main-transition;
 }
 #open_nav {
+    position: relative;
     line-height: 1;
     color: $gray-6;
-    font-size: $font-xl;
+    font-size: $font-xxxxl;
     &:hover {
         color: $gray-8;
     }

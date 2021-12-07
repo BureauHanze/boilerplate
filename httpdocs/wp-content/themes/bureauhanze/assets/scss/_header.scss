@@ -1,16 +1,42 @@
 .header {
+    position: relative;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    position: relative;
     .header__nav {
+        transition: $main-transition;
         .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding-top: $padding-md;
+            padding-bottom: $padding-md;
             .header__logo {
                 height: 80px;
+                margin: 0;
             }
+        }
+    }
+}
+.header-sticky {
+    .header__nav {
+        transition: $main-transition;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 98%;
+            z-index: 9999;
+            max-height: 80px;
+            background: gray;
+        }
+        .header__logo {
+            position: relative;
+            height: 100%;
+            width: 128px !important;
         }
     }
 }

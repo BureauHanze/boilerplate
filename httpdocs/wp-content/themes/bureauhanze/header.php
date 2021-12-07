@@ -7,7 +7,6 @@
 
 	<?php
 	get_template_part( 'template-parts/header/head' );
-
 	wp_head(); ?>
 </head>
 
@@ -18,7 +17,7 @@
 
 	<div id="page" class="site">
 
-		<header class="header">
+		<header class="header" id="main__header">
 			<div class="header__nav">
 				<div class="container">
 					<a class="header__logo" href="/" title="Home">

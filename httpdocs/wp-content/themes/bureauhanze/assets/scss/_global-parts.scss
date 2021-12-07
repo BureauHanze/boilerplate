@@ -21,3 +21,23 @@
         }
     }
 }
+
+#whatsapp-mobile-icon {
+    display: none;
+    @media(max-width: $tablet){
+        position: fixed;
+        bottom: 2%;
+        right: 2%;
+        display: flex;
+        height: 48px;
+        width: 48px;
+        background-color: #29AB02;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 999;
+        box-shadow: rgba(0,0,0,0.32) 0px 3px 12px;
+        svg {
+            fill: white;
+        }
+    }
+}
