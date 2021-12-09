@@ -28,6 +28,13 @@
 						<?php
 						endif; ?>
 					</a>
+					<?php 
+						wp_nav_menu( 
+							array( 
+								'theme_location' => 'main'
+							) 
+						); 
+					?>
 					<div id="open_nav" class="header__nav">☰</div>
 				</div>
 			</div>

@@ -77,7 +77,7 @@ $gray-8: #343a40;
 $gray-9: #212529;
 
 // Transitions
-$main-transition: all 0.2s ease;
+$main-transition: all 0.2s ease-out;
 
 // Site global variables
 $clip-path-slant: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);

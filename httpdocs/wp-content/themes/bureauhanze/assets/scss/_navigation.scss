@@ -15,7 +15,7 @@
     opacity: 0.3;
     background: black;
     transition: opacity 0.2s ease;
-    z-index: 1;
+    z-index: 97;
 }
 
 .nav {
@@ -25,15 +25,28 @@
     bottom: 0;
     width: 0;
     height: 100%;
-    background: $gray-2;
+    background: black;
     box-shadow: $box-shadow;
     transition: right 0.2s ease;
     z-index: 2;
     overflow: hidden;
-    .nav__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .nav__content {
+        position: fixed;
+        .nav__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav__links {
+            a {
+                text-decoration: none;
+                color: white;
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                }
+            }
+        }
     }
 }
 
@@ -41,7 +54,7 @@
     width: 400px;
     right: 0;
     transition: right 0.2s ease;
-    z-index: 3;
+    z-index: 98;
     @media(max-width: $tablet){
         max-width: 80%;
     }
@@ -57,24 +70,22 @@
     justify-content: center;
     height: 48px;
     width: 48px;
-    font-size: $font-xl;
+    font-size: $font-xxxl;
     cursor: pointer;
     transition: $main-transition;
 }
 #open_nav {
     position: relative;
     line-height: 1;
-    color: $gray-6;
+    color: black;
     font-size: $font-xxxxl;
-    &:hover {
-        color: $gray-8;
-    }
 }
 #close_nav {
     background: no-repeat;
     border: none;
     color: $blue;
     background-color: white;
+    margin-bottom: $margin-lg;
     &:hover {
         background-color: $red;
         color: white;
