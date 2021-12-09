@@ -62,7 +62,7 @@
 .projects {
     .container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 32px;
     }
     .project {
@@ -70,13 +70,16 @@
         .project__container {
             position: relative;
             border: 1px solid $blue;
-            min-height: 460px;
             img {
                 object-fit: cover;
             }
             .project__content {
                 position: relative;
                 padding: $padding-lg;
+                .btn-link {
+                    margin: $margin-md 0 0 0;
+                    padding: 0;
+                }
             }
         }
     }

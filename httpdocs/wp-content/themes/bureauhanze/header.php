@@ -46,7 +46,7 @@
 					<div class="header__content">
 						<?php
 						if ( is_front_page() ) : ?>
-						<h1>Site title</h1>
+						<h1><< Boilerplate >></h1>
 						<?php
 						else : ?> 
 						<h1><?php the_title(); ?></h1>

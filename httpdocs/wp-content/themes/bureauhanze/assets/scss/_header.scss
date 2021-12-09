@@ -18,6 +18,11 @@
                 height: 56px;
                 margin: 0;
                 transition: $main-transition;
+                svg {
+                    .logo {
+                        fill: black;
+                    }
+                }
             }
             .menu-main-container {
                 margin-left: auto;
@@ -47,6 +52,9 @@
     }
 }
 .header-sticky {
+    p, a {
+        color: white;
+    }
     .header__nav {
         position: fixed;
         top: 0;
@@ -56,10 +64,21 @@
         transition: $main-transition;
         z-index: 90;
         .container {
-            height: 80px;
-            background: white;
-            border: 1px solid black;
+            height: 50px;
+            background: black;
             transition: $main-transition;
+            .header__logo {
+                height: 32px;
+                transition: $main-transition;
+                svg {
+                    .logo{
+                        fill: white;
+                    }
+                }
+            }
+            #open_nav {
+                color: white;
+            }
         }
     }
 }

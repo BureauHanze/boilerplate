@@ -1,34 +1,39 @@
 .footer {
-    background-color: $gray-2;
-    color: white;
+    background-color: black;
+    p, a {
+        color: white;
+    }
     .container {
-
         .footer__top {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             align-items: center;
             .footer__logo {
                 padding: $padding-md;
-                width: 150px;
+                width: 128px;
                 z-index: 1;
                 position: relative;
+                svg {
+                    .logo{
+                        fill: white;
+                    }
+                }
             }
         }
     }
     .footer__bottom {
-        background-color: $gray-3;
+        background-color: white;
+        p, a {
+            font-size: $font-md;
+            color: $text-light;
+            margin: 0;
+        }
         .container {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: $padding-sm $padding-lg;
             color: $text-light;
-            .bottom__copyright {
-                p {
-                    color: $text-light;
-                    margin: 0;
-                }
-            }
             .bottom__links {
                 display: flex;
                 align-items: center;
@@ -57,7 +62,7 @@
             width: 32px;
             padding: $padding-sm;
             &:hover {
-                background-color: $gray-8;
+                background-color: black;
                 svg {
                     fill: white;
                 }
