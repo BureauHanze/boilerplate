@@ -25,7 +25,7 @@
     width: 0;
     height: 100%;
     background: black;
-    transition: $main-transition;
+    transition: width $main-transition;
     z-index: 99;
     overflow: hidden;
     .nav__content {
@@ -59,7 +59,7 @@
 .nav--active {
     width: 400px;
     right: 0;
-    transition: $main-transition;
+    transition: width $main-transition;
     z-index: 98;
     @media(max-width: $tablet){
         max-width: 80%;
@@ -79,7 +79,7 @@
     padding: 0;
     font-size: $font-xxxl;
     cursor: pointer;
-    transition: $main-transition;
+    transition: all $main-transition;
 }
 #open_nav {
     position: relative;

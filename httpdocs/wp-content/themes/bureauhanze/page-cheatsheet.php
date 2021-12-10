@@ -2,8 +2,7 @@
 
 get_header(); ?>
 
-<main id="main" class="site-main" role="main">
-
+<main id="main" class="site-main cheatsheet" role="main">
 
     <section>
         <div class="container">
@@ -105,24 +104,33 @@ get_header(); ?>
 
     <section class="cheatsheet__paragraph">
         <div class="container">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, mollitia. Culpa nam est iste fugiat magni quia dolorum laudantium nobis ab molestiae nulla facilis accusamus voluptatem exercitationem nisi itaque blanditiis, quaerat dolorem harum eaque iusto doloremque sapiente beatae? Aliquid voluptates voluptatibus sint expedita illo, quo suscipit consequatur voluptate tempora perferendis?</p>
+            <div class="row">
+                <h2>Paragraph</h2>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, mollitia. Culpa nam est iste fugiat magni quia dolorum laudantium nobis ab molestiae nulla facilis accusamus voluptatem exercitationem nisi itaque blanditiis, quaerat dolorem harum eaque iusto doloremque sapiente beatae? Aliquid voluptates voluptatibus sint expedita illo, quo suscipit consequatur voluptate tempora perferendis Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quod maxime debitis quis odit, alias dolores consequatur, cum impedit iusto modi atque totam quam non. Possimus, animi doloribus rem quasi ex laboriosam labore magnam corporis obcaecati explicabo aut reiciendis fugiat, vitae rerum, minima quisquam quia autem quam odit impedit! Maiores Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nisi a aliquid aut ut error ducimus. Totam rem impedit obcaecati alias dignissimos at, ullam necessitatibus facere assumenda temporibus ipsa animi minus deleniti provident fuga illo placeat consequatur accusantium eum repudiandae earum esse! Iusto incidunt similique nulla natus minima eveniet deserunt?</p>
         </div>
     </section>
 
     <section class="cheatsheet__ul-li">
         <div class="container">
-            <ul>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-            </ul>
-            <ol>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-            </ul>
+            <div class="row">
+                <h2>List items</h2>
+            </div>
+            <div class="row">
+                <ul>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ul>
+                <ol>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ul>
+            </div>
+
         </div>
     </section>
 

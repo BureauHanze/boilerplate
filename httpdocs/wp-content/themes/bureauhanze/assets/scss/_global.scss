@@ -29,23 +29,23 @@ p, a, ul, li{
 }
 
 h1 {
-    font-size: $font-xxxl;
+    font-size: $font-xxxxxl;
 }
 
 h2 {
-    font-size: $font-xxl;
+    font-size: $font-xxxxl;
 }
 
 h3 {
-    font-size: $font-xl;
+    font-size: $font-xxxl;
 }
 
 h4 {
-    font-size: $font-lg;
+    font-size: $font-xxl;
 }
 
 h5 {
-    font-size: $font-lg;
+    font-size: $font-xl;
 }
 
 h6 {
@@ -61,17 +61,17 @@ a {
     cursor: pointer;
     text-decoration: underline;
     text-underline-position: under;
-    transition: $main-transition;
+    transition: all $main-transition;
 }
 
 ul {
-    list-style-type: none;
     display: block;
+    list-style-type: none;
     align-items: center;
     margin-top: 0;
     li {
-        line-height: 1.8;
         position: relative;
+        line-height: 1.8;
         &::before {
             content: "";
             position: absolute;
@@ -87,7 +87,14 @@ ul {
         }
     }
 }
-
+ol {
+    display: block;
+    margin-top: 0;
+    li {
+        position: relative;
+        line-height: 1.8;
+    }
+}
 
 
 section {

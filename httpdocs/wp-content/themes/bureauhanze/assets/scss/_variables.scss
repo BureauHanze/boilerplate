@@ -43,7 +43,7 @@ $font-xl: 1.25rem;      // 20px
 $font-xxl: 1.5rem;      // 24px
 $font-xxxl: 1.75rem;    // 28px
 $font-xxxxl: 2rem;      // 32px
-$font-xxxxxl: 4rem;     // 64px
+$font-xxxxxl: 3rem;     // 48px
 
 // Colors
 
@@ -77,7 +77,7 @@ $gray-8: #343a40;
 $gray-9: #212529;
 
 // Transitions
-$main-transition: all 0.2s ease-out;
+$main-transition: 0.2s ease;
 
 // Site global variables
 $clip-path-slant: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);

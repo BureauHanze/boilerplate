@@ -4,9 +4,15 @@
     width: 100%;
     z-index: 90;
     .header__nav {
-        position: relative;
-        width: 100%;
-        transition: $main-transition;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(100%);
+        transition: width $main-transition;
+        z-index: 90;
         .container {
             display: flex;
             justify-content: space-between;
@@ -14,15 +20,19 @@
             background: white;
             padding-top: $padding-md;
             padding-bottom: $padding-md;
+            transition: height $main-transition;
             .header__logo {
                 height: 56px;
                 margin: 0;
-                transition: $main-transition;
+                transition: height $main-transition;
                 svg {
                     .logo {
                         fill: black;
                     }
                 }
+            }
+            #open_nav {
+                margin: 0;
             }
             .menu-main-container {
                 margin-left: auto;
@@ -50,26 +60,28 @@
             }
         }
     }
+    .header__content {
+        margin-top: $margin-xl;
+        .container {
+            padding-bottom: 0;
+        }
+    }
 }
 .header-sticky {
     p, a {
         color: white;
     }
     .header__nav {
-        position: fixed;
-        top: 0;
-        left: 1%;
-        right: 1%;
         width: calc(100% - 2%);
-        transition: $main-transition;
+        transition: width $main-transition;
         z-index: 90;
         .container {
             height: 50px;
             background: black;
-            transition: $main-transition;
+            transition: height $main-transition;
             .header__logo {
                 height: 32px;
-                transition: $main-transition;
+                transition: height $main-transition;
                 svg {
                     .logo{
                         fill: white;
@@ -78,6 +90,7 @@
             }
             #open_nav {
                 color: white;
+                margin: 0;
             }
         }
     }
