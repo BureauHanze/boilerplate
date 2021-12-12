@@ -18,7 +18,7 @@ function breadcrumbs($separator = ' &raquo; ', $home = 'Home') {
     return implode($separator, $breadcrumbs);
 } ?>
 
-<div class="breadcrumbs">
+<div class="breadcrumb">
     <p><?= breadcrumbs(' <span class="breadcrumb-spacing">></span> ') ?></p>
 </div>
 

@@ -1,36 +1,36 @@
-#cheatsheet__buttons {
-    .container {
-        .buttons__container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: $gap-lg;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-}
-
-.cheatsheet__paragraph {
-    .container {
-        .row {
-            display: flex;
-        }
-        p {
-            column-count:3;
-            column-gap: $gap-xl;
-        }
-
-    }
-}
-
-
-.cheatsheet__ul-li {
-    .container {
-        .row {
-            &:nth-child(2) {
-                display: flex;
+.cheatsheet {
+    margin-top: $margin-xl;
+    #cheatsheet__buttons {
+        .container {
+            .buttons__container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: $gap-lg;
                 align-items: center;
-                gap: $gap-xl;
+                justify-content: center;
+            }
+        }
+    }
+    .cheatsheet__paragraph {
+        .container {
+            .row {
+                display: flex;
+            }
+            p {
+                column-count:3;
+                column-gap: $gap-xl;
+            }
+    
+        }
+    }
+    .cheatsheet__ul-li {
+        .container {
+            .row {
+                &:nth-child(2) {
+                    display: flex;
+                    align-items: center;
+                    gap: $gap-xl;
+                }
             }
         }
     }

@@ -41,22 +41,15 @@
 
 			<?php the_post_thumbnail( 'main-background', array( 'class' => 'lazy' ) ); ?>
 
-			<div class="header__content">
-				<div class="container">
-				<?php
-				if ( is_front_page() ) : ?>
-				<h1><< Boilerplate >></h1>
-				<?php
-				else : ?> 
-				<h1><?php the_title(); ?></h1>
-				<?php
-				get_template_part( 'template-parts/navigation/breadcrumb' ); ?>
-				<?php
-				endif; ?>
-				</div>
-			</div>
-
 		</header>
 
-
-
+		<?php
+		if ( !is_front_page() ) : ?>
+		<div class="breadcrumbs">
+			<div class="container">
+				<h1><?php the_title(); ?></h1>
+				<?php get_template_part( 'template-parts/navigation/breadcrumb' ); ?>
+			</div>
+		</div>
+		<?php
+		endif; ?>
