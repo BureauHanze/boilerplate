@@ -90,7 +90,7 @@
 #nav--close {
     background: no-repeat;
     border: none;
-    color: $blue;
+    color: black;
     background-color: white;
     margin-bottom: $margin-lg;
     &:hover {
@@ -107,7 +107,6 @@
         align-items: center;
     }
     p, a {
-        color: $gray-9;
         @media(max-width: $tablet){
             font-size: $font-md;
         }

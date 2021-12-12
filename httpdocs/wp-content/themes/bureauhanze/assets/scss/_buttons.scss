@@ -99,16 +99,3 @@ button {
         background-color: $primary-color;
     }
 }
-
-
-
-.btn-link-inverted {
-    color: $red;
-    &::before {
-        content: "";
-        background-image: url("/wp-content/themes/bureauhanze/assets/images/arrow-right-red.svg");
-    }
-    &:hover {
-        color: $blue;
-    }
-}

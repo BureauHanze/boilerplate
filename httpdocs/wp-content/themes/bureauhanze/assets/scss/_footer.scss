@@ -30,20 +30,18 @@
         background-color: white;
         p, a {
             font-size: $font-md;
-            color: $text-light;
             margin: 0;
+            color: black;
         }
         .container {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: $padding-sm $padding-lg;
-            color: $text-light;
             .bottom__links {
                 display: flex;
                 align-items: center;
                 a {
-                    color: $text-light;
                     text-decoration: none;
                     margin: 0;
                     &:hover {
@@ -62,7 +60,7 @@
             justify-content: center;
             margin-left: $margin-lg;
             transition: all $main-transition;
-            border: 1px solid $text-light;
+            border: 1px solid black;
             height: 32px;
             width: 32px;
             padding: $padding-sm;
