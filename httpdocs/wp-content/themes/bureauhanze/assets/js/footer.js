@@ -1,7 +1,6 @@
 
 // Nav
 const pageOverlay = document.getElementById("page-overlay");
-const page = document.getElementById("page");
 const navContainer = document.querySelector(".nav");
 const openNav = document.getElementById("nav--open");
 const closeNav = document.getElementById("nav--close");
