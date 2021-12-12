@@ -33,6 +33,16 @@ $gap-xl: 64px;
 // Line height
 $line-height: 1.6;
 
+$border-radius-xxs: 4px;
+$border-radius-xxs: 8px;
+$border-radius-xs: 12px;
+$border-radius-root: 16px;
+$border-radius-lg: 20px;
+$border-radius-xl: 24px;
+$border-radius-xxl: 28px;
+$border-radius-xxxl: 32px;
+
+
 // Font sizes
 $font-xs: 0.625rem;     // 10px
 $font-sm: 0.75rem;      // 12px
@@ -46,7 +56,6 @@ $font-xxxxl: 2rem;      // 32px
 $font-xxxxxl: 3rem;     // 48px
 
 // Colors
-
 $primary-color: #005891;
 $secondary-color: #ff870c;
 $primary-color-dark: #15173a;
@@ -81,5 +90,4 @@ $main-transition: 0.2s ease;
 
 // Site global variables
 $clip-path-slant: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
-$border-radius: 15px;
 $box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;

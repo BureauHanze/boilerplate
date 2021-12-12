@@ -44,7 +44,7 @@
 						</div>
 					</div>
 
-					<div class="footer__column">
+					<div class="footer__column footer__contact-links">
 						<?php
 						$contactmail = get_field('contactMail', 'option');
 						if($contactmail):?>
@@ -63,19 +63,17 @@
 				</div>
 			</div>
 
-			<div class="footer__bottom">
+			<div class="footer__copyright">
 				<div class="container">
-					<div class="bottom__copyright">
-						<p>
-							&copy; 		
-							<?php
-							$contactcompany = get_field('contactCompany', 'option');
-							if ($contactcompany) : ?>
-								<?php the_field('contactCompany', 'option');
-							endif; ?> 
-							<?php the_date('Y'); ?>
-						</p>
-					</div>
+					<p>
+						&copy; 		
+						<?php
+						$contactcompany = get_field('contactCompany', 'option');
+						if ($contactcompany) : ?>
+							<?php the_field('contactCompany', 'option');
+						endif; ?> 
+						<?php the_date('Y'); ?>
+					</p>
 					<div class="bottom__links">
 						<a href="/algemene-voorwaarden">Algemene voorwaarden</a><span>|</span>
 						<a href="/privacy-statement">Privacy statement</a>

@@ -4,16 +4,17 @@ button {
     display: inline-flex;
     align-items: center;
     color: white;
-    padding: $padding-md $padding-lg;
+    padding: $padding-xs $padding-md;
     text-decoration: none;
     cursor: pointer;
     background: none;
     border: none;
-    font-weight: normal;
+    font-size: $font-md;
     font-weight: bold;
     transition: all 0.2s ease;
     white-space: nowrap;
     width: fit-content;
+    border-radius: $border-radius-xxl;
 }
 
 .btn-primary,
@@ -40,8 +41,9 @@ button {
 .btn-link,
 .btn-link-icon {
     svg {
-        height: 16px;
-        width: 10px;
+        height: 12px;
+        width: 16px;
+        margin-right: -6px;
         transform: translateX(-8px);
         fill: white;
     }

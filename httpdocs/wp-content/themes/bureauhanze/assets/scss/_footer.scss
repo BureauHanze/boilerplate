@@ -10,7 +10,7 @@
             align-items: center;
             .footer__logo {
                 padding: $padding-md;
-                width: 128px;
+                width: 96px;
                 z-index: 1;
                 position: relative;
                 svg {
@@ -19,9 +19,14 @@
                     }
                 }
             }
+            .footer__contact-links {
+                a {
+                    justify-content: end;
+                }
+            }
         }
     }
-    .footer__bottom {
+    .footer__copyright {
         background-color: white;
         p, a {
             font-size: $font-md;
