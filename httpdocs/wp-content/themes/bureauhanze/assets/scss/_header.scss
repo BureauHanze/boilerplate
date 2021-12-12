@@ -2,7 +2,6 @@
     position: relative;
     height: 100%;
     width: 100%;
-    z-index: 90;
     .header__nav {
         position: fixed;
         top: 0;
@@ -12,7 +11,7 @@
         margin-right: auto;
         width: calc(100%);
         transition: width $main-transition;
-        z-index: 90;
+        z-index: 99;
         .container {
             display: flex;
             justify-content: space-between;
