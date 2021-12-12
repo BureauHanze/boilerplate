@@ -35,7 +35,7 @@
 							) 
 						); 
 					?>
-					<div id="open_nav" class="header__nav">☰</div>
+					<div id="nav--open" class="header__nav">☰</div>
 				</div>
 			</div>
 

@@ -31,7 +31,7 @@
                     }
                 }
             }
-            #open_nav {
+            #nav--open {
                 margin: 0;
             }
             .menu-main-container {
@@ -67,7 +67,7 @@
         }
     }
 }
-.header-sticky {
+.--sticky {
     p, a {
         color: white;
     }
@@ -88,7 +88,7 @@
                     }
                 }
             }
-            #open_nav {
+            #nav--open {
                 color: white;
                 margin: 0;
             }

@@ -4,7 +4,7 @@
     <nav class="nav__content">
         <div class="container">
             <div class="nav__header">
-                <button id="close_nav" class="close">×</button>
+                <button id="nav--close" class="close">×</button>
             </div>
             <div class="nav__links">
                 <?php
