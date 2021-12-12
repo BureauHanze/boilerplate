@@ -60,7 +60,7 @@
     width: 400px;
     right: 0;
     transition: width $main-transition;
-    z-index: 98;
+    z-index: 100;
     @media(max-width: $tablet){
         max-width: 80%;
     }
