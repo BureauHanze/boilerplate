@@ -35,10 +35,10 @@ function scrollToTop() {
 }
 
 // Sticky header
-window.onscroll = function() {StickyHeader()};
+window.onscroll = function() {stickyHeader()};
 const header = document.getElementById("main__header");
 const sticky = header.offsetTop;
-function StickyHeader() {
+function stickyHeader() {
    if (window.pageYOffset > sticky) {
      header.classList.add("--sticky");
    } else {
