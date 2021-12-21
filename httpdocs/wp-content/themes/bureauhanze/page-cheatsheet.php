@@ -152,6 +152,72 @@ get_header(); ?>
         </div>
     </section>
 
+    <section class="cheatsheet__swiper">
+        <div class="container">
+            <div class="row">
+                <h2>Swiper (with Lightbox)</h2>
+            </div>
+            <div class="row">
+                <div class="single-gallery__gallery">
+                    <div class="swiper swiper-gallery">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a data-fslightbox href="/wp-content/themes/bureauhanze/assets/img/cheatsheet/colin.webp">
+                                    <img src="/wp-content/themes/bureauhanze/assets/img/cheatsheet/colin.webp">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fslightbox href="/wp-content/themes/bureauhanze/assets/img/cheatsheet/jaap.webp">
+                                    <img src="/wp-content/themes/bureauhanze/assets/img/cheatsheet/jaap.webp">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fslightbox href="/wp-content/themes/bureauhanze/assets/img/cheatsheet/henrick.webp">
+                                    <img src="/wp-content/themes/bureauhanze/assets/img/cheatsheet/henrick.webp">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fslightbox href="/wp-content/themes/bureauhanze/assets/img/cheatsheet/reinier.webp">
+                                    <img src="/wp-content/themes/bureauhanze/assets/img/cheatsheet/reinier.webp">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fslightbox href="/wp-content/themes/bureauhanze/assets/img/cheatsheet/melanie.webp">
+                                    <img src="/wp-content/themes/bureauhanze/assets/img/cheatsheet/melanie.webp">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <?php get_template_part( 'template-parts/swiper/swiper' ); ?>
+    </section>
+
+    <section class="cheatsheet__lightbox">
+        <div class="container">
+            <div class="row">
+                <h2>Lightbox</h2>
+            </div>
+            <div class="row">
+                <a data-fslightbox href="/wp-content/themes/bureauhanze/assets/img/cheatsheet/colin.webp">
+                    <img src="/wp-content/themes/bureauhanze/assets/img/cheatsheet/colin.webp">
+                </a>
+                <a data-fslightbox href="/wp-content/themes/bureauhanze/assets/img/cheatsheet/jaap.webp">
+                    <img src="/wp-content/themes/bureauhanze/assets/img/cheatsheet/jaap.webp">
+                </a>
+                <a data-fslightbox href="/wp-content/themes/bureauhanze/assets/img/cheatsheet/henrick.webp">
+                    <img src="/wp-content/themes/bureauhanze/assets/img/cheatsheet/henrick.webp">
+                </a>
+                <script src="/wp-content/themes/bureauhanze/assets/js/fslightbox.min.js"></script>
+            </div>
+        </div>
+    </section>
+
 
 </main>
 

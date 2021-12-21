@@ -1,0 +1,23 @@
+.fslightbox-container {
+    font-family: $font-family !important;
+    .fslightbox-slide-btn {
+        background: none;
+        svg {
+            display: none;
+        }
+        &::before {
+            content: "";
+            background-image: url('/wp-content/themes/bureauhanze/assets/svg/arrow-slider.svg');
+            background-repeat: no-repeat;
+            height: 44px;
+            width: 44px;
+        }
+    }
+    .fslightbox-slide-btn-container-next {
+        .fslightbox-slide-btn {
+            &::before {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

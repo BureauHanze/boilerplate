@@ -10,7 +10,7 @@
 .wpcf7-not-valid-tip,
 .wpcf7-response-output,
 .wpcf7-list-item-label {
-    font-family: 'Open Sans';
+    font-family: $font-family !important;
 }
 .wpcf7-list-item-label {
     color: #999999;
