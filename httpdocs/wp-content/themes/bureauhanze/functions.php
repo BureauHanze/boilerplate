@@ -28,4 +28,7 @@ register_nav_menus( array(
 function my_excerpt_length($length){
     return 10;
     }
-add_filter(‘excerpt_length’, ‘my_excerpt_length’);
+add_filter('excerpt_length', 'my_excerpt_length');
+
+// Add post thumbnail support
+add_theme_support( 'post-thumbnails' );

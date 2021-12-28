@@ -10,7 +10,3 @@ function namespace_theme_stylesheets() {
     wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/script.min.js', array(), '1.0.0', false );
 }
 add_action( 'wp_enqueue_scripts', 'namespace_theme_stylesheets', 999999 );
-
-add_theme_support( 'post-thumbnails' );
-add_filter( 'use_block_editor_for_post', '__return_false' );
-remove_filter('the_content', 'wpautop');
