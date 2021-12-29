@@ -98,27 +98,3 @@
         color: white;
     }
 }
-
-.breadcrumbs {
-    margin-top: 128px;
-    p {
-        display: flex;
-        align-items: center;
-    }
-    p, a {
-        @media(max-width: $tablet){
-            font-size: $font-md;
-        }
-    }
-    a {
-        padding-right: 0;
-        text-decoration: none;
-        margin: 0;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-    .breadcrumb-spacing {
-        padding: 0 $padding-sm;
-    }
-}

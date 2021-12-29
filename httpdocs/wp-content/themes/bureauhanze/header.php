@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js no-svg">
+<html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,14 @@
 
 	<div id="page" class="site">
 
+		<?php
+		if(is_front_page()) : ?>
 		<header class="header" id="main__header">
+		<?php
+		else : ?>
+		<header class="header header-page" id="main__header">
+		<?php
+		endif; ?>
 			<div class="header__nav">
 				<div class="container">
 					<a class="header__logo" href="/" title="Home">
@@ -39,17 +46,18 @@
 				</div>
 			</div>
 
-			<?php the_post_thumbnail( 'main-background', array( 'class' => 'lazy' ) ); ?>
+			<div class="header__overlay"></div>
+			<?php the_post_thumbnail( 'main-background', array( 'class' => 'header__img lazy' ) ); ?>
+
+			<?php
+			if ( !is_front_page() ) : ?>
+			<div class="header__content">
+				<div class="container">
+					<h1><?php the_title(); ?></h1>
+					<?php get_template_part( 'template-parts/navigation/breadcrumb' ); ?>
+				</div>
+			</div>
+			<?php
+			endif; ?>
 
 		</header>
-
-		<?php
-		if ( !is_front_page() ) : ?>
-		<div class="breadcrumbs">
-			<div class="container">
-				<h1><?php the_title(); ?></h1>
-				<?php get_template_part( 'template-parts/navigation/breadcrumb' ); ?>
-			</div>
-		</div>
-		<?php
-		endif; ?>
