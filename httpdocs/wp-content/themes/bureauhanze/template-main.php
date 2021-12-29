@@ -16,8 +16,18 @@ get_header(); ?>
     <?php
     endif; ?>
 
+
+
     <?php
-    get_template_part( 'template-parts/sections/projects' ); ?>
+
+    if(is_front_page()) :
+        get_template_part( 'template-parts/sections/projects' ); 
+    endif;
+
+    if(is_page('contact')) :
+        get_template_part( 'template-parts/sections/contact' ); 
+    endif;
+    ?>
 
 </main>
 

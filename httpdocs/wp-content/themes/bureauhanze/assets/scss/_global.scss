@@ -13,10 +13,9 @@ body {
 
 h1,h2,h3,h4,h5,h6,
 p, a, ul, li,
-input, textarea {
+input, textarea, label {
     font-family: $font-family !important;
     margin-top: 0;
-    margin: 0 0 $margin-md 0;
     line-height: $line-height;
 }
 
