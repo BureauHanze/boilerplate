@@ -116,10 +116,24 @@ form {
         }
         .wpcf7-not-valid-tip {
             position: absolute;
+            top: -8px;
             bottom: 100%;
             right: 16px;
             font-size: $font-sm;
             color: red;
+            background: white;
+            padding: 0 4px;
+            height: fit-content;
+            transform: translateX(-4px);
         }
+    }
+}
+.invalid {
+    .wpcf7-response-output {
+        margin-bottom: $margin-lg;
+        color: red;
+        border: 1px solid red;
+        padding: $padding-sm $padding-md;
+        border-radius: $border-radius-xxs;
     }
 }
