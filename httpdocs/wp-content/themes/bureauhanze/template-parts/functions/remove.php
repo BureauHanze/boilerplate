@@ -78,3 +78,6 @@ add_action('init', function () {
 
 // Remove Gutenberg
 add_filter( 'use_block_editor_for_post', '__return_false' );
+
+// Remove <br> tags from contactForm 7
+add_filter( 'wpcf7_autop_or_not', '__return_false' );
