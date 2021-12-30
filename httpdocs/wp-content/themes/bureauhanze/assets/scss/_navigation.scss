@@ -39,6 +39,7 @@
             .menu {
                 padding-left: 20px;
                 li {
+                    padding: $padding-sm 0;
                     &::before {
                         background-color: white;
                     }
@@ -49,6 +50,9 @@
                             text-decoration: underline;
                             text-underline-position: under;
                         }
+                    }
+                    .--active {
+                        text-decoration: underline;
                     }
                 }
             }
