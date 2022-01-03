@@ -10,7 +10,7 @@
         right: 0;
         margin-left: auto;
         margin-right: auto;
-        width: $container-width;
+        max-width: $container-width;
         height: 68px;
         transition: height $main-transition;
         z-index: 99;
