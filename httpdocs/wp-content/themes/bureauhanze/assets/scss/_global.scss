@@ -112,9 +112,6 @@ section {
     @media(max-width: $tablet) {
         padding: $padding-md;
     }
-    @media(max-width: $mobile) {
-        padding: $padding-sm;
-    }
     .row {
         position: relative;
         width: 100%;

@@ -24,4 +24,8 @@ get_header(); ?>
 </main>
 
 <?php
+if(is_404()) :
+	get_template_part( 'template-parts/sections/404' ); 
+endif;
+
 get_footer();

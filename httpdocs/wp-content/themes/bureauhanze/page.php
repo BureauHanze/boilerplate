@@ -1,7 +1,6 @@
 <?php
 get_header(); ?>
 
-
 <main id="main" class="site-main" role="main">
 	<div class="page__wrapper">
 
@@ -22,11 +21,6 @@ get_header(); ?>
 
 	</div> <!-- page wrapper -->
 </main>
-
-
-
-
-
 
 <?php
 get_footer();

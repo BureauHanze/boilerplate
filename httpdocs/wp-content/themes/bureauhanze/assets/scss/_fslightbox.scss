@@ -21,3 +21,16 @@
         }
     }
 }
+.fslightbox-nav {
+    height: 45px;
+    top: 1% !important;
+    width: 99% !important;
+    position: absolute;
+    .fslightbox-toolbar {
+        .fslightbox-toolbar-button {
+            &:nth-child(1) {
+                display: none;
+            }
+        }
+    }
+}
