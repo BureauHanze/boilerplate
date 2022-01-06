@@ -32,3 +32,6 @@ add_filter('excerpt_length', 'my_excerpt_length');
 
 // Add post thumbnail support
 add_theme_support( 'post-thumbnails' );
+
+/* Custom Widget on Dashboard */
+get_template_part( 'template-parts/functions/widgets');
