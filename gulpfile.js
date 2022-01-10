@@ -14,11 +14,11 @@ const terser = require('gulp-terser');
 // PHP server
 function phpServer() {
     phpConnect.server({
-        port: 8887,
+        port: 8890,
         reloadOnRestart: true
     }, function (){
         browsersync.init({
-            proxy: 'localhost:8888',
+            proxy: 'https://boilerplate:8890/',
             browser: 'google chrome',
             notify: false,
             files: [
@@ -27,6 +27,10 @@ function phpServer() {
                 "httpdocs/wp-content/themes/bureauhanze/assets/js/script.js", 
                 "httpdocs/wp-content/themes/bureauhanze/assets/js/footer.js"
             ],
+            https: {
+                key: '/Applications/MAMP/Library/OpenSSL/certs/localhost.key',
+                cert: '/Applications/MAMP/Library/OpenSSL/certs/localhost.crt',
+            },
             injectChanges: true
         });
     });
