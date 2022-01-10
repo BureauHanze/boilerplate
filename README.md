@@ -70,3 +70,18 @@ browsersync.init({
         cert: '/Applications/MAMP/Library/OpenSSL/certs/localhost.crt',
     }
 });
+
+
+----------------------------------------
+
+<!-- To accept *.local certificates in Chrome -->
+1. Click on the lock icon in the browser
+2. Click "verbinding is beveiligd"
+3. Click "Certificaat is geldig"
+4. Drag the certificate icon to your desktop
+5. Dubble click this certificate
+6. Open keychain app on your mac
+7. Search for *.local certificate and open it
+8. Click on "Vertrouw"
+9. Set option "Gebruik bij dit certificaat" to "Vertrouw altijd"
+10. Done.
