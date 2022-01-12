@@ -1,3 +1,7 @@
+<!-- Clone this project! -->
+git clone https://github.com/BureauHanze/boilerplate.git
+
+
 <!-- Boilerplate for WordPress development -->
 WordPress login:
 Accountname: admin or webbeheer@buerauhanze.nl
