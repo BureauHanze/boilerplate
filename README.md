@@ -57,6 +57,9 @@ subjectAltName = @alt_names
 [alt_names]
 DNS.1 = localhost
 
+<!-- Run the command to create localhost.csr -->
+openssl req -new -key localhost.key -out localhost.csr
+
 <!-- Run the command to create localhost.crt -->
 openssl x509 -req -in localhost.csr -CA myCA.pem -CAkey myCA.key \
 -CAcreateserial -out localhost.crt -days 825 -sha256 -extfile localhost.ext
