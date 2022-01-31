@@ -378,7 +378,7 @@ function wp_render_duotone_support( $block_content, $block ) {
 		}
 	</style>
 
-	<svg
+	<!-- <svg
 		xmlns:xlink="http://www.w3.org/1999/xlink"
 		viewBox="0 0 0 0"
 		width="0"
@@ -405,7 +405,7 @@ function wp_render_duotone_support( $block_content, $block ) {
 				</feComponentTransfer>
 			</filter>
 		</defs>
-	</svg>
+	</svg> -->
 
 	<?php
 
