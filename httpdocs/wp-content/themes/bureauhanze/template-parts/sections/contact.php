@@ -1,10 +1,8 @@
 <section class="contact-form">
     <div class="container">
-
         <?php 
         echo do_shortcode('[contact-form-7 id="9" title="Contact" html_class="form-with-animated-labels"]');
         ?>
-
         <script>
         // Floating labels in contactForm7
         const formsWithAnimatedLabels = document.querySelectorAll(
@@ -37,6 +35,5 @@
             });
         }
         </script>
-
     </div>
 </section>

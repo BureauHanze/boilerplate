@@ -152,25 +152,15 @@ get_header(); ?>
         </div>
     </section>
 
-
     <section class="cheatsheet__modals">
         <div class="container">
             <div class="row">
                 <h2>Modals</h2>
             </div>
             <div class="row">
-                <button class="btn btn-primary open-modal">Open modal</button>
-                <div class="modal">
-                    <div class="modal-content">
-                        <div class="modal-content__header">
-                            <h2>Waar kan ik jou mee helpen?</h2>
-                            <button id="close_modal--contact" class="close close-modal">&#10005;</button>
-                        </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere velit alias atque doloribus quidem perferendis repudiandae aliquid cupiditate ipsum impedit veritatis, dolor nisi praesentium natus sit quo culpa animi dignissimos tempora quod asperiores repellat! Amet quos nihil quam dolorum minus consequuntur dolorem, minima ducimus non fugit dicta totam quod voluptates repellat illo consequatur quas architecto! At, harum voluptatum soluta officiis ad aliquam sunt eos maiores quisquam magnam doloribus quo tempore dolores cupiditate, totam vero, modi vitae! Omnis dignissimos eaque vel quas laudantium, molestias assumenda magni eveniet explicabo atque rerum nostrum nam placeat nisi, accusantium laboriosam molestiae perferendis, dolores hic sapiente provident deserunt dolor ipsa quasi! Eligendi pariatur expedita harum dolor libero quos tempore voluptatum accusamus explicabo cumque similique laboriosam doloremque nobis nemo, enim nam et deserunt id veritatis alias molestias corrupti deleniti temporibus! Perspiciatis quidem quo reiciendis, dolore cupiditate quam maxime odio pariatur corrupti iure aliquid quis consectetur quas, voluptas accusantium ipsum id eos est! Culpa quis nihil, quia accusamus perferendis impedit aliquid eos nemo reprehenderit officia, iste, repudiandae deserunt unde ullam illum est natus blanditiis nam sapiente voluptatum perspiciatis maxime dicta. Nostrum dicta accusamus natus fugiat odit beatae voluptatum magni omnis enim ipsam, numquam molestias eos totam accusantium earum ab? Sequi quis eius delectus molestiae, totam, tempore odio inventore maiores qui quisquam perferendis beatae laudantium debitis nemo nobis velit itaque rem soluta facilis doloribus enim molestias non quibusdam. Earum amet eaque ipsum, laudantium, aliquid atque, quas quod illo a magni pariatur sunt? Minima temporibus tempore porro, sed repellendus, dolorem deserunt harum vero nihil reiciendis quibusdam soluta aliquam possimus magnam provident exercitationem quos eaque itaque voluptatum dolores deleniti ratione tenetur qui? Repellat earum modi voluptatum, deleniti exercitationem veniam! Neque sapiente modi dolorem cumque, iure nisi iusto, consequatur harum nostrum itaque, ipsum quia porro. Commodi, dolores? Quae non, reprehenderit consequuntur minima quo repellat dolorem dolor vero dolorum provident alias similique delectus eum corporis beatae voluptate fugiat harum fuga omnis. Adipisci quia nam eveniet, modi doloremque fugit quo libero soluta maxime alias in voluptatum quis natus deserunt. Alias, enim sed vero laborum perferendis, odit veritatis consequuntur voluptates dicta architecto, consectetur provident aliquid sapiente natus ipsa in? Suscipit commodi ullam repellat atque unde, alias officia rem minima aperiam odio modi molestiae delectus omnis sint corporis magni, quod incidunt odit? Delectus dolorem voluptatem accusantium quia mollitia eligendi commodi labore aperiam eius quidem illo, animi veniam ea voluptatibus error ipsum assumenda? Hic dolorum facere neque at ut dolor minus nulla iure ab, adipisci placeat. Quas, temporibus? Est dolores, sit dolor sapiente commodi harum et facere. Ad cum a quo ratione esse cupiditate beatae dolor, quibusdam minima voluptates velit nobis ipsa quidem placeat, magnam assumenda! Facere reiciendis nesciunt laborum tenetur, odit repellendus delectus sapiente. Quam maiores voluptatem nemo consequuntur, cumque incidunt doloribus illo esse, nobis eos culpa totam porro ex optio. Veritatis fugiat aliquam explicabo? Blanditiis, in? Cum iusto facilis at maiores, atque, minus, vel nemo veritatis quam velit recusandae. Rerum quaerat consequuntur facilis in, minima totam obcaecati rem magnam reiciendis ipsa quasi exercitationem laudantium porro.</p>
-                    </div>
-                </div>
-
-
+                <button class="btn btn-primary open-modal">Open modal with form</button>
+                <?php
+                get_template_part( 'template-parts/modals/modal-contact' ); ?>
             </div>
         </div>
     </section>
