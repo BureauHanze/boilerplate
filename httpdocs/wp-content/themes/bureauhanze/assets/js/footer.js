@@ -11,6 +11,20 @@ function navClose(){
     navContainer.classList.remove("nav--active");
 }
 
+// Open modal
+function modalOpen(){
+    modal.style.display = "block";
+    pageOverlay.classList.remove("page-overlay");
+    pageOverlay.classList.add("page-overlay--active");
+}
+
+// Modal init
+function modalClose(){
+    modal.style.display = "none";
+    pageOverlay.classList.remove("page-overlay--active");
+    pageOverlay.classList.add("page-overlay");
+}
+
 // When the user clicks on the button, open the nav
 openNav.onclick = function () {
     pageOverlay.className += " page-overlay--active";
@@ -22,10 +36,30 @@ closeNav.onclick = function () {
     navClose();
 };
 
+// Modals
+const modal = document.querySelector(".modal");
+const openModal = document.querySelectorAll(".open-modal");
+const closeModal = document.querySelectorAll(".close-modal");
+for(let i = 0; i < openModal.length; i++){
+    // When the user clicks on the button, open the modal
+    openModal[i].onclick = function () {
+        modalOpen();
+    };
+    // When the user clicks on <span> (x), close the modal
+    for(let y = 0; y < closeModal.length; y++){
+
+        closeModal[y].onclick = function () {
+            modalClose();
+        };
+    }
+}
+
+
 // When the user clicks anywhere outside of the nav modal, close it
 window.onclick = function (event) {
     if (event.target == pageOverlay) {
         navClose();
+        modalClose();
     }
 };
 

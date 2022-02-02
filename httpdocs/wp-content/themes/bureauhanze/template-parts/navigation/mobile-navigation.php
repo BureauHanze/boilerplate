@@ -1,12 +1,10 @@
-<div id="page-overlay" class="page-overlay"></div>
-
 <div class="nav">
     <nav class="nav__content">
         <div class="container">
             <div class="nav__header">
                 <button id="nav--close" class="close">&#10005;</button>
             </div>
-            <div class="nav__links">
+            <nav class="nav__links">
                 <?php
                 wp_nav_menu( 
                     array( 
@@ -14,8 +12,7 @@
                     ) 
                 ); 
                 ?>
-            </div>
-
+            </nav>
         </div>
     </nav>
 </div>

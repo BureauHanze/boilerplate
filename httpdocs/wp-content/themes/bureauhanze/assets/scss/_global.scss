@@ -16,15 +16,17 @@ p, a, ul, li,
 input, textarea, label {
     font-family: $font-family !important;
     margin-top: 0;
-    line-height: $line-height;
 }
 
 h1,h2,h3,h4,h5,h6 {
     color: $heading-color;
+    line-height: 1;
+    margin-bottom: $margin-lg;
 }
 
 p, a, ul, li{
     color: $text-color;
+    line-height: $line-height;
 }
 
 h1 {

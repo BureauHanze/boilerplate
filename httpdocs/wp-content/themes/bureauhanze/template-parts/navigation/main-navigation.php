@@ -15,7 +15,7 @@
         <?php
         endif; ?>
     </div>
-    <div class="main-navigation__links">
+    <nav class="main-navigation__links">
     <?php 
         wp_nav_menu( 
             array( 
@@ -23,5 +23,5 @@
             ) 
         ); 
     ?>
-    </div>
+    </nav>
 </div>

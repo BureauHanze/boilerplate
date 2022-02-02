@@ -12,6 +12,7 @@
 
 <body>
 
+	<div id="page-overlay" class="page-overlay"></div>
 	<?php
 	get_template_part( 'template-parts/navigation/mobile-navigation' ); ?>
 
