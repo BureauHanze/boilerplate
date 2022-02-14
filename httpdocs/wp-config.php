@@ -80,6 +80,7 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
+define( 'ACF_PRO_LICENSE', 'b3JkZXJfaWQ9MTg1MzMwfHR5cGU9ZGV2ZWxvcGVyfGRhdGU9MjAyMC0wMi0wNiAwOTozOTozOQ==' );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
