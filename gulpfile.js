@@ -18,7 +18,7 @@ function phpServer() {
         reloadOnRestart: true
     }, function (){
         browsersync.init({
-            proxy: 'https://boilerplate:8890/',
+            proxy: 'https://boilerplate.local:8890/',
             browser: 'google chrome',
             notify: false,
             files: [

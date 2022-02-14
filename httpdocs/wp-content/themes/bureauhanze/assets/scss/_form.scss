@@ -5,7 +5,7 @@ form {
         label {
             position: absolute;
             left: 16px;
-            top: 8px;
+            top: 15px;
             transition: all 0.25s ease-in-out;
             color: gray;
             background: white;
@@ -24,7 +24,6 @@ form {
             border: 0px;
             cursor: text;
             border: 1px solid #e5e5e5;
-            border-radius: $border-radius-xxs;
             &:focus {
                 outline: 0;
             }
@@ -33,7 +32,7 @@ form {
             }
         }
         input {
-            height: 40px;
+            height: 50px;
             padding-left: $padding-md;
             &:nth-of-type() {
                 margin-bottom: 0;
@@ -53,11 +52,11 @@ form {
             }
         }
         label.focused {
-            top: -16px;
+            top: -12px;
             transform: none;
             transition: all 0.2s ease;
             color: $primary-color;
-            padding: 0 4px;
+            padding: 0 8px;
             transform: translateX(-4px);
         }
         [type="submit"] {
@@ -81,7 +80,6 @@ form {
             height: 20px;
             border: 1px solid #E4E6E4;
             overflow: hidden;
-            border-radius: 3px;
             cursor: pointer;
             padding:0 0.6rem !important;
             font-size: inherit !important;
@@ -133,7 +131,6 @@ form {
         color: red;
         border: 1px solid red;
         padding: $padding-sm $padding-md;
-        border-radius: $border-radius-xxs;
     }
 }
 
@@ -160,11 +157,11 @@ form {
 .form-with-animated-labels {
     display: flex;
     flex-direction: column;
-    gap: $gap-md;
+    gap: 20px;
     .form-row {
         display: flex;
         flex-direction: row;
-        gap: $gap-md;
+        gap: 20px;
         @media(max-width: $tablet){
             flex-direction: column;
             .form-col {
@@ -228,7 +225,6 @@ form {
         background: #fdfdfd;
         border: 1px solid #E4E6E5;
         padding: $padding-md;
-        border-radius: $border-radius-xxs;
         flex-flow: wrap;
         flex-direction: column;
         row-gap: 0;

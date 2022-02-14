@@ -65,6 +65,10 @@
     font-size: $font-xxxl;
     cursor: pointer;
     transition: all $main-transition;
+    display: none;
+    @media(max-width: $tablet){
+        display: flex;
+    }
 }
 #nav--open {
     position: relative;

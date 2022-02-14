@@ -4,7 +4,7 @@ button {
     display: inline-flex;
     align-items: center;
     color: white;
-    padding: $padding-xs $padding-md;
+    padding: $padding-md $padding-lg;
     text-decoration: none;
     cursor: pointer;
     background: none;
@@ -73,8 +73,8 @@ button {
 
 
 .btn-link {
+    padding: 0;
     color: $primary-color;
-    padding-left: 0;
     &:hover {
         color: $secondary-color;
     }
@@ -84,7 +84,7 @@ button {
 }
 .btn-link-icon {
     color: $primary-color;
-    padding-left: 8px;
+    padding: 0;
     &:hover {
         color: $secondary-color;
         svg {

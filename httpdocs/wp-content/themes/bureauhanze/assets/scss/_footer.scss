@@ -1,5 +1,5 @@
 .footer {
-    background-color: black;
+    background-color: darkslategrey;
     p, a {
         color: white;
     }
@@ -27,18 +27,17 @@
         }
     }
     .footer__copyright {
-        background-color: white;
+        background-color: rgba(0, 0, 0, 0.2);
         p, a {
             font-size: $font-md;
             margin: 0;
-            color: black;
+            color: white;
         }
         .container {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-top: $padding-sm;
-            padding-bottom: $padding-sm;
+            padding:$padding-md 0;
             .bottom__links {
                 display: flex;
                 align-items: center;
@@ -58,14 +57,16 @@
             justify-content: center;
             margin-left: $margin-lg;
             transition: all $main-transition;
-            border: 1px solid black;
+            border: 1px solid white;
+            fill: white;
             height: 32px;
             width: 32px;
             padding: $padding-sm;
             &:hover {
                 background-color: black;
+                border: 1px solid $primary-color;
                 svg {
-                    fill: white;
+                    fill: $primary-color;
                 }
             }
             svg {

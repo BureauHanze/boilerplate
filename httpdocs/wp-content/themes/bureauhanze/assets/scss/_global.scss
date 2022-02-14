@@ -103,7 +103,7 @@ section {
 }
 
 .container {
-    padding: $padding-xl;
+    padding: $padding-xl 0;
     width: 100%;
     max-width: $container-width;
     margin-left: auto;

@@ -18,9 +18,10 @@
  * @package WordPress
  */
 
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wp-5-8-3' );
+define( 'DB_NAME', 'wp_boilerplate' );
 
 /** MySQL database username */
 define( 'DB_USER', 'root' );
@@ -36,6 +37,10 @@ define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
+
+/** Define the Advanced Custom Fields Pro License */
+define('ACF_PRO_LICENSE', 'b3JkZXJfaWQ9MTg1MzMwfHR5cGU9ZGV2ZWxvcGVyfGRhdGU9MjAyMC0wMi0wNiAwOTozOTozOQ==' );
+
 
 /**#@+
  * Authentication unique keys and salts.
@@ -80,7 +85,6 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
-define( 'ACF_PRO_LICENSE', 'b3JkZXJfaWQ9MTg1MzMwfHR5cGU9ZGV2ZWxvcGVyfGRhdGU9MjAyMC0wMi0wNiAwOTozOTozOQ==' );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
