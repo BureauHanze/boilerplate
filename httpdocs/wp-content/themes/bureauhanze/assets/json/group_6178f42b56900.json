@@ -42,7 +42,7 @@
             "label": "Favicon",
             "name": "contactFavicon",
             "type": "image",
-            "instructions": ".jpg in 512px 512px",
+            "instructions": "Afmeting 512px 512px",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -71,7 +71,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-second",
+                "class": "one-third",
                 "id": ""
             },
             "default_value": "Bedrijfsnaam",
@@ -90,7 +90,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-second",
+                "class": "one-third",
                 "id": ""
             },
             "default_value": "WordPress webdevelopment",
@@ -109,7 +109,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-second",
+                "class": "one-third",
                 "id": ""
             },
             "default_value": "https:\/\/bureauhanze.nl\/",
@@ -144,7 +144,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-second",
+                "class": "one-fourth",
                 "id": ""
             },
             "default_value": "Straatnaam 11",
@@ -163,7 +163,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "25",
-                "class": "one-second",
+                "class": "one-fourth",
                 "id": ""
             },
             "default_value": "1234 AB",
@@ -182,7 +182,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "75",
-                "class": "one-second",
+                "class": "one-fourth",
                 "id": ""
             },
             "default_value": "Plaats",
@@ -196,15 +196,15 @@
             "label": "Land",
             "name": "contactCountry",
             "type": "text",
-            "instructions": "Nederland",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-second",
+                "class": "one-fourth",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Nederland",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -236,7 +236,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-second",
+                "class": "one-fourth",
                 "id": ""
             },
             "return_format": "array"
@@ -251,7 +251,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-second",
+                "class": "one-fourth",
                 "id": ""
             },
             "return_format": "array"
@@ -266,7 +266,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-second",
+                "class": "one-fourth",
                 "id": ""
             },
             "default_value": "",
@@ -285,7 +285,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-second",
+                "class": "one-fourth",
                 "id": ""
             },
             "default_value": "",
@@ -320,7 +320,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-fourth",
+                "class": "one-eight",
                 "id": ""
             },
             "return_format": "array"
@@ -335,7 +335,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-fourth",
+                "class": "one-eight",
                 "id": ""
             },
             "return_format": "array"
@@ -350,7 +350,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-fourth",
+                "class": "one-eight",
                 "id": ""
             },
             "return_format": "array"
@@ -365,7 +365,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-fourth",
+                "class": "one-eight",
                 "id": ""
             },
             "return_format": "array"
@@ -380,7 +380,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-fourth",
+                "class": "one-eight",
                 "id": ""
             },
             "return_format": "array"
@@ -404,5 +404,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644850552
+    "modified": 1645615775
 }
