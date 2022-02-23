@@ -39,7 +39,7 @@
     border-radius: 10px;
     min-width: 100%;
     min-height: 0px !important;
-    box-shadow: 0px 0px 2px #0000001f;
+    box-shadow: 1px 1px 4px #0000001f;
 }
 
 [id^="acf-group"] .ui-sortable .acf-fields > .acf-field, [id^="acf-group"]  .acf-field.one-second {
@@ -57,15 +57,20 @@
     min-width: 10%
 }
 
+[id^="acf-group"] .ui-sortable .acf-fields > .acf-field, [id^="acf-group"]  .acf-field.one-eight {
+    flex: 1 1 12.5%;
+    min-width: 12.5%
+}
+
 [id^="acf-group"] .acf-field .acf-label {
-    padding: 20px;
+    padding: 15px 20px;
     border-radius: 10px 10px 0px 0px;
-    background-color: #edf2f7;
-    color: #6f7986;
+    background-color: #f2f2f2;
+    color: #4f5372;
 }
 
 [id^="acf-group"] .acf-field .acf-label > label {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
 }
 
@@ -92,9 +97,9 @@
     background: none;
     border: none;
     padding: 0px;
-    font-size: 20px;
-    font-weight: 700;
-    color: #534a6d;
+    font-size: 18px;
+    font-weight: 600;
+    color: #282650; 
 }
 
 .acf-field input[type=text], 
@@ -140,3 +145,44 @@
     padding: 7px 9px;
     transition:all 0.3s;
 } 
+
+.acf-settings-wrap #poststuff #post-body.columns-2 {
+    margin-right: 0px;
+}
+
+
+.acf-settings-wrap #post-body.columns-2 #postbox-container-1 {
+    float: none;
+    margin-right: 0px;
+    width: 100%;
+}
+
+.acf-settings-wrap #post-body.columns-2 #postbox-container-1 .postbox-header {
+    display: none;
+}
+
+.acf-settings-wrap #post-body.columns-2 #postbox-container-1 #side-sortables {
+    width: 100%;
+    min-height: 0px;
+}
+
+.acf-settings-wrap #post-body.columns-2 #postbox-container-1  #major-publishing-actions {
+    padding: 0px;
+    clear: both;
+    border-top: 0px;
+    background: none;
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+
+.acf-settings-wrap #post-body.columns-2 #postbox-container-1 .postbox {
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+.acf-settings-wrap #post-body.columns-2 #postbox-container-1 .postbox input {
+    width: 150px;
+    padding: 5px;
+}
