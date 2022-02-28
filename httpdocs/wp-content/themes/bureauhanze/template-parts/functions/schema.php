@@ -30,8 +30,8 @@ function addschema()
         "url" => $urlcompany,
         "logo" => $faviconcompany,
         'sameAs' => array(
-            $instagramcompany,
-            $linkedincompany
+            $instagramcompany['url'],
+            $linkedincompany['url']
         ),
         "address" => array(
             "@type" => "PostalAddress",
