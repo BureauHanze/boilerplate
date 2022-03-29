@@ -1,27 +1,7 @@
 {
     "key": "group_617a6fb072c2d",
     "title": "Footer",
-    "fields": [
-        {
-            "key": "field_620a3547b1ddd",
-            "label": "test",
-            "name": "test",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        }
-    ],
+    "fields": [],
     "location": [
         [
             {
@@ -40,5 +20,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644836170
+    "modified": 1648548958
 }

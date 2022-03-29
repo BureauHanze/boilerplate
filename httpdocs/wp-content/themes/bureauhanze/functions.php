@@ -21,6 +21,9 @@ get_template_part( 'template-parts/functions/schema');
 // Automatic sitemap generate
 get_template_part( 'template-parts/functions/sitemap');
 
+// Add favicon
+get_template_part( 'template-parts/functions/favicon');
+
 // Register WordPress menu's
 register_nav_menus( array(  
     'main' => __( 'Primary Navigation', 'Bureauhanze' ),  

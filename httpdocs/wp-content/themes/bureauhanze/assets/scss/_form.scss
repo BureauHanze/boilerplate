@@ -136,21 +136,21 @@ form {
 
 .form-submit-col {
     position: relative;
-    &::before {
-        content: "";
-        top: 0;
-        bottom: 0;
-        left: 21px;
-        background-image: url(/wp-content/themes/bureauhanze/assets/svg/leaf.svg);
-        background-size: cover;
-        height: 24px;
-        width: 14px;
-        z-index: 9999;
-        display: block;
-        margin: auto;
-        position: absolute;
-        transform: rotate(90deg);
-    }
+    // &::before {
+    //     content: "";
+    //     top: 0;
+    //     bottom: 0;
+    //     left: 21px;
+    //     background-image: url(/wp-content/themes/bureauhanze/assets/svg/leaf.svg);
+    //     background-size: cover;
+    //     height: 24px;
+    //     width: 14px;
+    //     z-index: 9999;
+    //     display: block;
+    //     margin: auto;
+    //     position: absolute;
+    //     transform: rotate(90deg);
+    // }
 }
 
 
