@@ -18,6 +18,9 @@ get_template_part( 'template-parts/functions/cpt-projecten');
 // Schema.org
 get_template_part( 'template-parts/functions/schema');
 
+// Automatic sitemap generate
+get_template_part( 'template-parts/functions/sitemap');
+
 // Register WordPress menu's
 register_nav_menus( array(  
     'main' => __( 'Primary Navigation', 'Bureauhanze' ),  
