@@ -50,7 +50,7 @@
                 "class": "one-second",
                 "id": ""
             },
-            "return_format": "url",
+            "return_format": "array",
             "preview_size": "thumbnail",
             "library": "all",
             "min_width": 512,
@@ -404,5 +404,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1645615775
+    "modified": 1648556725
 }

@@ -28,7 +28,7 @@ function addschema()
         "alternateName" => $slogancompany,
         "description" => $seodescription, // Meta description van SEO per pagina
         "url" => $urlcompany,
-        "logo" => $faviconcompany,
+        "logo" => $faviconcompany['sizes']['favicon-chrome'],
         'sameAs' => array(
             $instagramcompany['url'],
             $linkedincompany['url']
@@ -95,9 +95,9 @@ function addschema()
                 'name'  => $company,
                 'logo'  => array(
                     '@type'  => "ImageObject",
-                    'url'    => $faviconcompany,
-                    'width'  => "512",
-                    'height' => "512"
+                    'url'    => $faviconcompany['sizes']['favicon-chrome'],
+                    'width'  => "192",
+                    'height' => "192"
                 )
             ),
             'description' => $description
