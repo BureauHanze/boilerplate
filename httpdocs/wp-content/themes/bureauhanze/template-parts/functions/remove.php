@@ -14,10 +14,12 @@ function remove_draft_widget(){
 }
 
 // Deregister wp_block_library_css
-function dm_remove_wp_block_library_css(){
+function remove_wp_block_library_css(){
     wp_dequeue_style( 'wp-block-library' );
-    }
-    add_action( 'wp_enqueue_scripts', 'dm_remove_wp_block_library_css' );
+    wp_dequeue_style( 'wp-block-library-theme' );
+    wp_dequeue_style( 'wc-blocks-style' ); // Remove WooCommerce block CSS
+}
+add_action( 'wp_enqueue_scripts', 'remove_wp_block_library_css', 100  );
 
 
 // Deregister Contact Form 7 CSS
