@@ -1,13 +1,12 @@
 <?php
-
-
 get_header(); ?>
 
 	<main id="main" class="site-main" role="main">
+	<?php 
+	if ( get_the_content() ) :
+		get_template_part( 'template-parts/sections/content');
+	endif; ?>
+	</main>
 
-		<?php 
-		if ( get_the_content() ) {
-			get_template_part( 'template-parts/sections/content');
-		} 
-
+<?php
 get_footer();
