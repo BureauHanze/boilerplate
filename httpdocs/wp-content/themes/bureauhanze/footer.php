@@ -72,7 +72,7 @@
 						if ($contactcompany) : ?>
 							<?php the_field('contactCompany', 'option');
 						endif; ?> 
-						<?php the_date('Y'); ?>
+						<?php echo date('Y'); ?>
 					</p>
 					<div class="bottom__links">
 						<a href="/privacy-statement">Privacy statement</a>
