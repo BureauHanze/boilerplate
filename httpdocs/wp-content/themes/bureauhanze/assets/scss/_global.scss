@@ -14,6 +14,7 @@ body {
 h1,h2,h3,h4,h5,h6,
 p, a, ul, li,
 input, textarea, label {
+    position: relative;
     font-family: $font-family !important;
     margin-top: 0;
 }
@@ -103,7 +104,7 @@ section {
 }
 
 .container {
-    padding: $padding-xl 0;
+    padding: $padding-lg;
     width: 100%;
     max-width: $container-width;
     margin-left: auto;
@@ -113,6 +114,9 @@ section {
     }
     @media(max-width: $tablet) {
         padding: $padding-md;
+    }
+    @media(min-width: calc($container-width + $padding-xl)) {
+        padding: $padding-lg 0;
     }
     .row {
         position: relative;
