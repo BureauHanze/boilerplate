@@ -7,6 +7,8 @@ get_header(); ?>
 <main id="main" class="site-main" role="main">
 
     <?php
+    get_template_part( 'template-parts/sections/flex-content' ); 
+
     if(is_front_page()) :
         get_template_part( 'template-parts/sections/projects' ); 
     endif;

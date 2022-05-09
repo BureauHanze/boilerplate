@@ -5,6 +5,58 @@
     }
 }
 
+.flex-content {
+    background: #F5F9F8;
+    .container {
+        padding-top: $padding-lg;
+        padding-bottom: 0;
+        .row {
+            display: flex;
+            gap: $gap-lg;
+            margin-bottom: $margin-lg;
+            &:nth-child(1) {
+                padding-top: 0;
+            }
+            &:nth-last-child(1) {
+                margin-bottom: 0;
+            }
+            @media(max-width: $tablet){
+                flex-direction: column !important;
+                
+            }
+            .flex-content__image {
+                flex: 0 0 50%;
+                img {
+                    border-radius: $border-radius-xxs;
+                    object-fit: cover;
+                    height: 100%;
+                }
+                iframe {
+                    height: 100%;
+                    min-height: 320px;
+                    width: 100%;
+                }
+            }
+            .flex-content__paragraph {
+                flex: 1 1 50%;
+                h2, h3, h4 {
+                    margin-bottom: $margin-md;
+                    &:nth-of-type(2),
+                    &:nth-of-type(3) {
+                        margin-top: $padding-lg;
+                    }
+                }
+                a {
+                    text-transform: initial;
+                }
+                .btn {
+                    margin-top: $margin-md;
+                }
+            }
+        }
+    }
+}
+
 .projects {
     .container {
         display: grid;
