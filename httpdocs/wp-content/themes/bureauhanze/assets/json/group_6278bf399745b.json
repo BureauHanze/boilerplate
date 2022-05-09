@@ -107,6 +107,13 @@
                 "operator": "==",
                 "value": "template-main.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-landing-page.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -118,5 +125,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652081463
+    "modified": 1652083275
 }

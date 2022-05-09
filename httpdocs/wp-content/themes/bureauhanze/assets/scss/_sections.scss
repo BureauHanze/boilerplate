@@ -8,8 +8,8 @@
 .flex-content {
     background: #F5F9F8;
     .container {
-        padding-top: $padding-lg;
-        padding-bottom: 0;
+        padding-top: $padding-xl;
+        padding-bottom: $padding-lg;
         .row {
             display: flex;
             gap: $gap-lg;
