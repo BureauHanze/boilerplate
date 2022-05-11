@@ -27,6 +27,17 @@ get_header(); ?>
         </div>
     </section>
 
+
+    <section class="cheatsheet__flex-content">
+        <div class="container">
+            <div class="row">
+                <h2 class="flex-content__heading">Flex content [ACF blok]</h2>
+            </div>
+            <?php
+            get_template_part( 'template-parts/sections/flex-content' ); ?>
+        </div>
+    </section>
+
     <section>
         <div class="container">
         <h2>Bedrijfsinformatie</h2>

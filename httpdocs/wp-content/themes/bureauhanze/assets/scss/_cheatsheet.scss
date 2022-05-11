@@ -11,8 +11,19 @@
             }
         }
     }
+    .cheatsheet__flex-content {
+        .flex-content__heading {
+            margin-bottom: 0;
+        }
+        .container {
+
+            padding-top: $padding-lg;
+        }
+
+    }
     .cheatsheet__paragraph {
         .container {
+            padding-top: $padding-md;
             .row {
                 display: flex;
             }
