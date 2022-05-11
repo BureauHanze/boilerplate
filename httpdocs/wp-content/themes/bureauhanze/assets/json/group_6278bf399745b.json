@@ -94,6 +94,76 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_627bc3cdab3e2": {
+                    "key": "layout_627bc3cdab3e2",
+                    "name": "section_flex-content-movie_row",
+                    "label": "Afbeelding met filmpje",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_627bc3cdab3e3",
+                            "label": "Filmpje positie",
+                            "name": "section_flex-content-movie_order",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "row": "Filmpje links",
+                                "row-reverse": "Filmpje rechts"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_627bc3cdab3e4",
+                            "label": "Filmje",
+                            "name": "section_flex-content_movie",
+                            "type": "oembed",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "width": "",
+                            "height": ""
+                        },
+                        {
+                            "key": "field_627bc3cdab3e5",
+                            "label": "Tekst",
+                            "name": "section_flex-content-movie_text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_627bbc2fdb3bc": {
                     "key": "layout_627bbc2fdb3bc",
                     "name": "section_flex-content-text_row",
@@ -199,5 +269,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652277563
+    "modified": 1652279132
 }
