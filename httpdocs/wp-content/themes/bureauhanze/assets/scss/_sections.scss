@@ -12,7 +12,7 @@
         .row {
             display: flex;
             gap: $gap-lg;
-            margin-bottom: $margin-lg;
+            margin-bottom: 48px;
             &:nth-child(1) {
                 padding-top: 0;
             }
@@ -24,7 +24,7 @@
                 
             }
             .flex-content__image {
-                flex: 0 0 50%;
+                flex: 1 0 50%;
                 img {
                     border-radius: $border-radius-xxs;
                     object-fit: cover;
@@ -58,6 +58,14 @@
             gap: initial;
             h1,h2,h3,h4,h5,h6 {
                 margin-bottom: $margin-md;
+            }
+            .flex-content__text {
+                @media(max-width: $tablet){
+                    column-count: 2 !important;
+                }
+                @media(max-width: $mobile){
+                    column-count: 1 !important;
+                }
             }
         }
     }

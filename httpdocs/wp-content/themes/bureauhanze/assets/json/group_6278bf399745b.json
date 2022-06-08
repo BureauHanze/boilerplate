@@ -249,14 +249,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "template-main.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "template-landing-page.php"
+                "value": "default"
             }
         ],
         [
@@ -276,5 +269,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652280820
+    "modified": 1654683744
 }
