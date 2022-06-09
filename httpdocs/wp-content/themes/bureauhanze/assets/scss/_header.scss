@@ -1,6 +1,5 @@
 .header {
     position: relative;
-    height: 700px;
     width: 100%;
     .header__nav {
         position: fixed;
@@ -108,9 +107,7 @@
         }
     }
 }
-.header-page {
-    height: 500px;
-}
+
 .--sticky {
     p, a {
         color: white;

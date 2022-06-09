@@ -68,13 +68,12 @@
 			<div class="footer__copyright">
 				<div class="container">
 					<p>
-						&copy; 		
-						<?php
+						&copy;
+						<?php echo date('Y');
 						$contactcompany = get_field('contactCompany', 'option');
 						if ($contactcompany) : ?>
 							<?php the_field('contactCompany', 'option');
 						endif; ?> 
-						<?php echo date('Y'); ?>
 					</p>
 					<div class="bottom__links">
 						<a href="/privacy-statement">Privacy statement</a>

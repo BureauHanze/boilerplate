@@ -4,6 +4,7 @@
         color: white;
     }
     .container {
+        padding-top: $padding-xl;
         .footer__top {
             display: flex;
             align-items: center;
@@ -23,7 +24,7 @@
             .footer__logo {
                 position: relative;
                 flex: 1 1 auto;
-                padding: $padding-md $padding-md $padding-md 0;
+                // padding: $padding-md $padding-md $padding-md 0;
                 margin-bottom: auto;
                 z-index: 1;
                 svg {

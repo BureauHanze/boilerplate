@@ -4,7 +4,7 @@
 
 get_header(); ?>
 
-<main id="main" class="site-main" role="main">
+<main id="main" class="site-main page" role="main">
 
     <?php
     get_template_part( 'template-parts/sections/flex-content' ); 

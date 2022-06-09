@@ -4,7 +4,6 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
 	<?php
 	get_template_part( 'template-parts/header/head' );
 	wp_head(); ?>
@@ -48,7 +47,15 @@
 			</div>
 
 			<div class="header__overlay"></div>
-			<?php the_post_thumbnail( 'main-background', array( 'class' => 'header__img lazy' ) ); ?>
+			<?php 
+			if(is_front_page()) :
+			the_post_thumbnail( 'hero', array( 'class' => 'header__img lazy' ) ); 
+			elseif(is_single()) :
+				the_post_thumbnail( 'hero-single', array( 'class' => 'header__img lazy' ) ); 
+			else :
+				the_post_thumbnail( 'hero-page', array( 'class' => 'header__img lazy' ) );
+			endif;
+			?>
 
 			<?php
 			if ( !is_front_page() ) : ?>
