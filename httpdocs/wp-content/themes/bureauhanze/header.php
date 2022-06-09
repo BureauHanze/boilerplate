@@ -50,7 +50,7 @@
 			<?php 
 			if(is_front_page()) :
 			the_post_thumbnail( 'hero', array( 'class' => 'header__img lazy' ) ); 
-			elseif(is_single()) :
+			elseif(is_single() || is_singular()) :
 				the_post_thumbnail( 'hero-single', array( 'class' => 'header__img lazy' ) ); 
 			else :
 				the_post_thumbnail( 'hero-page', array( 'class' => 'header__img lazy' ) );

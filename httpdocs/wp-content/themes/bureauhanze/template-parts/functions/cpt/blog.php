@@ -28,14 +28,9 @@ function blog_init() {
         'supports' => array(
             'title',
             'editor',
-            'excerpt',
-            'trackbacks',
             'custom-fields',
-            'comments',
-            'revisions',
             'thumbnail',
             'author',
-            'page-attributes'
         )
     );
     register_post_type( 'blog', $args );

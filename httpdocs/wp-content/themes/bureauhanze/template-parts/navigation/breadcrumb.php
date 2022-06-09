@@ -9,7 +9,7 @@ function breadcrumbs($separator = ' &raquo; ', $home = 'Home') {
 
     // Build the breadcrumbs
     foreach ($path AS $x => $crumb) {
-        $title = ucwords(str_replace(Array('.php', '_'), Array('', ' '), $crumb));
+        $title = ucwords(str_replace(Array('.php', '_', '-'), Array('', ' ', ' '), $crumb));
         if ($x != $last)
             $breadcrumbs[] = "<a href=\"$base$crumb\">$title</a>";
         else

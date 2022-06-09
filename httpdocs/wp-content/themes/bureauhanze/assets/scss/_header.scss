@@ -77,7 +77,6 @@
                             transform: rotate(90deg);
                         }
                     }
-
                     .sub-menu {
                         display: none;
                     }
@@ -90,6 +89,7 @@
                         .sub-menu {
                             position: absolute;
                             display: block;
+                            top: 23px;
                             left: 0;
                             width: max-content;
                             margin-top: $margin-md;
@@ -189,6 +189,45 @@
                 svg {
                     .logo{
                         fill: white;
+                    }
+                }
+            }
+            .menu-main-container {
+                margin-left: auto;
+                .menu {
+                    display: flex;
+                    align-items: center;
+                    gap: $gap-xl;
+                    margin: 0 $margin-xl 0 0;
+                    padding: 0;
+                    @media(max-width: $tablet){
+                        display: none;
+                        gap: $gap-lg;
+                    }
+                    li {
+                        margin: 0;
+                        &:before {
+                            content: none;
+                        }
+                        a {
+                            text-decoration: none;
+                            font-weight: bold;
+                            padding-bottom: $padding-lg;
+                            &:hover {
+                                text-decoration: underline;
+                                text-underline-position: under;
+                            }
+                        }
+                        .--active {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .menu-item-has-children {
+                    &:hover {
+                        .sub-menu {
+                            background: $primary-color;
+                        } 
                     }
                 }
             }
