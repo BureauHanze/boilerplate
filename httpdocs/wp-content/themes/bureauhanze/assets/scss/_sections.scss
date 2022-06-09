@@ -69,32 +69,32 @@
     }
 }
 
-.projects {
+.four-o-four {
+    margin-top: 196px;
+}
+
+.blog {
     .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 32px;
-    }
-    .project {
-        position: relative;
-        .project__container {
-            position: relative;
-            border: 1px solid black;
-            img {
+        .row {
+            display: grid;
+            grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+            gap: $gap-lg;
+        }
+        .blog__card {
+            border-radius: $border-radius-xxs;
+            box-shadow: $box-shadow-lg;
+            overflow: hidden;
+            .card__img {
+                aspect-ratio: 4 / 3;
                 object-fit: cover;
+                height: auto;
             }
-            .project__content {
-                position: relative;
+            .card__content {
                 padding: $padding-lg;
-                .btn-link {
-                    margin: $margin-md 0 0 0;
-                    padding: 0;
+                @media(max-width: $tablet){
+                    padding: $padding-md;
                 }
             }
         }
     }
-}
-
-.four-o-four {
-    margin-top: 196px;
 }

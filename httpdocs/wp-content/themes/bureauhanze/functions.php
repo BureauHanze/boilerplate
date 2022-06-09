@@ -12,12 +12,12 @@ get_template_part( 'template-parts/functions/image-sizes');
 // Advanced Custom Fields functions
 get_template_part( 'template-parts/functions/acf');
 
-// Register Custom Post Type Projecten
-get_template_part( 'template-parts/functions/cpt-projecten');
+// Register Custom Post Types
+get_template_part( 'template-parts/functions/cpt/blog');
 
 // Schema.org
 if (get_field('optionDisableSchemaOrg', 'option')) :
-get_template_part( 'template-parts/functions/schema');
+    get_template_part( 'template-parts/functions/schema');
 endif;
 
 // Automatic sitemap generate

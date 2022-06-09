@@ -7,6 +7,7 @@ add_image_size( 'hero-sinlge', 1920, 640, true  );
 
 // Cards
 add_image_size( 'card', 640, 480, true  );
+add_image_size( 'card-blog', 240, 0, true  );
 
 // Favicons (automatic generate)
 add_image_size( 'favicon', 16, 16, false  );
