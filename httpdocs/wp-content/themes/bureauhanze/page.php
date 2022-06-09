@@ -1,7 +1,4 @@
 <?php 
-
-/* Template Name: template-main */
-
 get_header(); ?>
 
 <main id="main" class="site-main page" role="main">
