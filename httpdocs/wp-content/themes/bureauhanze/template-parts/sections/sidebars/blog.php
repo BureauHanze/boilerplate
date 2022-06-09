@@ -1,5 +1,5 @@
 
-<div class="sidebar__content">
+<aside class="sidebar__content">
     <div class="content__categories">
         <h4>Recente blogs</h4>
         <?php
@@ -38,4 +38,4 @@
             endif; ?>
         </div>
     </div>
-</div>
+</aside>
