@@ -59,14 +59,41 @@ $font-xxxxxl: 3rem;     // 48px
 $font-family: 'Open Sans';
 
 // Colors
-$primary-color: #005891;
-$secondary-color: #ff870c;
-$primary-color-dark: #15173a;
-$heading-color: black;
-$text-color: #4a4a4a;
+$primary-color: #12004D;
+$primary-color-d-2: darken($primary-color, 2%);
+$primary-color-d-4: darken($primary-color, 4%);
+$primary-color-d-6: darken($primary-color, 6%);
+$primary-color-d-8: darken($primary-color, 8%);
+$primary-color-d-10: darken($primary-color, 10%);
+
+$primary-color-l-2: lighten($primary-color, 2%);
+$primary-color-l-4: lighten($primary-color, 4%);
+$primary-color-l-6: lighten($primary-color, 6%);
+$primary-color-l-8: lighten($primary-color, 8%);
+$primary-color-l-10: lighten($primary-color, 10%);
+
+$secondary-color: #FF870D;
+$secondary-color-d-2: darken($primary-color, 2%);
+$secondary-color-d-4: darken($primary-color, 4%);
+$secondary-color-d-6: darken($primary-color, 6%);
+$secondary-color-d-8: darken($primary-color, 8%);
+$secondary-color-d-10: darken($primary-color, 10%);
+
+$secondary-color-l-2: lighten($primary-color, 2%);
+$secondary-color-l-4: lighten($primary-color, 4%);
+$secondary-color-l-6: lighten($primary-color, 6%);
+$secondary-color-l-8: lighten($primary-color, 8%);
+$secondary-color-l-10: lighten($primary-color, 10%);
+
+$heading-color: $primary-color-d-4;
+$text-color: #282828;
 
 $red: #E73743;
 $yellow: #FECC04;
+
+
+
+
 
 // HSL (hue, saturation, and lightness)
 // $primary: hsl(204, 100%, 28%);

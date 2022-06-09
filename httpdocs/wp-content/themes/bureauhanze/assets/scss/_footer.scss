@@ -1,5 +1,5 @@
 .footer {
-    background-color: darkslategrey;
+    background-color: $primary-color;
     p, a {
         color: white;
     }
@@ -29,7 +29,7 @@
         }
     }
     .footer__copyright {
-        background-color: rgba(0, 0, 0, 0.2);
+        background: $primary-color-d-4;
         p, a {
             font-size: $font-md;
             margin: 0;

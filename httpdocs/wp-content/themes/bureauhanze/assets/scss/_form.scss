@@ -126,33 +126,20 @@ form {
 }
 .invalid {
     .wpcf7-response-output {
-        margin-top: $margin-xl;
+        margin-top: $margin-lg;
         margin-bottom: 0;
         color: red;
         border: 1px solid red;
         padding: $padding-sm $padding-md;
     }
+    input[type=checkbox] {
+        border-color: $red !important;
+    }
 }
 
 .form-submit-col {
     position: relative;
-    // &::before {
-    //     content: "";
-    //     top: 0;
-    //     bottom: 0;
-    //     left: 21px;
-    //     background-image: url(/wp-content/themes/bureauhanze/assets/svg/leaf.svg);
-    //     background-size: cover;
-    //     height: 24px;
-    //     width: 14px;
-    //     z-index: 9999;
-    //     display: block;
-    //     margin: auto;
-    //     position: absolute;
-    //     transform: rotate(90deg);
-    // }
 }
-
 
 .form-with-animated-labels {
     display: flex;
@@ -237,6 +224,63 @@ form {
             &:nth-last-child(1) {
                 margin-bottom: 0;
             }
+        }
+    }
+    .form-row-last {
+        display: flex;
+        justify-content: space-between;
+        .form-col {
+            flex: initial;
+            label {
+                display: flex;
+                left: 0;
+            }
+        }
+        .form-acceptance-col {
+            flex: 1 1 68%;
+        }
+        .submit-col-btn {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                background-image: url('/wp-content/themes/bureauhanze/assets/svg/chevron.svg');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 12px;
+                width: 12px;
+                left: 12px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 9;
+            }
+            input[type=submit] {
+                position: relative;
+                display: block;
+                margin-left: auto;
+                border-radius: $border-radius-xxl;
+                padding-left: $padding-lg;
+                padding-right: $padding-md;
+
+            }
+            @media(max-width: $tablet){
+                flex-direction: column;
+                input[type=submit] {
+                    margin-left: 0;
+                    margin-top: 48px;
+                }
+            }
+            @media(max-width: $mobile){
+                input[type=submit] {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .wpcf7-not-valid-tip {
+            top: -12px;
+            left: 0;
         }
     }
 }
