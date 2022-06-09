@@ -109,14 +109,14 @@ section {
     max-width: $container-width;
     margin-left: auto;
     margin-right: auto;
+    @media(min-width: calc($container-width + $padding-lg)) {
+        padding: $padding-lg 0;
+    }
     @media(max-width: $desktop-xl) {
         padding: $padding-lg;
     }
     @media(max-width: $tablet) {
         padding: $padding-md;
-    }
-    @media(min-width: calc($container-width + $padding-xl)) {
-        padding: $padding-lg 0;
     }
     .row {
         position: relative;

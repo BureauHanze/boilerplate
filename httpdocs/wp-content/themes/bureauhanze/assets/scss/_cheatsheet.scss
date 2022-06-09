@@ -1,5 +1,29 @@
 .cheatsheet {
     margin-top: $margin-xl;
+    .cheatsheet__headings {
+        h1, h2, h3, h4, h5, h6 {
+            color: $primary-color;
+        }
+        h1 {
+            color: lighten( $primary-color, 4% ) !important;
+        }
+        h2 {
+            color: lighten( $primary-color, 8% ) !important;
+        }
+        h3 {
+            color: lighten( $primary-color, 12% ) !important;
+        }
+        h4 {
+            color: lighten( $primary-color, 16% ) !important;
+        }
+        h5 {
+            color: lighten( $primary-color, 20% ) !important;
+        }
+        h6 {
+            color: lighten( $primary-color, 24% ) !important;
+        }
+    }
+
     #cheatsheet__buttons {
         .container {
             .buttons__container {

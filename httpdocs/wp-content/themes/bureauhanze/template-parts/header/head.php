@@ -1,24 +1,25 @@
 <!-- Page Title -->
 <?php
-if (get_field('seoPageTitle', 'option')) : ?>
-<title><?php the_field('seoPageTitle', 'option'); ?></title> 
+if (get_field('optionDisableSeo', 'option')) :
+    if (get_field('seoPageTitle')) : ?>
+    <title><?php the_field('seoPageTitle'); ?></title> 
+    <?php
+    else : ?>
+    <title><?php echo get_the_title($page->ID); ?> | <?php the_field('contactSlogan', 'option'); ?></title>
+    <?php
+    endif; 
+endif;?>
+
 <?php
-else : ?>
-<title><?php echo get_the_title($page->ID); ?> | <?php the_field('contactSlogan', 'option'); ?></title>
-<?php
+if (get_field('optionDisableSeo', 'option')) :
+    if (get_field('seoPageMetaDescription')) : ?>
+    <meta name="description" content="<?php the_field('seoPageMetaDescription'); ?>">
+    <?php
+    else : ?>
+    <?php
+    endif;
 endif; ?>
 
-<!-- Meta Description -->
-<?php
-if (get_field('seoPageMetaDescription', 'option')) : ?>
-<meta name="description" content="<?php the_field('seoPageMetaDescription', 'option'); ?>">
-<?php
-else : ?>
-<meta name="description" content="">
-<?php
-endif; ?>
-
-<!-- Google Analytics code -->
 <?php
 if ( get_field( 'header_google_analytics', 'option' ) ):?>
     <?php the_field( 'header_google_analytics', 'option' );

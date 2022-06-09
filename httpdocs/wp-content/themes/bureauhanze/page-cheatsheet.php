@@ -4,9 +4,6 @@ get_header(); ?>
 
 <main id="main" class="site-main cheatsheet" role="main">
 
- 
-
-
     <section class="cheatsheet__headings">
         <div class="container">
             <h1>Heading H1</h1>
@@ -26,7 +23,6 @@ get_header(); ?>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, mollitia. Culpa nam est iste fugiat magni quia dolorum laudantium nobis ab molestiae nulla facilis accusamus voluptatem exercitationem nisi itaque blanditiis, quaerat dolorem harum eaque iusto doloremque sapiente beatae? Aliquid voluptates voluptatibus sint expedita illo, quo suscipit consequatur voluptate tempora perferendis Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quod maxime debitis quis odit, alias dolores consequatur, cum impedit iusto modi atque totam quam non. Possimus, animi doloribus rem quasi ex laboriosam labore magnam corporis obcaecati explicabo aut reiciendis fugiat, vitae rerum, minima quisquam quia autem quam odit impedit! Maiores Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nisi a aliquid aut ut error ducimus. Totam rem impedit obcaecati alias dignissimos at, ullam necessitatibus facere assumenda temporibus ipsa animi minus deleniti provident fuga illo placeat consequatur accusantium eum repudiandae earum esse! Iusto incidunt similique nulla natus minima eveniet deserunt?</p>
         </div>
     </section>
-
 
     <section class="cheatsheet__flex-content">
         <div class="container">
@@ -241,7 +237,6 @@ get_header(); ?>
             </div>
         </div>
     </section>
-
 
 </main>
 

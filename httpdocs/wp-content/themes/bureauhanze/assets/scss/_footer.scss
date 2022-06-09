@@ -5,14 +5,16 @@
     }
     .container {
         .footer__top {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            display: flex;
             align-items: center;
+            justify-content: space-between;
+            align-items: baseline;
             .footer__logo {
+                position: relative;
                 padding: $padding-md $padding-md $padding-md 0;
                 width: 96px;
+                margin-bottom: auto;
                 z-index: 1;
-                position: relative;
                 svg {
                     .logo{
                         fill: white;
@@ -37,7 +39,8 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding:$padding-md 0;
+            padding-top: $padding-md;
+            padding-bottom: $padding-md;
             .bottom__links {
                 display: flex;
                 align-items: center;

@@ -16,10 +16,14 @@ get_template_part( 'template-parts/functions/acf');
 get_template_part( 'template-parts/functions/cpt-projecten');
 
 // Schema.org
+if (get_field('optionDisableSchemaOrg', 'option')) :
 get_template_part( 'template-parts/functions/schema');
+endif;
 
 // Automatic sitemap generate
-get_template_part( 'template-parts/functions/sitemap');
+if (get_field('optionDisableSitemap', 'option')) :
+    get_template_part( 'template-parts/functions/sitemap');
+endif;
 
 // Add favicon
 get_template_part( 'template-parts/functions/favicon');

@@ -1,6 +1,6 @@
 {
     "key": "group_6178f42b56900",
-    "title": "Contact information",
+    "title": "Thema opties",
     "fields": [
         {
             "key": "field_620a6d24f233a",
@@ -384,6 +384,86 @@
                 "id": ""
             },
             "return_format": "array"
+        },
+        {
+            "key": "field_62a1a703a0c54",
+            "label": "Aan \/ uitzetten custom functionaliteiten",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 1
+        },
+        {
+            "key": "field_62a1a68da0c53",
+            "label": "SEO (titel & meta)",
+            "name": "optionDisableSeo",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6179a0f70f954",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "one-third",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_62a1a73aa0c55",
+            "label": "Sitemap",
+            "name": "optionDisableSitemap",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "one-third",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_62a1ae622ff52",
+            "label": "Schema.org",
+            "name": "optionDisableSchemaOrg",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "one-third",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -404,5 +484,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648556725
+    "modified": 1654763184
 }
