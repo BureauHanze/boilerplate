@@ -7,25 +7,43 @@
         .footer__top {
             display: flex;
             align-items: center;
-            justify-content: space-between;
             align-items: baseline;
+            gap: $gap-xl;
+            @media(max-width: $tablet) {
+                flex-direction: column;
+                gap: $gap-md;
+                margin-top: $margin-lg;
+                margin-bottom: $margin-lg;
+            }
+            .footer__heading {
+                color: white;
+                font-size: $font-lg;
+                margin-bottom: $margin-md;
+            }
             .footer__logo {
                 position: relative;
+                flex: 1 1 auto;
                 padding: $padding-md $padding-md $padding-md 0;
-                width: 96px;
                 margin-bottom: auto;
                 z-index: 1;
                 svg {
+                    max-width: 128px;
                     .logo{
                         fill: white;
                     }
                 }
             }
-            .footer__contact-links {
-                a {
-                    justify-content: end;
-                }
+            .footer__address {
+                flex: 0 1 auto;
             }
+            .footer__contact {
+                flex: 0 1 auto;
+            }
+            // .footer__contact-links {
+            //     a {
+            //         justify-content: end;
+            //     }
+            // }
         }
     }
     .footer__copyright {

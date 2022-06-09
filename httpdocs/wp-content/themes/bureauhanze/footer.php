@@ -2,7 +2,7 @@
 			<div class="container">
 
 				<div class="footer__top">
-					<div class="footer__logo">
+					<div class="footer__column footer__logo">
 						<?php
 						$contactlogo = get_field('contactLogo', 'option');
 						if ($contactlogo) : ?>
@@ -11,7 +11,8 @@
 						endif; ?>
 					</div>
 
-					<div class="footer__column">
+					<div class="footer__column footer__address">
+						<h3 class="footer__heading">Adres</h3>
 						<div class="main__address">
 							<?php
 							$contactaddress = get_field('contactAddress', 'option');
@@ -44,7 +45,8 @@
 						</div>
 					</div>
 
-					<div class="footer__column footer__contact-links">
+					<div class="footer__column footer__contact">
+						<h3 class="footer__heading">Contactgegevens</h3>
 						<?php
 						$contactmail = get_field('contactMail', 'option');
 						if($contactmail):?>
