@@ -71,7 +71,26 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-third",
+                "class": "one-fourth",
+                "id": ""
+            },
+            "default_value": "Bedrijfsnaam",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62a1b00ea227a",
+            "label": "Bedrijfsnaam volledig",
+            "name": "contactCompanyFull",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "one-fourth",
                 "id": ""
             },
             "default_value": "Bedrijfsnaam",
@@ -90,7 +109,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-third",
+                "class": "one-fourth",
                 "id": ""
             },
             "default_value": "WordPress webdevelopment",
@@ -109,7 +128,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "one-third",
+                "class": "one-fourth",
                 "id": ""
             },
             "default_value": "https:\/\/bureauhanze.nl\/",
@@ -484,5 +503,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654763184
+    "modified": 1654763581
 }

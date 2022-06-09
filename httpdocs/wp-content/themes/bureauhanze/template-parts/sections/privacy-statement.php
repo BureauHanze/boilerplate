@@ -1,6 +1,6 @@
 <section class="privacy-statement">
     <div class="container">
-        <p>Privacy- en cookieverklaring van <?php if (get_field('contactCompany', 'option')) : the_field('contactCompany', 'option'); endif; ?> (hierna te noemen: “de Onderneming”).</p>
+        <p>Privacy- en cookieverklaring van <?php if (get_field('contactCompany', 'option')) : the_field('contactCompany', 'option'); endif; ?> (hierna te noemen: “<?php if (get_field('contactCompanyFull', 'option')) : the_field('contactCompanyFull', 'option'); endif; ?>”).</p>
         <p>De onderneming is gevestigd te <?php if (get_field('contactPlace', 'option')) : the_field('contactPlace', 'option'); endif; ?> <?php if (get_field('contactPostal', 'option')) : the_field('contactPostal', 'option'); endif; ?> aan het adres <?php if (get_field('contactAddress', 'option')) : the_field('contactAddress', 'option'); endif; ?> en staat ingeschreven bij de Kamer van Koophandel onder <?php if (get_field('contactKvK', 'option')) : the_field('contactKvk', 'option'); else : ?> xxxxxxxx <?php endif; ?>.</p>
         <p>In deze privacy- en cookieverklaring wil de Onderneming de u op transparante wijze op de hoogte stellen van de gegevens die zij verzamelt en de cookies die zij gebruikt, en waarvoor zij uw toestemming nodig heeft. De Onderneming spant zich in om altijd zoveel mogelijk in lijn met dit beleid te handelen en wanneer dat nodig is het beleid van een update te voorzien. Op deze manier handelt de Onderneming altijd in overeenstemming met de meest actuele toepasselijke wet- en regelgeving.</p>
         <br/>
