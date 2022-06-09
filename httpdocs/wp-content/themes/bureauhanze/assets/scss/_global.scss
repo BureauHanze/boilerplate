@@ -70,6 +70,7 @@ ul {
     list-style-type: none;
     align-items: center;
     margin-top: 0;
+    padding-left: $padding-lg;
     li {
         position: relative;
         line-height: 1.8;
@@ -80,8 +81,8 @@ ul {
             bottom: 50%;
             transform: translate(-50%, -50%);
             left: -$margin-md;
-            height: 8px;
-            width: 8px;
+            height: 6px;
+            width: 6px;
             background-color: black;
             margin-right: $margin-sm;
             border-radius: 50%;

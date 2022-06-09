@@ -98,3 +98,42 @@
         }
     }
 }
+
+.single-blog {
+    .container {
+        display: flex;
+        gap: $gap-xl;
+        @media(max-width: $tablet){
+            flex-direction: column;
+            gap: $gap-lg;
+        }
+        .sidebar {
+            .sidebar__content {
+                box-shadow: $box-shadow-md;
+                padding: $padding-lg;
+                border-radius: $border-radius-xxs;
+                .content__categories {
+                    ul {
+                        margin: 0;
+                        li {
+                            a {
+                                text-decoration: none;
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+                .contact__paragraph {
+                    a {
+                        margin-bottom: $margin-sm;
+                        &:nth-last-child(1) {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
