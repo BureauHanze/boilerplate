@@ -32,11 +32,12 @@
                 .menu {
                     display: flex;
                     align-items: center;
-                    gap: $gap-lg;
+                    gap: $gap-xl;
                     margin: 0 $margin-xl 0 0;
                     padding: 0;
                     @media(max-width: $tablet){
                         display: none;
+                        gap: $gap-lg;
                     }
                     li {
                         margin: 0;
@@ -46,6 +47,7 @@
                         a {
                             text-decoration: none;
                             font-weight: bold;
+                            padding-bottom: $padding-lg;
                             &:hover {
                                 text-decoration: underline;
                                 text-underline-position: under;
@@ -56,11 +58,72 @@
                         }
                     }
                 }
+                .menu-item-has-children {
+                    position: relative;
+                    a {
+                        position: relative;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 7px;
+                            right: -20px;
+                            margin: auto;
+                            height: 12px;
+                            width: 12px;
+                            background-image: url('/wp-content/themes/bureauhanze/assets/svg/chevron-menu.svg');
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            transition: all $main-transition;
+                            transform: rotate(90deg);
+                        }
+                    }
+
+                    .sub-menu {
+                        display: none;
+                    }
+                    &:hover {
+                        a {
+                            &::after {
+                                transform: rotate(270deg);
+                            }
+                        }
+                        .sub-menu {
+                            position: absolute;
+                            display: block;
+                            left: 0;
+                            width: max-content;
+                            margin-top: $margin-md;
+                            background: white;
+                            padding: 0 $padding-md;
+                            border-radius: 0 0 $border-radius-xxs $border-radius-xxs;
+                            li {
+                                position: relative;
+                                margin-top: $margin-md;
+                                margin-bottom: $margin-md;
+                                a {
+                                    &::after {
+                                        content: none;
+                                    }
+                                    &:hover {
+                                        padding-bottom: 5px;
+                                    }
+                                }
+                                .--active {
+                                    text-decoration: underline;
+                                    padding-bottom: $padding-xs;
+                                }
+                            }
+                        } 
+                    }
+                }
             }
         }
     }
     .header__img {
         object-fit: cover;
+        @media(max-width: $tablet){
+            height: 320px;
+        }
     }
     .header__overlay {
         position: absolute;

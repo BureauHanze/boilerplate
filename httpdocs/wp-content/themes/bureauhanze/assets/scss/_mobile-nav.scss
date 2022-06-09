@@ -12,6 +12,9 @@
     .nav__content {
         position: fixed;
         width: 100%;
+        .container {
+            padding-left: $padding-lg;
+        }
         .nav__header {
             display: flex;
             justify-content: space-between;
@@ -22,11 +25,12 @@
         }
         .nav__links {
             .menu {
-                padding-left: 20px;
+                padding-left: 0;
                 li {
                     padding: $padding-sm 0;
+                    margin-bottom: $margin-md;
                     &::before {
-                        background-color: white;
+                        content: none;
                     }
                     a {
                         text-decoration: none;
@@ -38,6 +42,12 @@
                     }
                     .--active {
                         text-decoration: underline;
+                    }
+                }
+                .sub-menu {
+                    padding-left: $padding-md;
+                    li {
+                        margin-bottom: 0;
                     }
                 }
             }
