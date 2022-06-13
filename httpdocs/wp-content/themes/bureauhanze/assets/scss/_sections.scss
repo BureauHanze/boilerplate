@@ -77,8 +77,11 @@
     .container {
         .row {
             display: grid;
-            grid-template-columns: repeat( auto-fit, minmax(250px, 378px) );
+            grid-template-columns: repeat( auto-fill, minmax(350px, 1fr) );
             gap: $gap-lg;
+            @media(max-width: $tablet){
+                grid-template-columns: 1fr;
+            }
             .type-blog {
                 display: none;
             }
@@ -117,8 +120,13 @@
         }
         .blog__card {
             border-radius: $border-radius-xxs;
-            box-shadow: $box-shadow-lg;
+            box-shadow: $box-shadow-md;
             overflow: hidden;
+            transition: all $main-transition;
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: $box-shadow-lg;
+            }
             .card__img {
                 aspect-ratio: 4 / 3;
                 object-fit: cover;

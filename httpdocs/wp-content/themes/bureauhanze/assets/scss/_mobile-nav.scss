@@ -7,7 +7,7 @@
     height: 100%;
     background: $primary-color-d-6;
     transition: width $main-transition;
-    z-index: 99;
+    z-index: 100;
     overflow: hidden;
     .nav__content {
         position: fixed;
@@ -54,14 +54,8 @@
         }
     }
 }
-.nav {
-    right: 0;
-    transition: width $main-transition;
-    z-index: 100;
-}
 .nav--active {
     width: 400px;
-
     @media(max-width: $tablet){
         max-width: 80%;
     }

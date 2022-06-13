@@ -20,17 +20,19 @@
             padding: $padding-md;
         }
         .modal-content__header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: $margin-lg;
-            h2 {
-                margin: 0;
-            }
-            .close-modal {
-                font-size: $font-xxl;
-                color: $primary-color;
-                padding: 0;
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                // margin-bottom: $margin-lg;
+                h2 {
+                    margin: 0;
+                }
+                .close-modal {
+                    font-size: $font-xxl;
+                    color: $primary-color;
+                    padding: 0;
+                }
             }
         }
         p {
