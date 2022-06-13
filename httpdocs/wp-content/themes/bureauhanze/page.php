@@ -6,7 +6,7 @@ get_header(); ?>
     <?php
     get_template_part( 'template-parts/sections/flex-content' ); 
 
-    get_template_part( 'template-parts/sections/blog' ); 
+    get_template_part( 'template-parts/sections/blog' );
 
     if(is_page('contact')) :
         get_template_part( 'template-parts/sections/contact' ); 

@@ -1,11 +1,11 @@
 {
-    "key": "group_617a97d33894c",
-    "title": "Single - Projects",
+    "key": "group_62a742281c4fa",
+    "title": "Section - Brands",
     "fields": [
         {
-            "key": "field_617a97f949672",
-            "label": "Project afbeeldingen",
-            "name": "projects_image_gallery",
+            "key": "field_62a74231e0f8e",
+            "label": "Upload merken afbeeldingen",
+            "name": "section_brands",
             "type": "gallery",
             "instructions": "",
             "required": 0,
@@ -28,30 +28,14 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
-        },
-        {
-            "key": "field_617a9daa26965",
-            "label": "Project embed url",
-            "name": "project_embed",
-            "type": "oembed",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "width": "",
-            "height": ""
         }
     ],
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "options_page",
                 "operator": "==",
-                "value": "projecten"
+                "value": "acf-options-merken"
             }
         ]
     ],
@@ -64,5 +48,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644836115
+    "modified": 1655128709
 }
