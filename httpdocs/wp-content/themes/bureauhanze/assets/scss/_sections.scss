@@ -77,8 +77,43 @@
     .container {
         .row {
             display: grid;
-            grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+            grid-template-columns: repeat( auto-fit, minmax(250px, 378px) );
             gap: $gap-lg;
+            .type-blog {
+                display: none;
+            }
+            .show {
+                display: inline-block;
+            }
+        }
+        .row__filters {
+            display: flex;
+            flex-direction: column;
+            h2 {
+                margin-bottom: 0;
+            }
+            #blog__filter-buttons {
+                display: flex;
+                flex-wrap: wrap;
+                gap: $gap-md;
+                margin-bottom: $margin-lg;
+                button {
+                    background: white;
+                    border: 1px solid $primary-color;
+                    color: $text-color;
+                    padding: $padding-sm $padding-md;
+                    border-radius: $border-radius-xxs;
+                    &:hover {
+                        background-color: $primary-color;
+                        color: white;
+                    }
+                }
+                .active {
+                    background-color: $secondary-color;
+                    border-color: $secondary-color;
+                    color: white;
+                }
+            }
         }
         .blog__card {
             border-radius: $border-radius-xxs;
@@ -114,7 +149,6 @@
                 border-radius: $border-radius-xxs;
                 .content__categories {
                     ul {
-                        margin: 0;
                         li {
                             a {
                                 text-decoration: none;

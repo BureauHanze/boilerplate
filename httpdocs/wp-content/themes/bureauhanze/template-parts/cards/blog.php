@@ -1,4 +1,4 @@
-<article class="blog__card">
+<article <?php post_class('blog__card'); ?>>
     <?php the_post_thumbnail( 'card-blog', array( 'class' => 'card__img lazy' ) ); ?>
     <div class="card__content">
         <h3><?php the_title(); ?></h3>
