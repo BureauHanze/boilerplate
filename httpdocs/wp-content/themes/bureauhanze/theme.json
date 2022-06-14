@@ -1,8 +1,16 @@
 {
-	"version": 1,
+	"version": 2,
 	"settings": {
-		"color": {
-			"duotone": null
-        }
-    }
+        "color": {
+			"duotone": null,
+			"palette": null,
+			"gradients": null
+        },
+		"typography": {
+			"fontSizes": null
+		}
+    },
+	"styles": null,
+	"variables": null,
+	"presets": null
 }
