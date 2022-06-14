@@ -85,6 +85,19 @@ $secondary-color-l-6: lighten($secondary-color, 12%);
 $secondary-color-l-8: lighten($secondary-color, 16%);
 $secondary-color-l-10: lighten($secondary-color, 20%);
 
+$secondary-color-2: #069946;
+$secondary-color-2-d-2: darken($secondary-color-2, 4%);
+$secondary-color-2-d-4: darken($secondary-color-2, 8%);
+$secondary-color-2-d-6: darken($secondary-color-2, 12%);
+$secondary-color-2-d-8: darken($secondary-color-2, 16%);
+$secondary-color-2-d-10: darken($secondary-color-2, 20%);
+
+$secondary-color-2-l-2: lighten($secondary-color-2, 4%);
+$secondary-color-2-l-4: lighten($secondary-color-2, 8%);
+$secondary-color-2-l-6: lighten($secondary-color-2, 12%);
+$secondary-color-2-l-8: lighten($secondary-color-2, 16%);
+$secondary-color-2-l-10: lighten($secondary-color-2, 20%);
+
 $heading-color: $primary-color-d-4;
 $text-color: #282828;
 

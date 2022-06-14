@@ -12,24 +12,29 @@
             flex-direction: column;
             gap: $gap-xs;
             .colors-primary,
-            .colors-secondary {
+            .colors-secondary,
+            .colors-secondary-2 {
                 display: flex;
+                align-items: center;
                 gap: $gap-xs;
-                h3 {
-                    width: 240px;
+                h4 {
+                    font-size: $font-lg;
+                    width: 200px;
                 }
                 .color-wrapper {
                     display: flex;
                     gap: $gap-xs;
                     .color {
+                        font-family: $font-family !important;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        height: 48px;
-                        width: 48px;
+                        height: 64px;
+                        width: 64px;
                         color: white;
                         font-weight: bold;
                         font-size: $font-sm;
+                        border-radius: $border-radius-xxs;
                         &:nth-child(1) {
                             background-color: $primary-color-l-10;
                         }
@@ -47,6 +52,7 @@
                         }
                         &:nth-child(6) {
                             background-color: $primary-color;
+                            width: 128px;
                         }
                         &:nth-child(7) {
                             background-color: $primary-color-d-2;
@@ -72,8 +78,6 @@
                 gap: $gap-xs;
                 .color-wrapper { 
                     .color {
-                        height: 48px;
-                        width: 48px;
                         &:nth-child(1) {
                             background-color: $secondary-color-l-10;
                         }
@@ -106,6 +110,47 @@
                         }
                         &:nth-child(11) {
                             background-color: $secondary-color-d-10;
+                        }
+                    }
+                }
+            }
+            .colors-secondary-2 {
+                display: flex;
+                gap: $gap-xs;
+                .color-wrapper { 
+                    .color {
+                        &:nth-child(1) {
+                            background-color: $secondary-color-2-l-10;
+                        }
+                        &:nth-child(2) {
+                            background-color: $secondary-color-2-l-8;
+                        }
+                        &:nth-child(3) {
+                            background-color: $secondary-color-2-l-6;
+                        }
+                        &:nth-child(4) {
+                            background-color: $secondary-color-2-l-4;
+                        }
+                        &:nth-child(5) {
+                            background-color: $secondary-color-2-l-2;
+                        }
+                        &:nth-child(6) {
+                            background-color: $secondary-color-2;
+                        }
+                        &:nth-child(7) {
+                            background-color: $secondary-color-2-d-2;
+                        }
+                        &:nth-child(8) {
+                            background-color: $secondary-color-2-d-4;
+                        }
+                        &:nth-child(9) {
+                            background-color: $secondary-color-2-d-6;
+                        }
+                        &:nth-child(10) {
+                            background-color: $secondary-color-2-d-8;
+                        }
+                        &:nth-child(11) {
+                            background-color: $secondary-color-2-d-10;
                         }
                     }
                 }

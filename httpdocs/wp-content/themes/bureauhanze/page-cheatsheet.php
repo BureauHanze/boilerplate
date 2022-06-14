@@ -18,37 +18,52 @@ get_header(); ?>
     <section class="colors">
         <div class="container">
             <div class="colors-primary">
-                <h3>primary-color</h3>
+                <h4>primary-color</h4>
                 <div class="color-wrapper">
-                    <div class="color">l-10</div>
-                    <div class="color">l-8</div>
-                    <div class="color">l-6</div>
-                    <div class="color">l-4</div>
-                    <div class="color">l-2</div>
-                    <div class="color">0</div>
-                    <div class="color">d-2</div>
-                    <div class="color">d-4</div>
-                    <div class="color">d-6</div>
-                    <div class="color">d-8</div>
-                    <div class="color">d-10</div>
+                    <div class="color">(+)-l-10</div>
+                    <div class="color">(+)-l-8</div>
+                    <div class="color">(+)-l-6</div>
+                    <div class="color">(+)-l-4</div>
+                    <div class="color">(+)-l-2</div>
+                    <div class="color">primary-color</div>
+                    <div class="color">(+)-d-2</div>
+                    <div class="color">(+)-d-4</div>
+                    <div class="color">(+)-d-6</div>
+                    <div class="color">(+)-d-8</div>
+                    <div class="color">(+)-d-10</div>
                 </div>
             </div>
             <div class="colors-secondary">
-                <h3>secondary-color</h3>
+                <h4>secondary-color</h4>
                 <div class="color-wrapper">
-                    <div class="color">l-10</div>
-                    <div class="color">l-8</div>
-                    <div class="color">l-6</div>
-                    <div class="color">l-4</div>
-                    <div class="color">l-2</div>
-                    <div class="color">0</div>
-                    <div class="color">d-2</div>
-                    <div class="color">d-4</div>
-                    <div class="color">d-6</div>
-                    <div class="color">d-8</div>
-                    <div class="color">d-10</div>
+                    <div class="color">(+)-l-10</div>
+                    <div class="color">(+)-l-8</div>
+                    <div class="color">(+)-l-6</div>
+                    <div class="color">(+)-l-4</div>
+                    <div class="color">(+)-l-2</div>
+                    <div class="color">secondary-color</div>
+                    <div class="color">(+)-d-2</div>
+                    <div class="color">(+)-d-4</div>
+                    <div class="color">(+)-d-6</div>
+                    <div class="color">(+)-d-8</div>
+                    <div class="color">(+)-d-10</div>
                 </div>
-
+            </div>
+            <div class="colors-secondary-2">
+                <h4>secondary-color-2</h4>
+                <div class="color-wrapper">
+                    <div class="color">(+)-l-10</div>
+                    <div class="color">(+)-l-8</div>
+                    <div class="color">(+)-l-6</div>
+                    <div class="color">(+)-l-4</div>
+                    <div class="color">(+)-l-2</div>
+                    <div class="color">secondary-color-2</div>
+                    <div class="color">(+)-d-2</div>
+                    <div class="color">(+)-d-4</div>
+                    <div class="color">(+)-d-6</div>
+                    <div class="color">(+)-d-8</div>
+                    <div class="color">(+)-d-10</div>
+                </div>
             </div>
         </div>
     </section>
