@@ -1,211 +1,350 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-mail template</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-</head>
-<body>
-    
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      
+      /*All the styling goes here*/
+      
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; 
+      }
 
-<div class="page-wrapper">
+      body {
+        font-family: sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; 
+      }
 
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <img class="header-logo" src="/wp-content/themes/bureauhanze/assets/img/favicon.jpg" alt="Favicon">
-            </div>
-        </div>
-    </header>
-    
-    <div class="sender-information">
-        <div class="container">
-            <div class="row">
-                <h1>Nieuwe contactaanvraag.</h1>
-                <div class="sender-items">
-                    <p class="sender-item">Naam:</p>
-                    <p class="sender-result">[first_name] [last_name]</p>
-                </div>
-                <div class="sender-items">
-                    <p class="sender-item">E-mail adres:</p>
-                    <p class="sender-result">[email]</p>
-                </div>
-                <div class="sender-items">
-                    <p class="sender-item">Telefoonnummer:</p>
-                    <p class="sender-result">[phone]</p>
-                </div>
-                <div class="sender-items">
-                    <p class="sender-item">Onderwerp:</p>
-                    <p class="sender-result">[subject]</p>
-                </div>
-                <div class="sender-items">
-                    <p class="sender-item sender-item-span">Bericht:</p>
-                    <p class="sender-result">[message]</p>
-                </div>
-            </div>
-        </div>
-    </div>
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td {
+          font-family: sans-serif;
+          font-size: 14px;
+          vertical-align: top; 
+      }
 
-    <div class="seperator"></div>
+      /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
 
-    <footer class="footer">
-    
-        <div class="container">
-            <div class="row">
-                <div class="footer-contact">
-                    <h2>Contact.</h2>
-                    <p>Broeklandstraaat 16</p>
-                    <p>8082 AE Elburg</p>
-                    <a href="https://bureauhanze.nl" title="">Bekijk hier onze website.</a>
-                    <div class="footer-buttons">
-                        <a class="main-navigation__phone contact-phone" href="tel:+31850640200" target="" title="Bel met ons">
-                        <svg width="15px" height="16px" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <title>phone-icon</title>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="Home" transform="translate(-1034.000000, -35.000000)" fill-rule="nonzero">
-                                    <g id="phone-icon" transform="translate(1034.000000, 35.000000)">
-                                        <path d="M14.1145199,10.3069889 C14.1499391,7.75680607 13.1582013,5.41913849 11.4934986,3.6835974 L12.1310443,3.0460517 C13.0519437,4.00237026 13.7603278,5.10036563 14.2561967,6.30461863 C14.7520656,7.57971004 15,8.92563986 15,10.2715697 L14.1145199,10.3069889 Z" class="phone1" fill="currentcolor"></path>
-                                        <path d="M11.1747258,10.2715697 C11.210145,8.5360286 10.5371801,6.94216434 9.40376548,5.77333054 L10.0413112,5.13578484 C11.387241,6.51713387 12.0956251,8.32351336 12.0602059,10.2715697 L11.1747258,10.2715697 Z" id="Path" class="phone2" ></path>
-                                        <path d="M11.8831099,13.8843287 L11.1038874,14.6635512 C10.7142761,15.0531625 10.182988,15.2302585 9.54544231,15.1948393 C8.97873501,15.1948393 8.34118931,15.0177433 7.63280519,14.7343896 C6.25145617,14.1676823 4.76384952,13.0696869 3.4179197,11.6883379 L5.29513761,9.81112001 C6.07436014,10.5903425 6.92442108,11.2987266 7.73906281,11.8654339 L8.8724774,10.7674386 C9.22666946,10.4486657 9.79337675,10.4486657 10.1121496,10.8028578 L11.8831099,12.6446565 C12.2373019,12.9988485 12.2373019,13.5655558 11.8831099,13.8843287 Z" class="phone3"  fill="currentcolor"></path>
-                                        <path d="M10.005892,5.13578484 C8.65996216,3.75443581 6.85358267,2.97521329 4.94094555,2.93979408 L4.94094555,3.82527423 C6.71190584,3.86069343 8.2703509,4.60449675 9.40376548,5.77333054 L10.005892,5.13578484 L10.005892,5.13578484 Z" class="phone4"  fill="currentcolor"></path>
-                                        <path d="M8.94331581,0.850060939 C7.70364361,0.283353646 6.35771379,0 4.97636476,0 L4.97636476,0.885480145 C7.52654758,0.920899351 9.86421516,2.01889473 11.4934986,3.71901661 L12.1310443,3.0814709 C11.210145,2.12515235 10.1475688,1.38134903 8.94331581,0.850060939 Z" class="phone4"  fill="currentcolor"></path>
-                                        <path d="M5.2242992,9.7757008 C4.44507667,8.96105907 3.73669256,8.07557892 3.20540447,7.19009878 L4.33881905,6.0921034 C4.69301111,5.73791134 4.69301111,5.20662325 4.37423826,4.85243119 L2.60327797,3.01063249 C2.21366671,2.62102123 1.68237862,2.65644043 1.36360577,2.97521329 L0.58438324,3.71901661 C-0.124000876,4.42740072 -0.194839287,5.63165372 0.407287211,7.19009878 C0.938575298,8.60686701 2.00115147,10.1653121 3.3825005,11.5820803 L3.45333891,11.6529187 L5.33055682,9.7757008 L5.2242992,9.7757008 Z" class="phone6"  fill="currentcolor"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                        085 06 40 200
-                        </a>
-                        <a class="main-navigation__mail contact-mail" href="mailto:webbeheer@bureauhanze.nl" target="" title="webbeheer@bureauhanze.nl"><svg width="19px" height="15px" viewBox="0 0 19 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <title>Group 4</title>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="Home" transform="translate(-1204.000000, -35.000000)">
-                                    <g id="Group-4" transform="translate(1213.407283, 42.809046) rotate(-9.000000) translate(-1213.407283, -42.809046) translate(1205.000000, 37.000000)">
-                                        <polygon class="envelope-top" fill="currentcolor" points="8.40730434 7.31182735 4.36740814e-05 1.50361127 4.36740814e-05 11.6180918 16.814565 11.6180918 16.814565 1.50361127"></polygon>
-                                        <polygon class="envelope-bottom" fill="currentcolor" points="-6.66548334e-14 -2.87804946e-14 8.40726066 5.80865282 16.8145213 -2.87804946e-14"></polygon>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>webbeheer@bureauhanze.nl
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      .body {
+        width: 100%; 
+      }
 
-    </footer>
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .container {
+        display: block;
+        margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 580px;
+        padding: 10px;
+        width: 580px; 
+      }
 
-</div>
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        max-width: 580px;
+        padding: 10px; 
+      }
 
-</body>
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #ffffff;
+        border-radius: 3px;
+        width: 100%; 
+      }
+
+      .wrapper {
+        box-sizing: border-box;
+        padding: 20px; 
+      }
+
+      .content-block {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+
+      .footer {
+        clear: both;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%; 
+      }
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+          color: #999999;
+          font-size: 12px;
+          text-align: center; 
+      }
+
+      .sender-item {
+          margin: 0;
+          font-weight: 600;
+      }
+
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000000;
+        font-family: sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        margin-bottom: 30px; 
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      p,
+      ul,
+      ol {
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 15px; 
+      }
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px; 
+      }
+
+      a {
+        color: #3498db;
+        text-decoration: underline; 
+      }
+
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0; 
+      }
+
+      .first {
+        margin-top: 0; 
+      }
+
+      .align-center {
+        text-align: center; 
+      }
+
+      .align-right {
+        text-align: right; 
+      }
+
+      .align-left {
+        text-align: left; 
+      }
+
+      .clear {
+        clear: both; 
+      }
+
+      .mt0 {
+        margin-top: 0; 
+      }
+
+      .mb0 {
+        margin-bottom: 0; 
+      }
+
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0; 
+      }
+
+      .powered-by a {
+        text-decoration: none; 
+      }
+
+      hr {
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        margin: 20px 0; 
+      }
+
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table.body h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; 
+        }
+        table.body p,
+        table.body ul,
+        table.body ol,
+        table.body td,
+        table.body span,
+        table.body a {
+          font-size: 16px !important; 
+        }
+        table.body .wrapper,
+        table.body .article {
+          padding: 10px !important; 
+        }
+        table.body .content {
+          padding: 0 !important; 
+        }
+        table.body .container {
+          padding: 0 !important;
+          width: 100% !important; 
+        }
+        table.body .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; 
+        }
+        table.body .btn table {
+          width: 100% !important; 
+        }
+        table.body .btn a {
+          width: 100% !important; 
+        }
+        table.body .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; 
+        }
+      }
+
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; 
+        }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; 
+        }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; 
+        }
+        #MessageViewBody a {
+          color: inherit;
+          text-decoration: none;
+          font-size: inherit;
+          font-family: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+        }
+        .btn-primary table td:hover {
+          background-color: #34495e !important; 
+        }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; 
+        } 
+      }
+
+    </style>
+  </head>
+  <body>
+    <span class="preheader">Nieuwe contactaanvraag</span>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td class="container">
+          <div class="content">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table role="presentation" class="main">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td style="padding: 0 0 16px 0;">
+                            <img style="height: 48px; width: 48px;" src="/wp-content/uploads/2021/12/favicon-48x48.jpg">
+                        </td>
+                      </tr>
+                    <tr>
+                      <td>
+                        <h1>Nieuwe contactaanvraag.</h1>
+                        <div class="sender-items">
+                            <p class="sender-item">Naam:</p>
+                            <p class="sender-result">[first_name] [last_name]</p>
+                        </div>
+                        <div class="sender-items">
+                            <p class="sender-item">E-mail adres:</p>
+                            <p class="sender-result">[email_real]</p>
+                        </div>
+                        <div class="sender-items">
+                            <p class="sender-item">Telefoonnummer:</p>
+                            <p class="sender-result">[phone]</p>
+                        </div>
+                        <div class="sender-items">
+                            <p class="sender-item">Onderwerp:</p>
+                            <p class="sender-result">[subject]</p>
+                        </div>
+                        <div class="sender-items">
+                            <p class="sender-item sender-item-span">Bericht:</p>
+                            <p class="sender-result">[message]</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- END MAIN CONTENT AREA -->
+            </table>
+            <!-- END CENTERED WHITE CONTAINER -->
+
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
-
-<style>
-
-* {
-    box-sizing: border-box;
-}
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-.page-wrapper {
-    margin: 32px;
-    max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.container {
-    width: 100%;
-    padding: 16px 64px;
-    background: white;
-}
-h1,h2 {
-    margin-top: 0;
-    font-weight: bold;
-    color: black;
-}
-h1 {
-    margin-bottom: 32px;
-    font-size: 24px;
-}
-h2 {
-    font-size: 18px;
-}
-p,a {
-    font-size: 16px;
-}
-p {
-    color: black;
-    margin: 0;
-    line-height: 1.3;
-}
-a {
-    color: black;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-.row {
-    position: relative;
-    width: 100%;
-}
-img {
-    height: 100%;
-    width: 100%;
-}
-.seperator {
-    height: 1px;
-    width: 100%;
-    background-color: lightgray;
-    padding: 0;
-}
-.header {
-    background-color: #15191C;
-}
-.header-logo {
-    position: absolute;
-    top: 16px;
-    right: -32px;
-    height: auto;
-    object-fit: contain;
-    width: 48px;
-}
-.sender-items {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    margin-bottom: 16px;
-}
-.sender-item-span {
-    grid-column: 1 / span 2;
-}
-.sender-result {
-    font-weight: bold;
-}
-.footer-contact a {
-    margin-top: 16px;
-    display: block;
-}
-.footer-buttons {
-    display: flex;
-    gap: 32px;
-    margin-top: 16px;
-}
-.footer-buttons a svg{
-    margin-right: 8px;
-}
-@media(max-width: 768px){
-    .container {
-    padding: 32px;
-    }
-}
-@media(max-width: 576px){
-    .container {
-    padding: 16px;
-    }
-}
-</style>

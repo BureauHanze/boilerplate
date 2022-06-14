@@ -5,6 +5,11 @@
             color: $primary-color;
         }
     }
+    .heading__sub {
+        color: lighten($text-color, 32%);;
+        font-size: $font-md;
+        margin-top: -8px;
+    }
 
     .colors {
         .container {
@@ -216,6 +221,15 @@
                 align-items: center;
                 gap: $gap-xl;
             }
+        }
+    }
+}
+
+.cheatsheet__favicon {
+    .container {
+        img {
+            height: 48px;
+            width: 48px;
         }
     }
 }

@@ -15,6 +15,18 @@ get_header(); ?>
         </div>
     </section>
 
+    <section class="cheatsheet__favicon">
+        <div class="container">
+            <div class="row">
+                <h2>Favicon</h2>
+                <h3 class="heading__sub">Auto generated for mail</h3>
+            </div>
+            <?php
+            $faviconcompany = get_field('contactFavicon', 'option'); ?>
+            <img src="<?php echo ($faviconcompany['sizes']['favicon-mail']); ?>">
+        </div>
+    </section>
+
     <section class="colors">
         <div class="container">
             <div class="colors-primary">
