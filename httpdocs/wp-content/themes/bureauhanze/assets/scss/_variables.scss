@@ -60,30 +60,30 @@ $font-family: 'Open Sans';
 
 // Colors
 $primary-color: #12004D;
-$primary-color-d-2: darken($primary-color, 2%);
-$primary-color-d-4: darken($primary-color, 4%);
-$primary-color-d-6: darken($primary-color, 6%);
-$primary-color-d-8: darken($primary-color, 8%);
-$primary-color-d-10: darken($primary-color, 10%);
+$primary-color-d-2: darken($primary-color, 4%);
+$primary-color-d-4: darken($primary-color, 8%);
+$primary-color-d-6: darken($primary-color, 12%);
+$primary-color-d-8: darken($primary-color, 16%);
+$primary-color-d-10: darken($primary-color, 20%);
 
-$primary-color-l-2: lighten($primary-color, 2%);
-$primary-color-l-4: lighten($primary-color, 4%);
-$primary-color-l-6: lighten($primary-color, 6%);
-$primary-color-l-8: lighten($primary-color, 8%);
-$primary-color-l-10: lighten($primary-color, 10%);
+$primary-color-l-2: lighten($primary-color, 4%);
+$primary-color-l-4: lighten($primary-color, 8%);
+$primary-color-l-6: lighten($primary-color, 12%);
+$primary-color-l-8: lighten($primary-color, 16%);
+$primary-color-l-10: lighten($primary-color, 20%);
 
 $secondary-color: #FF870D;
-$secondary-color-d-2: darken($primary-color, 2%);
-$secondary-color-d-4: darken($primary-color, 4%);
-$secondary-color-d-6: darken($primary-color, 6%);
-$secondary-color-d-8: darken($primary-color, 8%);
-$secondary-color-d-10: darken($primary-color, 10%);
+$secondary-color-d-2: darken($secondary-color, 4%);
+$secondary-color-d-4: darken($secondary-color, 8%);
+$secondary-color-d-6: darken($secondary-color, 12%);
+$secondary-color-d-8: darken($secondary-color, 16%);
+$secondary-color-d-10: darken($secondary-color, 20%);
 
-$secondary-color-l-2: lighten($primary-color, 2%);
-$secondary-color-l-4: lighten($primary-color, 4%);
-$secondary-color-l-6: lighten($primary-color, 6%);
-$secondary-color-l-8: lighten($primary-color, 8%);
-$secondary-color-l-10: lighten($primary-color, 10%);
+$secondary-color-l-2: lighten($secondary-color, 4%);
+$secondary-color-l-4: lighten($secondary-color, 8%);
+$secondary-color-l-6: lighten($secondary-color, 12%);
+$secondary-color-l-8: lighten($secondary-color, 16%);
+$secondary-color-l-10: lighten($secondary-color, 20%);
 
 $heading-color: $primary-color-d-4;
 $text-color: #282828;

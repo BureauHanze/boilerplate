@@ -15,6 +15,44 @@ get_header(); ?>
         </div>
     </section>
 
+    <section class="colors">
+        <div class="container">
+            <div class="colors-primary">
+                <h3>primary-color</h3>
+                <div class="color-wrapper">
+                    <div class="color">l-10</div>
+                    <div class="color">l-8</div>
+                    <div class="color">l-6</div>
+                    <div class="color">l-4</div>
+                    <div class="color">l-2</div>
+                    <div class="color">0</div>
+                    <div class="color">d-2</div>
+                    <div class="color">d-4</div>
+                    <div class="color">d-6</div>
+                    <div class="color">d-8</div>
+                    <div class="color">d-10</div>
+                </div>
+            </div>
+            <div class="colors-secondary">
+                <h3>secondary-color</h3>
+                <div class="color-wrapper">
+                    <div class="color">l-10</div>
+                    <div class="color">l-8</div>
+                    <div class="color">l-6</div>
+                    <div class="color">l-4</div>
+                    <div class="color">l-2</div>
+                    <div class="color">0</div>
+                    <div class="color">d-2</div>
+                    <div class="color">d-4</div>
+                    <div class="color">d-6</div>
+                    <div class="color">d-8</div>
+                    <div class="color">d-10</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section class="cheatsheet__paragraph">
         <div class="container">
             <div class="row">
