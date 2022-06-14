@@ -200,3 +200,13 @@
 
     }
 }
+
+.privacy-statement {
+    h2 {
+        font-size: $font-xl;
+    }
+    .main__contact {
+        display: inline-flex;
+        text-decoration: underline;
+    }
+}

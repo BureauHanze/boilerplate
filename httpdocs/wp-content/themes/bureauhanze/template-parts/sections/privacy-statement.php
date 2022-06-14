@@ -6,7 +6,7 @@
         <br/>
 
         <h2>Welke gegevens verwerkt de onderneming?</h2>
-        <p>De onderneming kan persoonsgegevens over u verwerken, doordat u gebruik maakt van de diensten van de diensten van de onderneming, en/of omdat u deze zelf bij het invullen van een contactformulier op de website van <?php if (get_field('contactCompany', 'option')) : the_field('contactCompany', 'option'); endif; ?> verstrekt. De onderneming kan de volgende (persoons)gegevens verwerken:
+        <p>De onderneming kan persoonsgegevens over u verwerken, doordat u gebruik maakt van de diensten van de onderneming, en/of omdat u deze zelf bij het invullen van een contactformulier op de website van <?php if (get_field('contactCompany', 'option')) : the_field('contactCompany', 'option'); endif; ?> verstrekt. De onderneming kan de volgende (persoons)gegevens verwerken:
             <ul>
                 <li>Uw voor- en achternaam;</li>
                 <li>Uw adresgegevens;</li>
@@ -57,12 +57,12 @@
         <br/>
         
         <h2>Gegevens inzien, aanpassen of verwijderen?</h2>
-        <p>U heeft het recht om uw persoonsgegevens in te zien, te corrigeren of te verwijderen. U kunt een verzoek tot inzage, correctie of verwijdering sturen naar <?php if (get_field('contactMail', 'option')) : the_field('contactMail', 'option'); endif; ?> of naar <?php if (get_field('contactAddress', 'option')) : the_field('contactAddress', 'option'); endif; ?> <?php if (get_field('contactPostal', 'option')) : the_field('contactPostal', 'option'); endif; ?> <?php if (get_field('contactPlace', 'option')) : the_field('contactPlace', 'option'); endif; ?>. De onderneming zal ervoor zorgen dat uw verzoek adequaat wordt behandeld en zal zo snel mogelijk, maar binnen vier weken, op uw verzoek reageren. In het geval uw verzoek zodanig complex is dat de onderneming meer tijd dan de genoemde vier weken nodig heeft, zal zij u daarvan zo spoedig mogelijk van op de hoogte stellen.</p>
+        <p>U heeft het recht om uw persoonsgegevens in te zien, te corrigeren of te verwijderen. U kunt een verzoek tot inzage, correctie of verwijdering sturen naar <a class="main__contact" href="<?php echo $contactmail['url']; ?>" target="<?php echo $contactmail['target']; ?>" title="<?php echo get_field('contactMail', 'option')['title']; ?>"><?php echo get_field('contactMail', 'option')['title']; ?></a> of naar <?php if (get_field('contactAddress', 'option')) : the_field('contactAddress', 'option'); endif; ?> <?php if (get_field('contactPostal', 'option')) : the_field('contactPostal', 'option'); endif; ?> <?php if (get_field('contactPlace', 'option')) : the_field('contactPlace', 'option'); endif; ?>. De onderneming zal ervoor zorgen dat uw verzoek adequaat wordt behandeld en zal zo snel mogelijk, maar binnen vier weken, op uw verzoek reageren. In het geval uw verzoek zodanig complex is dat de onderneming meer tijd dan de genoemde vier weken nodig heeft, zal zij u daarvan zo spoedig mogelijk van op de hoogte stellen.</p>
         <br/>
 
         <h2>Zijn de gegevens beveiligd?</h2>
         <p>De onderneming neemt de bescherming van uw gegevens serieus en neemt passende maatregelen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging tegen te gaan. De website van de onderneming maakt indien sprake is van een inlogomgeving, webshop en/of betalingsomgeving gebruik van een betrouwbaar SSL Certificaat om te borgen dat uw persoonsgegevens niet in verkeerde handen vallen en eventuele transacties op een veilige manier plaatsvinden.</p>
-        <p>Als u de indruk heeft dat uw gegevens niet goed beveiligd zijn of er aanwijzingen zijn van misbruik, of indien u meer informatie wenst over de beveiliging van door de onderneming verzamelde persoonsgegevens, neem dan contact met het hierboven genoemde e-mail- of postadres of via de contactpagina op <?php if (get_field('contactURL', 'option')) : the_field('contactURL', 'option'); endif; ?>.</p>
+        <p>Als u de indruk heeft dat uw gegevens niet goed beveiligd zijn of er aanwijzingen zijn van misbruik, of indien u meer informatie wenst over de beveiliging van door de onderneming verzamelde persoonsgegevens, neem dan contact met het hierboven genoemde e-mail- of postadres of via de contactpagina op <a href="<?php if (get_field('contactURL', 'option')) : the_field('contactURL', 'option'); endif; ?>/contact/"><?php if (get_field('contactURL', 'option')) : the_field('contactURL', 'option'); endif; ?>/contact</a>.</p>
         <p>De onderneming is altijd gerechtigd om minder persoonsgegevens te verzamelen en minder cookies te gebruiken dan hierboven is genoemd.</p>
     </div>
 </section>
