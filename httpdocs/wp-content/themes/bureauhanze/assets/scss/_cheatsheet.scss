@@ -172,8 +172,13 @@
             margin-bottom: 0;
         }
         .container {
-
             padding-top: $padding-lg;
+            .flex-content {
+                .container {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
         }
 
     }
