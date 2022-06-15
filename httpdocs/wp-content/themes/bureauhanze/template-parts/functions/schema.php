@@ -63,47 +63,47 @@ function addschema()
     );
     echo '<script type="application/ld+json">' . json_encode($schema_organisation) . '</script>';
  
-    // Schema.org for Custom Post Type "projecten"
-    // if (is_singular( array('projecten')) ){
-    //     $author_id = $post->post_author;
-    //     $author = get_the_author_meta('display_name', $author_id);
-    //     $imgurl = get_the_post_thumbnail_url();
-    //     $datepublished = get_the_date('c'); // Date published in ISO 8601 format
-    //     $datemodified = get_the_modified_time('c'); // Date modified in ISO 8601 format
-    //     $schema_blogposting = array(
-    //         '@context'  => "http://schema.org",
-    //         '@type'     => "BlogPosting",
-    //         'mainEntityOfPage' => array(
-    //             '@type' => "WebPage",
-    //             '@id'   => $permalink
-    //         ),
-    //         'headline' => $headline,
-    //         'image'     => array(
-    //             '@type'     => "ImageObject",
-    //             'url'       => $imgurl,
-    //             'height'    => "440",
-    //             'width'     => "880"
-    //         ),
-    //         'datePublished' => $datepublished,
-    //         'dateModified' => $datemodified,
-    //         'author'    => array(
-    //             '@type'     => "Person",
-    //             'name'      => $author
-    //         ),
-    //         'publisher' => array(
-    //             '@type' => "Organization",
-    //             'name'  => $company,
-    //             'logo'  => array(
-    //                 '@type'  => "ImageObject",
-    //                 'url'    => $faviconcompany['sizes']['favicon-chrome'],
-    //                 'width'  => "192",
-    //                 'height' => "192"
-    //             )
-    //         ),
-    //         'description' => $description
-    //     );
-    //     echo '<script type="application/ld+json">' . json_encode($schema_blogposting) . '</script>';
-    // }   
+    // Schema.org for Custom Post Type "Blog"
+    if (is_singular( array('blog')) ){
+        $author_id = $post->post_author;
+        $author = get_the_author_meta('display_name', $author_id);
+        $imgurl = get_the_post_thumbnail_url();
+        $datepublished = get_the_date('c'); // Date published in ISO 8601 format
+        $datemodified = get_the_modified_time('c'); // Date modified in ISO 8601 format
+        $schema_blogposting = array(
+            '@context'  => "http://schema.org",
+            '@type'     => "BlogPosting",
+            'mainEntityOfPage' => array(
+                '@type' => "WebPage",
+                '@id'   => $permalink
+            ),
+            'headline' => $headline,
+            'image'     => array(
+                '@type'     => "ImageObject",
+                'url'       => $imgurl,
+                'height'    => "440",
+                'width'     => "880"
+            ),
+            'datePublished' => $datepublished,
+            'dateModified' => $datemodified,
+            'author'    => array(
+                '@type'     => "Person",
+                'name'      => $author
+            ),
+            'publisher' => array(
+                '@type' => "Organization",
+                'name'  => $company,
+                'logo'  => array(
+                    '@type'  => "ImageObject",
+                    'url'    => $faviconcompany['sizes']['favicon-chrome'],
+                    'width'  => "192",
+                    'height' => "192"
+                )
+            ),
+            'description' => $description
+        );
+        echo '<script type="application/ld+json">' . json_encode($schema_blogposting) . '</script>';
+    }   
 }
 
 add_action('wp_head', 'addschema'); //Add Schema to header
