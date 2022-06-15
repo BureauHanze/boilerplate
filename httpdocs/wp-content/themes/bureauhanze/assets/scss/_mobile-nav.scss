@@ -19,7 +19,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: $padding-sm $padding-lg;
+            padding: 0 $padding-lg;
             margin-bottom: $margin-lg;
             background-color: $primary-color-l-2;
         }
@@ -62,29 +62,6 @@
     @media(max-width: $mobile){
         max-width: 90%;
     }
-}
-#nav--open,
-#nav--close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 48px;
-    width: 48px;
-    padding: 0;
-    font-size: $font-xxxl;
-    cursor: pointer;
-    transition: all $main-transition;
-    display: none;
-    @media(max-width: $tablet){
-        display: flex;
-    }
-}
-#nav--open {
-    position: relative;
-    line-height: 1;
-    // color: white;
-    margin: 0;
-    font-size: $font-xxxxl;
 }
 #nav--close {
     font-size: $font-xxl;

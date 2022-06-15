@@ -1,7 +1,7 @@
 <div class="nav">
     <nav class="nav__content">
         <div class="nav__header">
-            <button id="nav--close" class="close">&#10005;</button>
+            <button id="nav--close">&#10005;</button>
         </div>
         <div class="container">
             <nav class="nav__links">

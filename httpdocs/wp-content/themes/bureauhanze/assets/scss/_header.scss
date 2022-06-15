@@ -7,7 +7,7 @@
         margin-right: auto;
         width: 100%;
         transition: height $main-transition;
-        z-index: 99;
+        z-index: 96;
         background: white;
         .container {
             display: flex;
@@ -30,8 +30,13 @@
             }
             #nav--open {
                 display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 48px;
+                width: 48px;
                 gap: 4px;
                 flex-direction: column;
+                cursor: pointer;
                 span {
                     width: 24px;
                     height: 3px;
@@ -53,6 +58,9 @@
                             width: 12px;
                         }
                     }
+                }
+                @media(min-width: $tablet){
+                    display: none;
                 }
             }
             .menu-main-container {
