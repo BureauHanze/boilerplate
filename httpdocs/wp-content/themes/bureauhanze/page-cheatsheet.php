@@ -1,5 +1,4 @@
 <?php 
-
 get_header(); ?>
 
 <main id="main" class="site-main cheatsheet" role="main">
@@ -29,6 +28,9 @@ get_header(); ?>
 
     <section class="colors">
         <div class="container">
+            <div class="row">
+                <h2>Colors</h2>
+            </div>
             <div class="colors-primary">
                 <h4>primary-color</h4>
                 <div class="color-wrapper">
@@ -86,16 +88,6 @@ get_header(); ?>
                 <h2>Paragraph</h2>
             </div>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, mollitia. Culpa nam est iste fugiat magni quia dolorum laudantium nobis ab molestiae nulla facilis accusamus voluptatem exercitationem nisi itaque blanditiis, quaerat dolorem harum eaque iusto doloremque sapiente beatae? Aliquid voluptates voluptatibus sint expedita illo, quo suscipit consequatur voluptate tempora perferendis Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quod maxime debitis quis odit, alias dolores consequatur, cum impedit iusto modi atque totam quam non. Possimus, animi doloribus rem quasi ex laboriosam labore magnam corporis obcaecati explicabo aut reiciendis fugiat, vitae rerum, minima quisquam quia autem quam odit impedit! Maiores Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nisi a aliquid aut ut error ducimus. Totam rem impedit obcaecati alias dignissimos at, ullam necessitatibus facere assumenda temporibus ipsa animi minus deleniti provident fuga illo placeat consequatur accusantium eum repudiandae earum esse! Iusto incidunt similique nulla natus minima eveniet deserunt?</p>
-        </div>
-    </section>
-
-    <section class="cheatsheet__flex-content">
-        <div class="container">
-            <div class="row">
-                <h2 class="flex-content__heading">Flex content [ACF blok]</h2>
-            </div>
-            <?php
-            get_template_part( 'template-parts/sections/flex-content' ); ?>
         </div>
     </section>
 
