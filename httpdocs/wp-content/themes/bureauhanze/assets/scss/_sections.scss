@@ -123,6 +123,7 @@
             box-shadow: $box-shadow-md;
             overflow: hidden;
             transition: all $main-transition;
+            text-decoration: none;
             &:hover {
                 transform: translateY(-3px);
                 box-shadow: $box-shadow-lg;
