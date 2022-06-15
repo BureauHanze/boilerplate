@@ -41,7 +41,6 @@ endif; ?>">
 				);
 				?>
 				<div id="nav--open">
-					<!-- ☰ -->
 					<span></span>
 					<span></span>
 					<span></span>
