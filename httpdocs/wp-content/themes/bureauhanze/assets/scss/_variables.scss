@@ -1,12 +1,21 @@
+// Globals
+$container-width: 1200px;
+$font-family: 'Open Sans';
+$line-height: 1.6;
+$main-transition: 0.2s ease;
+
+
+// Site global variables
+$box-shadow: rgba(0, 0, 0, 0.1) 0 8px 48px;
+$box-shadow-md: rgba(0, 0, 0, 0.1) 0 8px 32px;
+$box-shadow-lg: rgba(0, 0, 0, 0.16) 0 8px 32px;
+
 // Breakpoints
 $mobile: 576px;         // Mobile
 $tablet: 768px;         // Tablet
 $desktop: 992px;        // Desktop
 $desktop-xl: 1200px;    // Desktop large
 $full-width: 1920px;    // Full width
-
-// Max page width
-$container-width: 1200px;
 
 // Margins
 $margin-xs: 4px;
@@ -29,25 +38,21 @@ $gap-md: 16px;
 $gap-lg: 32px;
 $gap-xl: 64px;
 
-
-// Line height
-$line-height: 1.6;
-
+// Border radius
 $border-radius-xxs: 4px;
 $border-radius-xxs: 8px;
 $border-radius-xs: 12px;
-$border-radius-root: 16px;
+$border-radius: 16px;
 $border-radius-lg: 20px;
 $border-radius-xl: 24px;
 $border-radius-xxl: 28px;
 $border-radius-xxxl: 32px;
 
-
-// Font sizes
+// Font sizes based on 16px :root font size
 $font-xs: 0.625rem;     // 10px
 $font-sm: 0.75rem;      // 12px
 $font-md: 0.875rem;     // 14px
-$font-root: 1rem;       // 16px
+$font: 1rem;            // 16px
 $font-lg: 1.125rem;     // 18px
 $font-xl: 1.25rem;      // 20px
 $font-xxl: 1.5rem;      // 24px
@@ -55,8 +60,6 @@ $font-xxxl: 1.75rem;    // 28px
 $font-xxxxl: 2rem;      // 32px
 $font-xxxxxl: 3rem;     // 48px
 
-// Font family
-$font-family: 'Open Sans';
 
 // Colors
 $primary-color: #12004D;
@@ -99,24 +102,7 @@ $secondary-color-2-l-8: lighten($secondary-color-2, 16%);
 $secondary-color-2-l-10: lighten($secondary-color-2, 20%);
 
 $heading-color: $primary-color-d-4;
-$text-color: #282828;
+$text-color: $primary-color-d-4;
 
 $red: #E73743;
 $yellow: #FECC04;
-
-
-
-
-
-// HSL (hue, saturation, and lightness)
-// $primary: hsl(204, 100%, 28%);
-
-
-
-// Transitions
-$main-transition: 0.2s ease;
-
-// Site global variables
-$box-shadow: rgba(0, 0, 0, 0.1) 0 8px 48px;
-$box-shadow-md: rgba(0, 0, 0, 0.1) 0 8px 32px;
-$box-shadow-lg: rgba(0, 0, 0, 0.16) 0 8px 32px;
