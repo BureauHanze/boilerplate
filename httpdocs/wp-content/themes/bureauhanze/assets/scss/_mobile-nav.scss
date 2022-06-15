@@ -33,6 +33,7 @@
                         content: none;
                     }
                     a {
+                        position: relative;
                         text-decoration: none;
                         color: white;
                         &:hover {
@@ -44,12 +45,54 @@
                         text-decoration: underline;
                     }
                 }
+
                 .sub-menu {
                     padding-left: $padding-md;
+                    display: none;
                     li {
                         margin-bottom: 0;
                     }
                 }
+                .--active {
+                    .sub-menu {
+                        display: block !important;
+                    }
+
+                }
+            }
+            .menu-item-has-children {
+                a {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 7px;
+                        right: -20px;
+                        margin: auto;
+                        height: 12px;
+                        width: 12px;
+                        background-image: url('/wp-content/themes/bureauhanze/assets/svg/chevron-mobile-menu.svg');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        transition: all $main-transition;
+                        transform: rotate(90deg);
+                    }
+                }
+                .sub-menu {
+                    a {
+                        &::after {
+                            background-image: none;
+                        }
+                    }
+
+                }
+            }
+            .--active {
+                a {
+                    &::after {
+                        transform: rotate(-90deg) !important;
+                    }
+                }
+
             }
         }
     }
