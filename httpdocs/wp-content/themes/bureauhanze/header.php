@@ -40,7 +40,12 @@ endif; ?>">
 					) 
 				);
 				?>
-				<div id="nav--open" class="header__nav">☰</div>
+				<div id="nav--open">
+					<!-- ☰ -->
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 			</div>
 		</div>
 
