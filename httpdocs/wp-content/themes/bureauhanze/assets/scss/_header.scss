@@ -263,6 +263,9 @@
                             text-decoration: none;
                             font-weight: bold;
                             padding-bottom: $padding-lg;
+                            &::after {
+                                background-image: url('/wp-content/themes/bureauhanze/assets/svg/chevron-mobile-menu.svg');
+                            }
                             &:hover {
                                 text-decoration: underline;
                                 text-underline-position: under;
