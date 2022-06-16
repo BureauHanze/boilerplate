@@ -228,8 +228,12 @@
     }
 }
 
-.cheatsheet__favicon {
+.cheatsheet__logo-favicon {
     .container {
+        .row {
+            display: flex;
+            gap: $gap-lg;
+        }
         img {
             height: 48px;
             width: 48px;

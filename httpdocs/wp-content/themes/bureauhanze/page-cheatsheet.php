@@ -3,6 +3,29 @@ get_header(); ?>
 
 <main id="main" class="site-main cheatsheet" role="main">
 
+    <section class="cheatsheet__logo-favicon">
+        <div class="container">
+            <div class="row">
+                <h2>Logo & Favicon</h2>
+            </div>
+            <div class="row">
+                <a class="header__logo" href="/" title="Home">
+                    <?php
+                    $contactlogo = get_field('contactLogo', 'option');
+                    if ($contactlogo) : ?>
+                        <?php the_field('contactLogo', 'option'); ?></p>
+                    <?php
+                    endif; ?>
+                </a>
+                <a class="header__logo" href="/" title="Home">
+                    <?php
+                    $faviconcompany = get_field('contactFavicon', 'option'); ?>
+                    <img src="<?php echo ($faviconcompany['sizes']['favicon-mail']); ?>" alt="Logo">
+                </a>
+            </div>
+        </div>
+    </section>
+
     <section class="cheatsheet__headings">
         <div class="container">
             <h1>Heading H1</h1>
@@ -14,15 +37,34 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="cheatsheet__favicon">
+    <section class="cheatsheet__paragraph">
         <div class="container">
             <div class="row">
-                <h2>Favicon</h2>
-                <h3 class="heading__sub">Auto generated for mail</h3>
+                <h2>Paragraph</h2>
             </div>
-            <?php
-            $faviconcompany = get_field('contactFavicon', 'option'); ?>
-            <img src="<?php echo ($faviconcompany['sizes']['favicon-mail']); ?>" alt="Logo">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, mollitia. Culpa nam est iste fugiat magni quia dolorum laudantium nobis ab molestiae nulla facilis accusamus voluptatem exercitationem nisi itaque blanditiis, quaerat dolorem harum eaque iusto doloremque sapiente beatae? Aliquid voluptates voluptatibus sint expedita illo, quo suscipit consequatur voluptate tempora perferendis Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quod maxime debitis quis odit, alias dolores consequatur, cum impedit iusto modi atque totam quam non. Possimus, animi doloribus rem quasi ex laboriosam labore magnam corporis obcaecati explicabo aut reiciendis fugiat, vitae rerum, minima quisquam quia autem quam odit impedit! Maiores Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nisi a aliquid aut ut error ducimus. Totam rem impedit obcaecati alias dignissimos at, ullam necessitatibus facere assumenda temporibus ipsa animi minus deleniti provident fuga illo placeat consequatur accusantium eum repudiandae earum esse! Iusto incidunt similique nulla natus minima eveniet deserunt?</p>
+        </div>
+    </section>
+
+    <section class="cheatsheet__ul-li">
+        <div class="container">
+            <div class="row">
+                <h2>List items</h2>
+            </div>
+            <div class="row">
+                <ul>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ul>
+                <ol>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -79,15 +121,6 @@ get_header(); ?>
                     <div class="color">(+)-d-10</div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="cheatsheet__paragraph">
-        <div class="container">
-            <div class="row">
-                <h2>Paragraph</h2>
-            </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, mollitia. Culpa nam est iste fugiat magni quia dolorum laudantium nobis ab molestiae nulla facilis accusamus voluptatem exercitationem nisi itaque blanditiis, quaerat dolorem harum eaque iusto doloremque sapiente beatae? Aliquid voluptates voluptatibus sint expedita illo, quo suscipit consequatur voluptate tempora perferendis Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quod maxime debitis quis odit, alias dolores consequatur, cum impedit iusto modi atque totam quam non. Possimus, animi doloribus rem quasi ex laboriosam labore magnam corporis obcaecati explicabo aut reiciendis fugiat, vitae rerum, minima quisquam quia autem quam odit impedit! Maiores Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nisi a aliquid aut ut error ducimus. Totam rem impedit obcaecati alias dignissimos at, ullam necessitatibus facere assumenda temporibus ipsa animi minus deleniti provident fuga illo placeat consequatur accusantium eum repudiandae earum esse! Iusto incidunt similique nulla natus minima eveniet deserunt?</p>
         </div>
     </section>
 
@@ -173,29 +206,6 @@ get_header(); ?>
             <a class="main__contact" href="<?php echo $contactwhatsapp['url']; ?>" target="<?php echo $contactwhatsapp['target']; ?>" title="<?php echo $contactwhatsapp['title']; ?>"><?php get_template_part( 'assets/svg/whatsapp'); echo $contactwhatsapp['title']; ?></a>
             <?php
             endif; ?>
-
-        </div>
-    </section>
-
-    <section class="cheatsheet__ul-li">
-        <div class="container">
-            <div class="row">
-                <h2>List items</h2>
-            </div>
-            <div class="row">
-                <ul>
-                    <li>List item</li>
-                    <li>List item</li>
-                    <li>List item</li>
-                    <li>List item</li>
-                </ul>
-                <ol>
-                    <li>List item</li>
-                    <li>List item</li>
-                    <li>List item</li>
-                    <li>List item</li>
-                </ul>
-            </div>
 
         </div>
     </section>
