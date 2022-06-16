@@ -249,28 +249,28 @@ get_header(); ?>
                     <div class="swiper swiper-gallery">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <a data-fslightbox href="/wp-content/themes/bureauhanze/assets/img/cheatsheet/colin.webp">
-                                    <img src="/wp-content/themes/bureauhanze/assets/img/cheatsheet/colin.webp">
+                                <a data-fslightbox href="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262__340.jpg">
+                                    <img src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262__340.jpg">
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a data-fslightbox href="/wp-content/themes/bureauhanze/assets/img/cheatsheet/jaap.webp">
-                                    <img src="/wp-content/themes/bureauhanze/assets/img/cheatsheet/jaap.webp">
+                                <a data-fslightbox href="https://cdn.pixabay.com/photo/2014/05/07/06/44/cat-339400__480.jpg">
+                                    <img src="https://cdn.pixabay.com/photo/2014/05/07/06/44/cat-339400__480.jpg">
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a data-fslightbox href="/wp-content/themes/bureauhanze/assets/img/cheatsheet/henrick.webp">
-                                    <img src="/wp-content/themes/bureauhanze/assets/img/cheatsheet/henrick.webp">
+                                <a data-fslightbox href="https://cdn.pixabay.com/photo/2016/03/28/10/05/kitten-1285341__480.jpg">
+                                    <img src="https://cdn.pixabay.com/photo/2016/03/28/10/05/kitten-1285341__480.jpg">
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a data-fslightbox href="/wp-content/themes/bureauhanze/assets/img/cheatsheet/reinier.webp">
-                                    <img src="/wp-content/themes/bureauhanze/assets/img/cheatsheet/reinier.webp">
+                                <a data-fslightbox href="https://cdn.pixabay.com/photo/2021/10/19/10/56/cat-6723256__480.jpg">
+                                    <img src="https://cdn.pixabay.com/photo/2021/10/19/10/56/cat-6723256__480.jpg">
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a data-fslightbox href="/wp-content/themes/bureauhanze/assets/img/cheatsheet/melanie.webp">
-                                    <img src="/wp-content/themes/bureauhanze/assets/img/cheatsheet/melanie.webp">
+                                <a data-fslightbox href="https://cdn.pixabay.com/photo/2014/06/03/01/31/cat-360807__480.jpg">
+                                    <img src="https://cdn.pixabay.com/photo/2014/06/03/01/31/cat-360807__480.jpg">
                                 </a>
                             </div>
                         </div>
@@ -291,14 +291,14 @@ get_header(); ?>
                 <h2>Lightbox</h2>
             </div>
             <div class="row">
-                <a data-fslightbox href="/wp-content/themes/bureauhanze/assets/img/cheatsheet/colin.webp">
-                    <img src="/wp-content/themes/bureauhanze/assets/img/cheatsheet/colin.webp">
+                <a data-fslightbox href="https://cdn.pixabay.com/photo/2020/01/10/22/52/cat-4756360__480.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2020/01/10/22/52/cat-4756360__480.jpg">
                 </a>
-                <a data-fslightbox href="/wp-content/themes/bureauhanze/assets/img/cheatsheet/jaap.webp">
-                    <img src="/wp-content/themes/bureauhanze/assets/img/cheatsheet/jaap.webp">
+                <a data-fslightbox href="https://cdn.pixabay.com/photo/2020/04/04/09/55/cat-5001570__480.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2020/04/04/09/55/cat-5001570__480.jpg">
                 </a>
-                <a data-fslightbox href="/wp-content/themes/bureauhanze/assets/img/cheatsheet/henrick.webp">
-                    <img src="/wp-content/themes/bureauhanze/assets/img/cheatsheet/henrick.webp">
+                <a data-fslightbox href="https://cdn.pixabay.com/photo/2020/01/29/21/57/cat-4803841__480.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2020/01/29/21/57/cat-4803841__480.jpg">
                 </a>
                 <script src="/wp-content/themes/bureauhanze/assets/js/fslightbox.min.js"></script>
             </div>
