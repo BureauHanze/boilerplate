@@ -1,5 +1,6 @@
 .fslightbox-container {
     font-family: $font-family !important;
+    background: linear-gradient(rgba(0,0,0,.85),#000) !important;
     .fslightbox-slide-number-container {
         width: fit-content;
     }
