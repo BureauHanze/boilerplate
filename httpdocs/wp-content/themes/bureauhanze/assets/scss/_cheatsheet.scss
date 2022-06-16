@@ -232,7 +232,11 @@
     .container {
         .row {
             display: flex;
+            align-items: center;
             gap: $gap-lg;
+        }
+        svg {
+            height: 68px;
         }
         img {
             height: 48px;

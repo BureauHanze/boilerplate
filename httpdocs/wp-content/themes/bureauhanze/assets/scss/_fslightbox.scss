@@ -1,5 +1,8 @@
 .fslightbox-container {
     font-family: $font-family !important;
+    .fslightbox-slide-number-container {
+        width: fit-content;
+    }
     .fslightbox-slide-btn {
         background: none;
         svg {
@@ -22,11 +25,19 @@
     }
 }
 .fslightbox-nav {
+    display: flex;
+    position:  relative !important;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     height: 45px;
-    top: 1% !important;
-    width: 99% !important;
-    position: absolute;
+    top: $margin-md !important;
+    width: 100%;
+    // position: absolute;
+    padding-left: $padding-lg;
+    padding-right: $padding-lg;
     .fslightbox-toolbar {
+        position: relative;
+        background: none;
         .fslightbox-toolbar-button {
             &:nth-child(1) {
                 display: none;

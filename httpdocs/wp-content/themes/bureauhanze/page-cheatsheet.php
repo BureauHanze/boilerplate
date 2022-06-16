@@ -13,7 +13,7 @@ get_header(); ?>
                     <?php
                     $contactlogo = get_field('contactLogo', 'option');
                     if ($contactlogo) : ?>
-                        <?php the_field('contactLogo', 'option'); ?></p>
+                        <?php the_field('contactLogo', 'option'); ?>
                     <?php
                     endif; ?>
                 </a>
