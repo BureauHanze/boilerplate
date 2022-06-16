@@ -63,7 +63,7 @@ get_header(); ?>
                     <li>List item</li>
                     <li>List item</li>
                     <li>List item</li>
-                </ul>
+                </ol>
             </div>
         </div>
     </section>
