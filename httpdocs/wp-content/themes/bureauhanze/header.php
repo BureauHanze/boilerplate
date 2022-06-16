@@ -33,6 +33,14 @@ endif; ?>">
 					<?php
 					endif; ?>
 				</a>
+				<a class="header__logo header__logo-mobile" href="/" title="Home">
+					<?php
+					$contactfavicon = get_field('contactFavicon', 'option');
+					if ($contactfavicon) : ?>
+						<img src="<?php echo ($contactfavicon['sizes']['favicon-mail']); ?>">
+					<?php
+					endif; ?>
+				</a>
 				<?php 
 				wp_nav_menu( 
 					array( 

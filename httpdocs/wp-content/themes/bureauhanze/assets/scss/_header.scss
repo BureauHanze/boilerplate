@@ -22,10 +22,19 @@
                 padding-top: 4px;
                 padding-bottom: 4px;
                 transition: height $main-transition;
+                @media(max-width: $mobile){
+                    display: none;
+                }
                 svg {
                     .logo {
                         fill: black;
                     }
+                }
+            }
+            .header__logo-mobile {
+                display: flex;
+                @media(min-width: $mobile){
+                    display: none;
                 }
             }
             #nav--open {
@@ -59,9 +68,9 @@
                         }
                     }
                 }
-                @media(min-width: $tablet){
-                    display: none;
-                }
+                // @media(min-width: $tablet){
+                //     display: none;
+                // }
             }
             .menu-main-container {
                 margin-left: auto;

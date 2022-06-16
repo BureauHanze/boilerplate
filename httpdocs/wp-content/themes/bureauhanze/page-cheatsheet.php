@@ -22,7 +22,7 @@ get_header(); ?>
             </div>
             <?php
             $faviconcompany = get_field('contactFavicon', 'option'); ?>
-            <img src="<?php echo ($faviconcompany['sizes']['favicon-mail']); ?>">
+            <img src="<?php echo ($faviconcompany['sizes']['favicon-mail']); ?>" alt="Logo">
         </div>
     </section>
 
