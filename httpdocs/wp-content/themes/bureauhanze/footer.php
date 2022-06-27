@@ -76,7 +76,7 @@
 						endif; ?> 
 					</p>
 					<div class="bottom__links">
-						<a href="/privacy-statement">Privacy statement</a>
+						<a href="/privacy-statement/" title="Privacy statement">Privacy statement</a>
 						<button id="scrollToTop" class="to-top" onclick="scrollToTop()">
 						<?php get_template_part( 'assets/svg/chevron'); ?>
 						</button>
