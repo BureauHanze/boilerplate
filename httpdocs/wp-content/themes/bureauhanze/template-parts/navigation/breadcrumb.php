@@ -13,7 +13,7 @@ function breadcrumbs($separator = ' &raquo; ', $home = 'Home') {
         if ($x != $last)
             $breadcrumbs[] = "<a href=\"$base$crumb\">$title</a>";
         else
-            $breadcrumbs[] = $title;
+            $breadcrumbs[] = "<a class='breadcrumb-item'>$title</a>";
     }
     return implode($separator, $breadcrumbs);
 } ?>

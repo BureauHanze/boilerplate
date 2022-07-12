@@ -201,6 +201,9 @@
                 &:hover {
                     text-decoration: underline;
                 }
+                &:last-child {
+                    font-weight: bold;
+                }
             }
             p, a {
                 color: white;
