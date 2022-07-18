@@ -1,6 +1,5 @@
 <?php
-if( have_rows('section_flex-content') ): ?>
-    <?php
+if( have_rows('section_flex-content') ):
     while ( have_rows('section_flex-content') ) : the_row(); 
     if( get_row_layout() == 'section_flex-content_row' ):
         get_template_part( 'template-parts/flex-content-rows/text-image' ); 
@@ -9,6 +8,5 @@ if( have_rows('section_flex-content') ): ?>
     elseif( get_row_layout() == 'section_flex-content-text_row' ):
         get_template_part( 'template-parts/flex-content-rows/text-columns' );
     endif;
-    endwhile; ?>
-<?php
+    endwhile;
 endif;
