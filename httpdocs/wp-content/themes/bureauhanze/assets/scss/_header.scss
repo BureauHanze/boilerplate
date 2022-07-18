@@ -203,6 +203,8 @@
                 }
                 &:last-child {
                     font-weight: bold;
+                    pointer-events: none;
+                    text-decoration: none;
                 }
             }
             p, a {
@@ -215,6 +217,16 @@
                 width: 12px;
                 opacity: 0.7;
             }
+            // .breadcrumb-item {
+            //     &:nth-last-child() {
+            //         a {
+            //             pointer-events: none;
+            //             &:hover {
+            //                 text-decoration: none;
+            //             }
+            //         }
+            //     }
+            // }
         }
     }
 }

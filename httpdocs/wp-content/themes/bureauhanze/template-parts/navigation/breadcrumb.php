@@ -4,16 +4,16 @@ function breadcrumbs($separator = ' &raquo; ', $home = 'Home') {
     // This gets the REQUEST_URI (/path/to/file.php), splits the string (using '/') into an array, and then filters out any empty values
     $path = array_filter(explode('/', parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)));
     $base = ($_SERVER['HTTPS'] ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/';
-    $breadcrumbs = Array("<a href=\"$base\">$home</a>");
+    $breadcrumbs = Array("<a class='breadcrumb-item' title='Home' href=\"$base\">$home</a>");
     $last = end(array_keys($path));
 
     // Build the breadcrumbs
     foreach ($path AS $x => $crumb) {
         $title = ucwords(str_replace(Array('.php', '_', '-'), Array('', ' ', ' '), $crumb));
         if ($x != $last)
-            $breadcrumbs[] = "<a href=\"$base$crumb\">$title</a>";
+            $breadcrumbs[] = "<a class='breadcrumb-item' href=\"$base$crumb\">$title</a>";
         else
-            $breadcrumbs[] = "<a class='breadcrumb-item'>$title</a>";
+            $breadcrumbs[] = "<a class='breadcrumb-item'>" . $title . "</a>";
     }
     return implode($separator, $breadcrumbs);
 } ?>
