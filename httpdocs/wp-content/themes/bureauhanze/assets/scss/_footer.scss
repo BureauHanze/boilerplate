@@ -24,12 +24,11 @@
             .footer__logo {
                 position: relative;
                 flex: 1 1 auto;
-                // padding: $padding-md $padding-md $padding-md 0;
                 margin-bottom: auto;
                 z-index: 1;
                 svg {
                     max-width: 128px;
-                    .logo{
+                    g {
                         fill: white;
                     }
                 }
@@ -40,11 +39,6 @@
             .footer__contact {
                 flex: 0 1 auto;
             }
-            // .footer__contact-links {
-            //     a {
-            //         justify-content: end;
-            //     }
-            // }
         }
     }
     .footer__copyright {

@@ -71,11 +71,6 @@ button {
     }
 }
 
-
-
-
-
-
 .btn-link {
     padding: 0;
     color: $primary-color;
@@ -86,6 +81,7 @@ button {
         fill: $primary-color;
     }
 }
+
 .btn-link-icon {
     color: $primary-color;
     padding: 0;
@@ -99,11 +95,3 @@ button {
         fill: $primary-color;
     }
 }
-
-
-// .btn-secondary {
-//     background-color: $secondary-color;
-//     &:hover {
-//         background-color: $primary-color;
-//     }
-// }
