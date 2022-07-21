@@ -32,6 +32,23 @@
     padding: 0px;
 }
 
+[id^="acf-group"] .acf-tab-wrap .acf-tab-group li a {
+    background: #fff;
+    border: solid 1px #c2c2c2;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+[id^="acf-group"] .acf-fields > .acf-tab-wrap .acf-tab-group li.active a {
+    font-weight: 600;
+    color: white; 
+    border-color: #333875;
+    background-color: #2271b1;
+}
+
 [id^="acf-group"] .ui-sortable .acf-fields > .acf-field, [id^="acf-group"]  .acf-field {
     transition:all 0.3s;
     padding: 0px;
@@ -42,28 +59,49 @@
     box-shadow: 1px 1px 4px #0000001f;
 }
 
-[id^="acf-group"] .ui-sortable .acf-fields > .acf-field, [id^="acf-group"]  .acf-field.one-second {
+[id^="acf-group"] .layout .acf-fields {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+[id^="acf-group"] .ui-sortable .acf-fields > .acf-field.one-second, [id^="acf-group"]  .acf-field.one-second {
     flex: 1 1 40%;
     min-width: 10%
 }
 
-[id^="acf-group"] .ui-sortable .acf-fields > .acf-field, [id^="acf-group"]  .acf-field.one-third {
+[id^="acf-group"] .ui-sortable .acf-fields > .acf-field.one-third, [id^="acf-group"]  .acf-field.one-third {
     flex: 1 1 30%;
     min-width: 10%
 }
 
-[id^="acf-group"] .ui-sortable .acf-fields > .acf-field, [id^="acf-group"]  .acf-field.one-fourth {
+[id^="acf-group"] .ui-sortable .acf-fields > .acf-field.one-fourth, [id^="acf-group"]  .acf-field.one-fourth {
     flex: 1 1 20%;
     min-width: 10%
 }
 
-[id^="acf-group"] .ui-sortable .acf-fields > .acf-field, [id^="acf-group"]  .acf-field.one-eight {
+[id^="acf-group"] .ui-sortable .acf-fields > .acf-field.one-eight, [id^="acf-group"]  .acf-field.one-eight {
     flex: 1 1 12.5%;
     min-width: 12.5%
 }
 
+[id^="acf-group"] .acf-field:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+[id^="acf-group"] .acf-field.acf-field-flexible-content {
+    background-color: #f8f8f9;
+}
+
+[id^="acf-group"] .acf-field.acf-field-flexible-content .layout {
+    padding: 15px;
+    border: solid 1px #0000002b;
+    border-radius: 10px;
+    background: #fff;
+}
+
 [id^="acf-group"] .acf-field .acf-label {
-    padding: 15px 20px;
+    padding: 0px;
     border-radius: 10px 10px 0px 0px;
     background-color: #f2f2f2;
     color: #4f5372;
@@ -72,6 +110,21 @@
 [id^="acf-group"] .acf-field .acf-label > label {
     font-size: 14px;
     font-weight: 700;
+    padding: 15px 20px;
+}
+[id^="acf-group"] .acf-field .acf-label > .description {
+    padding: 0px 20px 15px 20px;
+    margin-top: -10px;
+}
+
+[id^="acf-group"] .acf-actions {
+    margin-top: 20px;
+}
+
+[id^="acf-group"] .acf-actions .button-primary {
+    width: 100%;
+    text-align: center;
+    padding: 6px 20px;
 }
 
 [id^="acf-group"] .acf-field .acf-label p {
@@ -81,6 +134,22 @@
 [id^="acf-group"] .acf-field .acf-input {
     padding: 20px;
     padding-top: 10px;
+    display: flex;
+    width: 100%;
+}
+
+[id^="acf-group"] .acf-field .acf-input .acf-input-wrap {
+    flex: 1;
+}
+
+[id^="acf-group"] .acf-field .acf-input .acf-input-prepend {
+    display: flex;
+    align-items: center;
+    max-width: 30px;
+}
+
+[id^="acf-group"] .acf-field .acf-input > div {
+    flex: auto;
 }
 
 [id^="acf-group"] .inside {
@@ -91,15 +160,6 @@
 
 [id^="acf-group"] .acf-fields:after {
     display: none;
-}
-
-[id^="acf-group"] .acf-fields > .acf-tab-wrap .acf-tab-group li.active a {
-    background: none;
-    border: none;
-    padding: 0px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #282650; 
 }
 
 .acf-field input[type=text], 
@@ -140,7 +200,7 @@
 .acf-field input[type=week]:focus, 
 .acf-field textarea:focus, 
 .acf-field select:focus  {
-    border-color: #7984ff;   
+    border-color: #2271b1;   
     border-width: 2px;
     padding: 7px 9px;
     transition:all 0.3s;
@@ -149,7 +209,6 @@
 .acf-settings-wrap #poststuff #post-body.columns-2 {
     margin-right: 0px;
 }
-
 
 .acf-settings-wrap #post-body.columns-2 #postbox-container-1 {
     float: none;
@@ -185,4 +244,25 @@
 .acf-settings-wrap #post-body.columns-2 #postbox-container-1 .postbox input {
     width: 150px;
     padding: 5px;
+}
+
+[id^="acf-group"] .layout .acf-fc-layout-handle {
+    padding: 5px 0px 15px 0px;
+    border: none;
+}
+
+[id^="acf-group"] .acf-flexible-content .layout .acf-fc-layout-controls {
+    top: 15px;
+    right: 15px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    padding: 5px 9px;
+}
+
+[id^="acf-group"] .acf-flexible-content .layout .acf-fc-layout-controls * {
+    visibility: visible !important;
+}
+
+[id^="acf-group"] .acf-field-group .acf-input .acf-fields.-border {
+    border: none;
 }
